@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "afaab357-0ff4-44e5-b86c-3c6b318ffff3": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755997966560__afaab357-0ff4-44e5-b86c-3c6b318ffff3-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"PqOHeMksE8DjTVup\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ><\/div>\n<script src='\/\/widget.reviews.io\/modern-widgets\/rating-bar.js'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755997966560__afaab357-0ff4-44e5-b86c-3c6b318ffff3-liquid-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection-with-sidebar",
+      "blocks": {
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 3,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": false,
+        "enable_sort": true,
+        "side_menu": "2023-side-menu"
+      }
+    }
+  },
+  "order": [
+    "afaab357-0ff4-44e5-b86c-3c6b318ffff3",
+    "collection-header",
+    "main-collection"
+  ]
+}

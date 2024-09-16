@@ -1,0 +1,515 @@
+{
+  "sections": {
+    "02d767f2-06ce-4943-849c-037d2db33e92": {
+      "type": "hero-video",
+      "custom_css": [
+        ".animation-cropper {overflow: visible;}",
+        ".hero {background: white;}"
+      ],
+      "settings": {
+        "title": "Find your new favourite artwork",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "SHOP LARGE CANVAS ART",
+        "link": "shopify:\/\/collections\/large-framed-canvas-wall-art",
+        "color_accent": "#424842",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cc27e476c62d4d2fb5cdd88a701db5ac.mp4",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "advanced_content_9ybEjw": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_MQw9D9": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"PqOHeMksE8DjTVup\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ><\/div>\n<script src='\/\/widget.reviews.io\/modern-widgets\/rating-bar.js'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_MQw9D9"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": false
+      }
+    },
+    "f9b42219-17b1-4531-92c0-63610a19ca91": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h1>Modern wall art for slow, feel-good spaces<\/h1><p>At Green Lili, we design modern abstract wall art for cosy spaces that inspire & invite — a place to relax that feels like home. Our collections of <a href=\"https:\/\/green-lili.myshopify.com\/collections\/art-prints\">framed art prints<\/a> and <a href=\"https:\/\/green-lili.myshopify.com\/collections\/large-framed-canvas-wall-art\">large canvas wall art<\/a> celebrate timeless design through laid-back styles and nature-inspired colour palettes, creating feel-good spaces that embrace slow living.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-heading-1",
+        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "fa1050d0-2d95-4712-aba6-ecf138afce13": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_dHhDfC": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Abstract Wall Art",
+            "textarea": "There's a piece for every space.",
+            "cta_text1": "Abstract Wall Art",
+            "cta_link1": "shopify:\/\/collections\/abstract-wall-art",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/abstract-wall-art-shore-thing-canvas.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#ffffff",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "advanced_werzgh": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Landscapes & Seascapes",
+            "textarea": "Let your mind wander.",
+            "cta_text1": "Landscapes & Seascapes",
+            "cta_link1": "shopify:\/\/collections\/abstract-landscape-wall-art",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/landscapes-seascapes.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#ffffff",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-2": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Boho Wall Art",
+            "textarea": "Earthy tones and organic shapes.",
+            "cta_text1": "Boho Wall Art",
+            "cta_link1": "shopify:\/\/collections\/bohemian-wall-art",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Boho-wall-art.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#ffffff",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "6fa7471a-fb89-4e74-be99-338194cb3c85": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Florals & Botanicals",
+            "textarea": "A refreshing and uplifting bunch.",
+            "cta_text1": "Floral & Botanical Art",
+            "cta_link1": "shopify:\/\/collections\/floral-botanical-wall-art",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/neutral-anemone-canvas.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#ffffff",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "920e61c6-a53d-4710-966a-dc6232fb41ee": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Neutral Wall Art",
+            "textarea": "Keep it simple & timeless.",
+            "cta_text1": "Neutral Wall Art",
+            "cta_link1": "shopify:\/\/collections\/neutral-wall-art",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/neutral-wall-art_d995ea59-b687-4ce1-b07e-4d83407f6a08.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#ffffff",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Wall Art Sets",
+            "textarea": "Thoughtfully designed to hang together.",
+            "cta_text1": "Wall Art Sets",
+            "cta_link1": "shopify:\/\/collections\/wall-art-sets",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/green-lili-wall-art-sets.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#ffffff",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_dHhDfC",
+        "advanced_werzgh",
+        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-2",
+        "6fa7471a-fb89-4e74-be99-338194cb3c85",
+        "920e61c6-a53d-4710-966a-dc6232fb41ee",
+        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false,
+        "lazyload_images": true
+      }
+    },
+    "c3df44a2-96ab-4b00-b2ae-91c0522b77d7": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "home_featured_products": "new-arrivals",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "2b847553-ff78-4c74-8fca-6e7e9c5b6410": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755998327008__2b847553-ff78-4c74-8fca-6e7e9c5b6410-1675938138a49050c3-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"press-holder\"><p class=\"press-quote\">\"{{ 'Homepage.Quote.Evening_Standard' | t }}\"<\/p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2271\/6167\/files\/Evening_Standard_logo.png?v=1675938816\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998327008__2b847553-ff78-4c74-8fca-6e7e9c5b6410-1675938138a49050c3-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "6dddd2c0-ca39-4dca-8a31-910cb7b19f3a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Best Sellers"
+          }
+        },
+        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Find your new favourite wall art. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-heading-1",
+        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "home_featured_products": "all",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "933f0b2c-8994-4dfc-a74f-bd2021de4353": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Discover new artwork for every room in the home"
+          }
+        },
+        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Set the vibe by choosing artwork that reflects your style, tells a story and packs personality into your every day. Whether you're decorating a bedroom, living room, a new apartment, or your first home — our framed wall art is available in colours and sizes to fit your interior.<br\/> <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-heading-1",
+        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Large Canvas Wall Art",
+            "textarea": "",
+            "cta_text1": "Shop Large Canvas Art",
+            "cta_link1": "shopify:\/\/collections\/large-framed-canvas-wall-art",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/framed-canvas-wall-art.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 700,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#272b2a",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "e11afab5-8e1b-4de8-bbb6-d6efd7230cb3": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Framed Art Prints",
+            "textarea": "",
+            "cta_text1": "Shop Art Prints",
+            "cta_link1": "shopify:\/\/collections\/art-prints",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/framed-art-prints.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 700,
+            "text_size": 120,
+            "text_align": "vertical-bottom horizontal-left",
+            "color_accent": "#272b2a",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "promo-0",
+        "e11afab5-8e1b-4de8-bbb6-d6efd7230cb3"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false,
+        "lazyload_images": true
+      }
+    },
+    "292dba62-5df5-4664-b113-ec848992da19": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Come hang with us"
+          }
+        },
+        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><a href=\"https:\/\/www.instagram.com\/greenliliart\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/greenliliart\">@greenliliart<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-heading-1",
+        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1671461419a287332f": {
+      "type": "apps",
+      "blocks": {
+        "223e4eee-ce33-4d0f-96d3-718eea711efe": {
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 109660,
+            "show_text": false,
+            "title_text": "",
+            "title_color": "#333333",
+            "title_size": 24,
+            "subtitle_text": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 20,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "223e4eee-ce33-4d0f-96d3-718eea711efe"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Elle-decor-logo.jpg",
+            "link": ""
+          }
+        },
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/living-etc-logo.jpg",
+            "link": ""
+          }
+        },
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/real-homes.jpg",
+            "link": ""
+          }
+        },
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ideal-home-logo.jpg",
+            "link": ""
+          }
+        },
+        "cf2e0b0f-1124-4baf-93e9-000f89d79e07": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/house-beautiful.jpg",
+            "link": ""
+          }
+        },
+        "bc2fcf90-1682-4d3d-9b63-333b8b55b86d": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stylist-logo.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-0",
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-1",
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-2",
+        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-3",
+        "cf2e0b0f-1124-4baf-93e9-000f89d79e07",
+        "bc2fcf90-1682-4d3d-9b63-333b8b55b86d"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "As seen in",
+        "logo_opacity": 76,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "02d767f2-06ce-4943-849c-037d2db33e92",
+    "advanced_content_9ybEjw",
+    "f9b42219-17b1-4531-92c0-63610a19ca91",
+    "fa1050d0-2d95-4712-aba6-ecf138afce13",
+    "c3df44a2-96ab-4b00-b2ae-91c0522b77d7",
+    "2b847553-ff78-4c74-8fca-6e7e9c5b6410",
+    "6dddd2c0-ca39-4dca-8a31-910cb7b19f3a",
+    "featured-collection",
+    "933f0b2c-8994-4dfc-a74f-bd2021de4353",
+    "promo-grid",
+    "292dba62-5df5-4664-b113-ec848992da19",
+    "1671461419a287332f",
+    "4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c"
+  ]
+}

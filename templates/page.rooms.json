@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "11b116d3-6c8f-4817-a776-6dc010374108": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/abstract-living-room-canvas-art.jpg",
+        "image2": "shopify:\/\/shop_images\/abstract-living-room-wall-art.jpg",
+        "subtitle": "",
+        "title": "Living Room Wall Art",
+        "text": "<p>We all want our living rooms to be the cosiest, most relaxing space in the house, a place for entertaining and a den where we can stretch out and feel most at ease. Set the vibe by choosing wall art for your living room that reflects your style and personality.  <\/p>",
+        "button_label": "Living Room Wall Art",
+        "button_link": "shopify:\/\/collections\/living-room-wall-art",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "1c723bb6-0558-4ae4-a412-43eb3f109a7f": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/abstract-canvas-bedroom-wall-art.jpg",
+        "image2": "shopify:\/\/shop_images\/minimal-abstract-bedroom-wall-art.jpg",
+        "subtitle": "",
+        "title": "Bedroom Wall Art",
+        "text": "<p>The bedroom is your calming space, a place to retreat, relax and unwind and your bedroom walls should reflect that.  <\/p>",
+        "button_label": "Bedroom Wall Art",
+        "button_link": "shopify:\/\/collections\/bedroom-wall-art",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "11b116d3-6c8f-4817-a776-6dc010374108",
+    "1c723bb6-0558-4ae4-a412-43eb3f109a7f"
+  ]
+}

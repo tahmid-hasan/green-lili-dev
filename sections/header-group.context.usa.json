@@ -1,0 +1,29 @@
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "announcement": {
+      "settings": {
+      },
+      "blocks": {
+        "announcement_7afagN": {
+          "settings": {
+            "link_text": "🇺🇸 Free shipping in 3-7 days"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_7afagN",
+        "announcement-0",
+        "announcement-1"
+      ]
+    }
+  },
+  "order": [
+    "announcement",
+    "header",
+    "advanced_content_At3JgL"
+  ]
+}

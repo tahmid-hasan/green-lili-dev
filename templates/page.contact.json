@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1e006660-42bb-4b91-b83d-6235961dbff7": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16714588881120__1e006660-42bb-4b91-b83d-6235961dbff7-1671557059abebdbd0-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"rte\"><div class=\"collection-description\">\n<h1>Contact Us<\/h1>\n<p>Contact our team for friendly advice about choosing wall art, product questions or an order you placed — we'd love to hear from you! We reply to most enquiries within 24 hours. <\/p><p>You can also hop on <a href=\"javascript:;\" onclick=\"tidioChatApi.display(true);tidioChatApi.open()\">live chat!*<\/a><\/p>No bots. Just real people.<\/br>*10am - 5pm, Mon - Fri. (UK)<\/p>\n<\/div><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588881120__1e006660-42bb-4b91-b83d-6235961dbff7-1671557059abebdbd0-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "title": "",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1e006660-42bb-4b91-b83d-6235961dbff7",
+    "form"
+  ]
+}

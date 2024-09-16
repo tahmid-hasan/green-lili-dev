@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "03b5ee93-4c23-4e6d-a3e5-66f59c62f677": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16714588520672__03b5ee93-4c23-4e6d-a3e5-66f59c62f677-16716157606c3093e7-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"collection-description\">\n<h1>We're sorry that page can't be found. <\/h1>\n<p>Browse our most popular collections of art prints and canvas below or get in touch if you've got a question. <\/p>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588520672__03b5ee93-4c23-4e6d-a3e5-66f59c62f677-16716157606c3093e7-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "3af39100-7d43-4a07-962f-0353814cbbb4": {
+      "type": "featured-collections",
+      "blocks": {
+        "79823b3e-7b72-4bbb-9405-1f5bfd874ddc": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals",
+            "title": "New Arrivals",
+            "focal_point": "center center"
+          }
+        },
+        "template--16714588520672__3af39100-7d43-4a07-962f-0353814cbbb4-1671615759c59427a5-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "large-framed-canvas-wall-art",
+            "title": "Large Canvas Wall Art",
+            "focal_point": "center center"
+          }
+        },
+        "e2747433-e9c9-4baf-ac45-bba79a295ac6": {
+          "type": "collection",
+          "settings": {
+            "collection": "art-prints",
+            "title": "Art Prints",
+            "focal_point": "center center"
+          }
+        },
+        "template--16714588520672__3af39100-7d43-4a07-962f-0353814cbbb4-1671615759c59427a5-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "abstract-wall-art",
+            "title": "Abstract Wall Art",
+            "focal_point": "center center"
+          }
+        },
+        "template--16714588520672__3af39100-7d43-4a07-962f-0353814cbbb4-1671615759c59427a5-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "bohemian-wall-art",
+            "title": "Boho Wall Art",
+            "focal_point": "center center"
+          }
+        },
+        "4a47ce7b-88d2-4d0b-9e0f-827bf09fd99f": {
+          "type": "collection",
+          "settings": {
+            "collection": "neutral-wall-art",
+            "title": "Neutral Wall Art",
+            "focal_point": "center center"
+          }
+        },
+        "92f00f81-e1cc-4e65-9f2e-29644ad4a81c": {
+          "type": "collection",
+          "settings": {
+            "collection": "floral-botanical-wall-art",
+            "title": "Florals & Botanicals",
+            "focal_point": "center center"
+          }
+        },
+        "e825afe5-d2b2-4198-aa00-3810c0698183": {
+          "type": "collection",
+          "settings": {
+            "collection": "japandi",
+            "title": "Japandi Wall Art",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "79823b3e-7b72-4bbb-9405-1f5bfd874ddc",
+        "template--16714588520672__3af39100-7d43-4a07-962f-0353814cbbb4-1671615759c59427a5-1",
+        "e2747433-e9c9-4baf-ac45-bba79a295ac6",
+        "template--16714588520672__3af39100-7d43-4a07-962f-0353814cbbb4-1671615759c59427a5-0",
+        "template--16714588520672__3af39100-7d43-4a07-962f-0353814cbbb4-1671615759c59427a5-3",
+        "4a47ce7b-88d2-4d0b-9e0f-827bf09fd99f",
+        "92f00f81-e1cc-4e65-9f2e-29644ad4a81c",
+        "e825afe5-d2b2-4198-aa00-3810c0698183"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    }
+  },
+  "order": [
+    "03b5ee93-4c23-4e6d-a3e5-66f59c62f677",
+    "main",
+    "3af39100-7d43-4a07-962f-0353814cbbb4"
+  ]
+}

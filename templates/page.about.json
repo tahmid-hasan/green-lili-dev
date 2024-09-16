@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "a099f832-acef-47d7-b342-f99beca77470": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16714588848352__a099f832-acef-47d7-b342-f99beca77470-1671555763a2a0af21-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"rte\"><div class=\"collection-description\">\n<h1>About Us<\/h1>\n<p>Green Lili is an independent home decor, art & lifestyle brand founded in Sheffield in 2015. Our shop features a collection of <a href=\"\/collections\/art-prints\">framed art prints<\/a>, <a href=\"\/collections\/large-framed-canvas-wall-art\">large canvas art<\/a> & <a href=\"\/collections\/rugs\">rugs<\/a> designed in our Sheffield studio by artist and founder Michelle Collins – and brought to life in cosy homes around the world.<\/p>\n<\/div><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588848352__a099f832-acef-47d7-b342-f99beca77470-1671555763a2a0af21-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "59b65ad4-0db7-470e-842e-2c9f4957ffab": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16714588848352__59b65ad4-0db7-470e-842e-2c9f4957ffab-1671555763a2a0af21-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Greenlili-down-to-earth.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588848352__59b65ad4-0db7-470e-842e-2c9f4957ffab-1671555763a2a0af21-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "c354ac68-970d-454a-9382-fb8ddf731f6d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16714588848352__c354ac68-970d-454a-9382-fb8ddf731f6d-16715558957a789138-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Our mission is to help you to tell stories and pack personality and good vibes into your every day – and there’s no better place to do that than your home.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588848352__c354ac68-970d-454a-9382-fb8ddf731f6d-16715558957a789138-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1670516213ee264ffb": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "eb1f4b96-77fb-40f3-92ea-fcf5d564b3bb": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ABOUT-SHELL-GOLD.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "Meet the artist",
+        "title": "Michelle Collins",
+        "text": "<p>Hey, I'm Michelle! We started Green Lili to provide a place that we hope will inspire your creativity, connect with nature and lift emotions - transforming your space with bold colours and simple styles that aren't overly busy but still have heart and meaning.<\/p>",
+        "button_label": "About Michelle",
+        "button_link": "shopify:\/\/blogs\/inspiration\/meet-michelle-collins",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "17c5278b-2fd1-4907-a021-ef7c5eb6241e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BLOG-ABSTRACT-SETS.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "press & tv",
+        "title": "Features",
+        "text": "<p>We've been in ElleDecor, LivingEtc, Real Homes, Ideal Home, Stylist, House Beautiful, & The Telegraph. Our art has also been featured on Grand Designs, George Clarke’s Old House New Home, <a href=\"https:\/\/green-lili.myshopify.com\/blogs\/inspiration\/ugly-house-to-lovely-house\" title=\"Ugly House To Lovely House\">Ugly House<\/a> to Lovely House, Extraordinary Extensions and Britains Most Expensive Houses. <\/p><p>If you’d like to feature any of our art, please get in touch – we’re always happy to share images & samples. <\/p>",
+        "button_label": "Get in touch",
+        "button_link": "shopify:\/\/pages\/contact",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "c296b3d2-5853-441b-a54d-e636569f7ec6": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GLXFC-PALMSPRINGS.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Collaborations",
+        "text": "<p>We love to collaborate with brands that have a similar outlook to ours. We've done collaborations with <a href=\"\/blogs\/collaborations\/green-lili-x-french-connection-home\" title=\"Green Lili X French Connection Home\">French Connection Home<\/a> and <a href=\"\/blogs\/collaborations\/green-lili-x-john-lewis\" title=\"Green Lili X John Lewis\">John Lewis<\/a>, and our art has sold in retailers including Ikea, Dunelm, Target, and Rockett St George.<\/p>",
+        "button_label": "Let's Collaborate",
+        "button_link": "shopify:\/\/pages\/contact",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a099f832-acef-47d7-b342-f99beca77470",
+    "59b65ad4-0db7-470e-842e-2c9f4957ffab",
+    "c354ac68-970d-454a-9382-fb8ddf731f6d",
+    "1670516213ee264ffb",
+    "eb1f4b96-77fb-40f3-92ea-fcf5d564b3bb",
+    "17c5278b-2fd1-4907-a021-ef7c5eb6241e",
+    "c296b3d2-5853-441b-a54d-e636569f7ec6"
+  ]
+}

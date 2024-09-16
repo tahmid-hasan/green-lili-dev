@@ -1,0 +1,20 @@
+{
+  "parent": "product.framed-print.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+        "99dfce58-0e1b-487d-8b08-1847b2164a83": {
+          "settings": {
+            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' %}\n    <p>🇳🇱 Free shipping from the Europe (3-7 Days)<\/p>\n  {% else %}\n\n  {% when 'US' %}\n  <p>🇺🇸 Made In the USA. Free Shipping in 3-7 Days.<\/p>\n{% endcase %}"
+          }
+        }
+      }
+    }
+  }
+}

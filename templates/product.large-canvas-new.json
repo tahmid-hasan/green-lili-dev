@@ -1,0 +1,542 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "reviews_io_reviewsio_rating_output_EXPANM": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
+        "b6e995aa-0a57-4e41-b177-9556d4df7b53": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' %}\n    <p>{{ 'Product.Shipping.Free_Shipping' | t }}<\/p>\n  {% else %}\n\n  {% when 'US' %}\n  <p>🇺🇸 Made in the USA. Free shipping in 3-7 Days.<\/p>\n\n  {% when 'AU' %}\n  <p>🇦🇺 Free shipping from Australia (3-7 days)<\/p>\n\n  {% when 'GB' %}\n<div class=\"ship\">\n                       <span class=\"icon-and-text\">\n\n                               <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewBox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}<\/style><\/defs><path class=\"a\" d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"\/><circle class=\"a\" cx=\"20.24\" cy=\"43.76\" r=\"3.74\"\/><path class=\"a\" d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"\/><\/svg>\n                              \n                              <span>Free shipping in 3-7 days<\/span>\n<\/span>\n<\/div>\n                          \n{% endcase %}"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "b6d95a91-8626-4891-a3a5-58ddd44d5224": {
+          "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "disabled": true,
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "locale_option": "geolocation",
+            "locale_fallback": "",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "b1482a76-b7eb-4cc7-9ef1-6018292b5d1b": {
+          "type": "custom",
+          "settings": {
+            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' or 'GB' or 'CH'  %}\n\n  {% for tag in product.tags %}\n    {% if tag contains 'large-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>71.4cm<\/td>\n          <td>101.6cm<\/td>\n          <td><strong>75 x 105cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>XL<\/td>\n          <td>91.4cm<\/td>\n          <td>127cm<\/td>\n          <td><strong>95 x 131cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n    {% endif %}\n  {% if tag contains 'square-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>81.3cm<\/td>\n          <td>81.3cm<\/td>\n          <td><strong>85 x 85cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n  {% if tag contains 'small-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>61cm<\/td>\n          <td>61cm<\/td>\n          <td><strong>64.5 x 64.5cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n    {% if tag contains 'mixed-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>61cm<\/td>\n          <td>61cm<\/td>\n          <td><strong>64.5 x 64.5cm<\/strong><\/td>\n        <\/tr>\n          <tr>\n          <td>81.3cm<\/td>\n          <td>81.3cm<\/td>\n          <td><strong>85 x 85cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n\n    {% if tag contains 'reg-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>71.4cm<\/td>\n          <td>101.6cm<\/td>\n          <td><strong>75 x 105cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n{% endfor %}\n\n  {% else %}\n\n  {% when 'US' or 'AU' %}\n\n  {% for tag in product.tags %}\n    {% if tag contains 'large-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>XL<\/td>\n          <td>36x50\"<\/td>\n          <td><strong>37.4x51.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n    {% endif %}\n  {% if tag contains 'square-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n  {% if tag contains 'small-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n    {% if tag contains 'mixed-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n          <tr>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n\n    {% if tag contains 'reg-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n{% endfor %}\n\n\n{% endcase %}"
+          }
+        },
+        "custom_VCU6CP": {
+          "type": "custom",
+          "settings": {
+            "code": "<div id='ss-trust-badge'><\/div>"
+          }
+        },
+        "custom_RgxTyz": {
+          "type": "custom",
+          "settings": {
+            "code": "<div id='ss-tabs-icon-insert-block'><\/div>"
+          }
+        },
+        "3b5f153f-595b-4cc2-91f7-e8d2f3e70db4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Giclée fine art print onto 400gsm cotton canvas"
+          }
+        },
+        "c70e46c5-bce3-449f-8809-59fa40eb520e": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "heart",
+            "text": "Hand-stretched & professionally framed"
+          }
+        },
+        "ea4ab4b1-15d7-4de6-940a-176dc2b406b1": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Lightweight & easy to hang"
+          }
+        },
+        "3ca4d227-da9a-4220-8967-bafc68333a5a": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "leaf",
+            "text": "Sustainably sourced wooden float frame"
+          }
+        },
+        "db445427-c573-45fc-b8fc-0db05cdcbd8a": {
+          "type": "custom",
+          "settings": {
+            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' or 'US' or 'GB' or 'AU'  %}\n\n  {% else %}\n\n {% for tag in product.tags %}\n{% if tag contains 'natural-frame' %}\n    <p class=\"BF\">*Natural frame is  UK, US, EU & AU only<\/p>\n  {% endif %}\n\n{% endfor %}\n{% endcase %}"
+          }
+        },
+        "custom_MqiWAV": {
+          "type": "custom",
+          "settings": {
+            "code": "<a style=\"display: none\" data-picture-it-trigger>View in your own room<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "reviews_io_reviewsio_rating_output_EXPANM",
+        "b6e995aa-0a57-4e41-b177-9556d4df7b53",
+        "separator",
+        "variant_picker",
+        "buy_buttons",
+        "b6d95a91-8626-4891-a3a5-58ddd44d5224",
+        "description",
+        "b1482a76-b7eb-4cc7-9ef1-6018292b5d1b",
+        "custom_VCU6CP",
+        "custom_RgxTyz",
+        "3b5f153f-595b-4cc2-91f7-e8d2f3e70db4",
+        "c70e46c5-bce3-449f-8809-59fa40eb520e",
+        "ea4ab4b1-15d7-4de6-940a-176dc2b406b1",
+        "3ca4d227-da9a-4220-8967-bafc68333a5a",
+        "db445427-c573-45fc-b8fc-0db05cdcbd8a",
+        "custom_MqiWAV"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "large",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "ss_tabs_block_CLEceg": {
+      "type": "ss-tabs-block",
+      "blocks": {
+        "tab_YCF7aG": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "none",
+            "question": "About the artwork",
+            "answer": "",
+            "answer_html": "{{ product.description }}"
+          }
+        },
+        "tab_wh8aBU": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "none",
+            "question": "Product details",
+            "answer": "",
+            "answer_html": "<span class=\"product-tab-content\">Our luxury framed canvas art is made using sustainably sourced materials and comes to life with a Giclée fine art print on slightly textured heavyweight 400gsm cotton canvas, ensuring a museum-quality finish that will last for years to come.\nPrinted using water-based inks, its professionally hand-stretched over a sturdy 38mm European Pine frame and set in a high-quality 53mm deep hardwood floating frame.\n<\/span>"
+          }
+        },
+        "tab_jhmDDg": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "none",
+            "question": "Shipping",
+            "answer": "",
+            "answer_html": "{% case localization.country.iso_code %}\n  \n  {% when 'GB' %}\n\n  <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n              \n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>FedEx<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td>Free<\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n\n\n\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK'  %}\n\n\n  <span class=\"product-tab-content\">🇳🇱 Ships from the Netherlands. All customs & duties included. <\/span>\n\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Various<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td>Free<\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n  {% when 'US' %}\n\n <span class=\"product-tab-content\"> 🇺🇸 Ships from the USA. All customs & duties included. <\/span>\n\n      <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Size<\/th>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n    \n        <\/tr>\n      <\/thead>\n      <tbody>\n\n        <tr>\n          <td>24x24\"<\/td>\n          <td>UPS | USPS<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n\n         <tr>\n          <td>32x32\"<\/td>\n          <td>UPS | USPS<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n\n\n        <tr>\n          <td>Large<\/td>\n          <td>UPS | USPS<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n              <tr>\n          <td>Extra Large<\/td>\n          <td>UPS | USPS<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n  {% when 'AU' or 'NZ' %}\n\n    <span class=\"product-tab-content\"> 🇦🇺 Ships from Australia. All customs & duties included. <\/span>\n\n        <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Size<\/th>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Shipping time<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n    \n        <\/tr>\n      <\/thead>\n      <tbody>\n\n        <tr>\n          <td>24x24\"<\/td>\n          <td>AUS Post<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n\n         <tr>\n          <td>32x32\"<\/td>\n          <td>AUS Post<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n\n\n        <tr>\n          <td>Large<\/td>\n          <td>AUS Post<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n              <tr>\n          <td>Extra Large<\/td>\n          <td>AUS Post<\/td>\n          <td>3-7<\/td>\n          <td>N\/A<\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n\n{% endcase %}\n\n <span class=\"product-tab-content\">For more info or shipping times for other products please check our <a href=\"\/pages\/delivery-returns\">delivery page.<\/a><\/span>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_YCF7aG",
+        "tab_wh8aBU",
+        "tab_jhmDDg"
+      ],
+      "settings": {
+        "close_other": false,
+        "open_default": true,
+        "subtitle": "",
+        "subtitle_color": "#121212",
+        "subtitle_font_size": 18,
+        "title": "",
+        "title_font_size": 21,
+        "title_color": "#121212",
+        "arrow_size": 14,
+        "arrow_color": "#121212",
+        "icon_width": 22,
+        "text_color": "#121212",
+        "question_font_size": 18,
+        "answer_color": "#121212",
+        "answer_font_size": 15,
+        "border_color": "#f2f2f2",
+        "background-color": "#ffffff",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_x_desktop": 0,
+        "padding_x": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "button_padding_y": 10
+      }
+    },
+    "ss_feature_1_ngc3aw": {
+      "type": "ss-feature-1",
+      "blocks": {
+        "image_Ttb4Hy": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Made in the UK",
+            "feature_text": "Hand-stretched & professionally framed in the UK.",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_RW4t8V": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Museum-quality finish",
+            "feature_text": "Giclee fine art print on 400gsm heavyweight canvas.",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_NBebUJ": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Sustainable materials",
+            "feature_text": "Water-based inks and sustainably sourced hardwood frames",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_7Y8qz4": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Free Shipping",
+            "feature_text": "Fast, tracked shipping in 3-7 days",
+            "feature_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_Ttb4Hy",
+        "image_RW4t8V",
+        "image_NBebUJ",
+        "image_7Y8qz4"
+      ],
+      "settings": {
+        "feature_row": 4,
+        "feature_row_mobile": 2,
+        "feature_gap": 14,
+        "feature_gap_mobile": 20,
+        "feature_padding_vertical": 0,
+        "feature_padding_horizontal": 0,
+        "feature_radius": 16,
+        "feature_border_thickness": 0,
+        "feature_shadow": false,
+        "feature_heading_custom": false,
+        "feature_heading_font": "josefin_sans_n4",
+        "feature_heading_size": 20,
+        "feature_heading_size_mobile": 12,
+        "feature_heading_height": 130,
+        "feature_heading_mt": 8,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 12,
+        "feature_text_size_mobile": 12,
+        "feature_text_height": 130,
+        "feature_text_mt": 4,
+        "feature_icon_size": 42,
+        "feature_icon_size_mobile": 42,
+        "feature_bg": "#ffffff",
+        "feature_border_color": "#000000",
+        "feature_shadow_color": "#000000",
+        "feature_heading_color": "#000000",
+        "feature_text_color": "#000000",
+        "feature_icon_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "1695562662fc3b172b": {
+      "type": "apps",
+      "blocks": {
+        "c3c2bc91-23d4-42ac-9109-4a01dccb9f80": {
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-product\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "show_text": true,
+            "hide_title_if_empty": true,
+            "title_text": "At home with Green Lili",
+            "title_color": "#000000",
+            "title_size": 28,
+            "subtitle_text": "Get inspiration from our community.",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 35,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "c3c2bc91-23d4-42ac-9109-4a01dccb9f80"
+      ],
+      "custom_css": [
+        ".covet-pics-product-gallery-section-subtitle {margin-top: 10px !important;}",
+        ".swiper-button-next svg,.swiper-button-prev svg {opacity: 0.5 !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "max_width": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    },
+    "16705207551b1a9f9b": {
+      "type": "apps",
+      "blocks": {
+        "b2cc2f00-a063-4af0-9173-30d130521e88": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "product_review",
+            "per_page": 8,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#000000",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#000000",
+            "heading_text_color": "#000000",
+            "heading_font": "helvetica_n4",
+            "body_text_color": "#000000",
+            "badge_icon_color": "#000000",
+            "badge_text_color": "#000000",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_replies": false,
+            "widget_spacing": 0,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
+            "show_review_title": true,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "b2cc2f00-a063-4af0-9173-30d130521e88"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 4,
+        "products_per_row": 4
+      }
+    },
+    "ss_trust_badges_pro_6BKiwN": {
+      "type": "ss-trust-badges-pro",
+      "blocks": {
+        "item_dcRBjX": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "text": "Made in the UK",
+            "url": "",
+            "action": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_Q6M4Yw": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "text": "Free Shipping in 3-7 days",
+            "url": "",
+            "action": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_gYHTVV": {
+          "type": "item",
+          "settings": {
+            "icon": "guarantee",
+            "text": "Museum-quality finish",
+            "url": "",
+            "action": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        }
+      },
+      "block_order": [
+        "item_dcRBjX",
+        "item_Q6M4Yw",
+        "item_gYHTVV"
+      ],
+      "settings": {
+        "badge_position": "above_description",
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 48,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "items_row": 3,
+        "items_row_mobile": 3,
+        "items_gap": 10,
+        "items_gap_mobile": 10,
+        "items_mt": 0,
+        "badge_icon_size": 30,
+        "badge_icon_size_mobile": 30,
+        "icon_align": "center",
+        "icon_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "text_mt": 6,
+        "modal_width": 70,
+        "modal_width_mobile": 100,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 50,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_icon_size": 16,
+        "close_icon_size_mobile": 16,
+        "modal_video_ratio": "landscape",
+        "modal_video_ratio_mobile": "landscape",
+        "text_color": "#121212",
+        "icon_color": "#121212",
+        "close_bg": "#000000",
+        "close_icon": "#ffffff",
+        "heading_color": "#232323",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_tabs_block_CLEceg",
+    "ss_feature_1_ngc3aw",
+    "1695562662fc3b172b",
+    "sub",
+    "recently-viewed",
+    "collection-return",
+    "16705207551b1a9f9b",
+    "product-recommendations",
+    "ss_trust_badges_pro_6BKiwN"
+  ]
+}

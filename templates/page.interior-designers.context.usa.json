@@ -1,0 +1,8 @@
+{
+  "parent": "page.interior-designers.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+  }
+}

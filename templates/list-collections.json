@@ -1,0 +1,285 @@
+{
+  "sections": {
+    "advanced_content_BcXyPN": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_Q4KRNM": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"PqOHeMksE8DjTVup\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ><\/div>\n<script src='\/\/widget.reviews.io\/modern-widgets\/rating-bar.js'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_Q4KRNM"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": false
+      }
+    },
+    "84d0dc2a-9558-42d9-b9f4-ac335f775416": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16714588815584__84d0dc2a-9558-42d9-b9f4-ac335f775416-1671557695b496ae2f-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"collection-description\"><h1>Collections<\/h1><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16714588815584__84d0dc2a-9558-42d9-b9f4-ac335f775416-1671557695b496ae2f-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "1d562e3a-e396-4eb0-8e15-076a9162e347": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1d562e3a-e396-4eb0-8e15-076a9162e347"
+      ],
+      "disabled": true,
+      "settings": {
+        "title_enable": false,
+        "display_type": "all",
+        "sort": "alphabetical",
+        "grid": "4"
+      }
+    },
+    "8971b5df-35ab-4614-a723-6acb44df3a59": {
+      "type": "advanced-content",
+      "blocks": {
+        "565f1d92-f553-4fec-8271-4f178fc07c1d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABSTRACT-LANDSCAPES.jpg",
+            "link": "shopify:\/\/collections\/abstract-wall-art",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16755998359776__8971b5df-35ab-4614-a723-6acb44df3a59-16844145489e721487-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"col-segment\"><h2>Abstract Wall Art<\/h2><p>Our fan-favourite collection of framed abstract wall art features modern, minimalist designs in nature inspired palettes. From stylish abstract art prints to large abstract canvas art — there's a piece for every space.<\/p>\n<a class=\"home-btn\" href=\"\/collections\/abstract-wall-art\">ABSTRACT WALL ART<\/a>\n<ul class=\"sub-col\">\n<li><a href=\"\/collections\/abstract-landscape-wall-art\">Abstract Landscapes<\/a><\/li>\n<li><a href=\"\/collections\/minimalist-wall-art\">Minimalist Wall Art<\/a><\/li>\n<li><a href=\"\/collections\/abstract-art-prints\">Abstract Art Prints<\/a><\/li>\n<li><a href=\"\/collections\/abstract-canvas-art\">Abstract Canvas Art<\/a><\/li>\n<li><a href=\"\/collections\/japandi\">Japandi Wall Art<\/a><\/li>\n\n<\/ul>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "565f1d92-f553-4fec-8271-4f178fc07c1d",
+        "template--16755998359776__8971b5df-35ab-4614-a723-6acb44df3a59-16844145489e721487-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "63cff86c-cc67-454d-925f-88338d8e5d3d": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755998359776__63cff86c-cc67-454d-925f-88338d8e5d3d-16844145489e721487-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BOHO_27216e81-3dfd-4cb2-8192-9d2c8b833770.jpg",
+            "link": "shopify:\/\/collections\/bohemian-wall-art",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16755998359776__63cff86c-cc67-454d-925f-88338d8e5d3d-16844145489e721487-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"col-segment\">\n<h2>Boho Wall Art<\/h2><p>Capture the nature of laidback living with boho wall art and create a meaningful space packed with personality. This elevated collection features bold organic shapes in warm earthy tones.<\/p>\n<a class=\"home-btn\" href=\"\/collections\/bohemian-wall-art\">BOHO WALL ART<\/a>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998359776__63cff86c-cc67-454d-925f-88338d8e5d3d-16844145489e721487-0",
+        "template--16755998359776__63cff86c-cc67-454d-925f-88338d8e5d3d-16844145489e721487-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "8f5abb4b-b376-4b21-b306-13c05c9449ab": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755998359776__8f5abb4b-b376-4b21-b306-13c05c9449ab-16844145489e721487-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FLORAL-BOTANICAL.jpg",
+            "link": "shopify:\/\/collections\/floral-botanical-wall-art",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16755998359776__8f5abb4b-b376-4b21-b306-13c05c9449ab-16844145489e721487-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"col-segment\">\n<h2>Florals & Botanicals<\/h2><p>Bring a little springtime, summertime and happiness into your space with our modern collection of framed abstract floral and botanical wall art.<\/p>\n<a class=\"home-btn\" href=\"\/collections\/floral-botanical-wall-art\">FLORALS & BOTANICALS<\/a>\n<ul class=\"sub-col\">\n<li><a href=\"\/collections\/floral-wall-art\">Floral Wall Art<\/a><\/li>\n<li><a href=\"\/collections\/botanical-wall-art-prints\">Botanical Wall Art<\/a><\/li>\n<\/ul>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998359776__8f5abb4b-b376-4b21-b306-13c05c9449ab-16844145489e721487-0",
+        "template--16755998359776__8f5abb4b-b376-4b21-b306-13c05c9449ab-16844145489e721487-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "fdd05a42-116f-41aa-a33b-feb82df93ae9": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755998359776__fdd05a42-116f-41aa-a33b-feb82df93ae9-16844172375783ee78-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KIDS-WALL-ART.jpg",
+            "link": "shopify:\/\/collections\/kids-wall-art",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16755998359776__fdd05a42-116f-41aa-a33b-feb82df93ae9-16844172375783ee78-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"col-segment\">\n<span class=\"new-flag\">NEW<\/span>\n<h2 class=\"new-col-title\">Kids Wall Art<\/h2><p>Browse our collection of kids' wall art perfect for bedrooms, nurseries and playrooms.<\/p>\n<a class=\"home-btn\" href=\"\/collections\/kids-wall-art\">KIDS WALL ART<\/a>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998359776__fdd05a42-116f-41aa-a33b-feb82df93ae9-16844172375783ee78-0",
+        "template--16755998359776__fdd05a42-116f-41aa-a33b-feb82df93ae9-16844172375783ee78-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "db2b49de-5a05-46cd-a800-56976371a631": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16755998359776__db2b49de-5a05-46cd-a800-56976371a631-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Wall Art By Colour"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998359776__db2b49de-5a05-46cd-a800-56976371a631-heading-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "17875a92-7e90-4d34-8b31-09c3bf509634": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755998359776__17875a92-7e90-4d34-8b31-09c3bf509634-16844145489e721487-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NEUTRAL.jpg",
+            "link": "shopify:\/\/collections\/neutral-wall-art",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16755998359776__17875a92-7e90-4d34-8b31-09c3bf509634-16844145489e721487-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"col-segment\">\n<h2>Neutral Wall Art<\/h2><p>Our neutral wall art collection brings nature to life with modern abstract art in soft tones that complement light and cosy spaces.<\/p>\n<a class=\"home-btn\" href=\"\/collections\/neutral-wall-art\">NEUTRAL WALL ART<\/a>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998359776__17875a92-7e90-4d34-8b31-09c3bf509634-16844145489e721487-0",
+        "template--16755998359776__17875a92-7e90-4d34-8b31-09c3bf509634-16844145489e721487-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "af971786-8453-4a9f-b687-ddf60e9b7fed": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16755998359776__af971786-8453-4a9f-b687-ddf60e9b7fed-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GREEN-ABSTRACT-WALL-ART.jpg",
+            "link": "shopify:\/\/collections\/green-wall-art",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16755998359776__af971786-8453-4a9f-b687-ddf60e9b7fed-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"col-segment\">\n<h2>Green Wall Art<\/h2><p>Our collection of green wall art brings a refreshing yet calming vibe to your home. Embrace nature's neutrals and seamlessly connect your living space with the great outdoors.<\/p>\n<a class=\"home-btn\" href=\"\/collections\/green-wall-art\">GREEN WALL ART<\/a>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16755998359776__af971786-8453-4a9f-b687-ddf60e9b7fed-image-1",
+        "template--16755998359776__af971786-8453-4a9f-b687-ddf60e9b7fed-liquid-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "advanced_content_BcXyPN",
+    "84d0dc2a-9558-42d9-b9f4-ac335f775416",
+    "main",
+    "8971b5df-35ab-4614-a723-6acb44df3a59",
+    "63cff86c-cc67-454d-925f-88338d8e5d3d",
+    "8f5abb4b-b376-4b21-b306-13c05c9449ab",
+    "fdd05a42-116f-41aa-a33b-feb82df93ae9",
+    "db2b49de-5a05-46cd-a800-56976371a631",
+    "17875a92-7e90-4d34-8b31-09c3bf509634",
+    "af971786-8453-4a9f-b687-ddf60e9b7fed"
+  ]
+}

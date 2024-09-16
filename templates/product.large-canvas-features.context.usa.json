@@ -1,0 +1,19 @@
+{
+  "parent": "product.large-canvas-features.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "b6e995aa-0a57-4e41-b177-9556d4df7b53": {
+          "disabled": true,
+          "settings": {
+          }
+        }
+      }
+    }
+  }
+}
