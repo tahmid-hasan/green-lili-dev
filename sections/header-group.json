@@ -39,7 +39,8 @@
 
       ],
       "settings": {
-        "announcement_compact": true
+        "announcement_compact": true,
+        "is_sticky": true
       }
     },
     "header": {

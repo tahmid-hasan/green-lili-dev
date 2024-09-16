@@ -68,164 +68,115 @@
         "divider": false
       }
     },
-    "fa1050d0-2d95-4712-aba6-ecf138afce13": {
-      "type": "promo-grid",
+    "featured_carousel_KVjbKc": {
+      "type": "featured-carousel",
       "blocks": {
-        "advanced_dHhDfC": {
-          "type": "advanced",
+        "collection_list_d8Dpc4": {
+          "type": "collection_list",
           "settings": {
-            "subheading": "",
-            "heading": "Abstract Wall Art",
-            "textarea": "There's a piece for every space.",
-            "cta_text1": "Abstract Wall Art",
-            "cta_link1": "shopify:\/\/collections\/abstract-wall-art",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/abstract-wall-art-shore-thing-canvas.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#ffffff",
-            "boxed": false,
-            "framed": false
+            "background_image": "shopify:\/\/shop_images\/ABSTRACT-ART_52696d1a-96d2-4976-904e-ee5c13e962ea.jpg",
+            "title": "Abstract Wall Art",
+            "text": "<p>A piece for every space. <\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/abstract-wall-art"
           }
         },
-        "advanced_werzgh": {
-          "type": "advanced",
+        "collection_list_JB8NLN": {
+          "type": "collection_list",
           "settings": {
-            "subheading": "",
-            "heading": "Landscapes & Seascapes",
-            "textarea": "Let your mind wander.",
-            "cta_text1": "Landscapes & Seascapes",
-            "cta_link1": "shopify:\/\/collections\/abstract-landscape-wall-art",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/landscapes-seascapes.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#ffffff",
-            "boxed": false,
-            "framed": false
+            "background_image": "shopify:\/\/shop_images\/FLORAL-BOTANICAL_b853f3fe-fbf6-4835-8f79-8d7f7be7d3ad.jpg",
+            "title": "Florals & Botanicals",
+            "text": "<p>A refreshing bunch. <\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/floral-botanical-wall-art"
           }
         },
-        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-2": {
-          "type": "advanced",
+        "collection_list_nTAmjk": {
+          "type": "collection_list",
           "settings": {
-            "subheading": "",
-            "heading": "Boho Wall Art",
-            "textarea": "Earthy tones and organic shapes.",
-            "cta_text1": "Boho Wall Art",
-            "cta_link1": "shopify:\/\/collections\/bohemian-wall-art",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Boho-wall-art.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#ffffff",
-            "boxed": false,
-            "framed": false
+            "background_image": "shopify:\/\/shop_images\/LANDSCAPES-SEASCAPES_da5088cd-5cea-4238-a15c-107af9e7227c.jpg",
+            "title": "Landscapes & Seascapes",
+            "text": "<p>Let your mind wonder. <\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/abstract-landscape-wall-art"
           }
         },
-        "6fa7471a-fb89-4e74-be99-338194cb3c85": {
-          "type": "advanced",
+        "collection_list_waGrM4": {
+          "type": "collection_list",
           "settings": {
-            "subheading": "",
-            "heading": "Florals & Botanicals",
-            "textarea": "A refreshing and uplifting bunch.",
-            "cta_text1": "Floral & Botanical Art",
-            "cta_link1": "shopify:\/\/collections\/floral-botanical-wall-art",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/neutral-anemone-canvas.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#ffffff",
-            "boxed": false,
-            "framed": false
+            "background_image": "shopify:\/\/shop_images\/WALLART-SETS.jpg",
+            "title": "Boho Wall Art",
+            "text": "<p>Packed with personality.<\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/bohemian-wall-art"
           }
         },
-        "920e61c6-a53d-4710-966a-dc6232fb41ee": {
-          "type": "advanced",
+        "collection_list_GDpQAJ": {
+          "type": "collection_list",
           "settings": {
-            "subheading": "",
-            "heading": "Neutral Wall Art",
-            "textarea": "Keep it simple & timeless.",
-            "cta_text1": "Neutral Wall Art",
-            "cta_link1": "shopify:\/\/collections\/neutral-wall-art",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/neutral-wall-art_d995ea59-b687-4ce1-b07e-4d83407f6a08.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#ffffff",
-            "boxed": false,
-            "framed": false
+            "background_image": "shopify:\/\/shop_images\/NEUTRAL-ART_cd26ba42-5905-4da7-9d79-c67108aec240.jpg",
+            "title": "Neutral Wall Art",
+            "text": "<p>Simple and timeless.<\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/neutral-wall-art"
           }
         },
-        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-1": {
-          "type": "advanced",
+        "collection_list_NfpQik": {
+          "type": "collection_list",
           "settings": {
-            "subheading": "",
-            "heading": "Wall Art Sets",
-            "textarea": "Thoughtfully designed to hang together.",
-            "cta_text1": "Wall Art Sets",
-            "cta_link1": "shopify:\/\/collections\/wall-art-sets",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/green-lili-wall-art-sets.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#ffffff",
-            "boxed": false,
-            "framed": false
+            "background_image": "shopify:\/\/shop_images\/RECONNECT-STAYGROUNDED.jpg",
+            "title": "Wall Art Sets",
+            "text": "<p>Born to hang together.<\/p>",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/wall-art-sets"
           }
         }
       },
       "block_order": [
-        "advanced_dHhDfC",
-        "advanced_werzgh",
-        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-2",
-        "6fa7471a-fb89-4e74-be99-338194cb3c85",
-        "920e61c6-a53d-4710-966a-dc6232fb41ee",
-        "template--16755998327008__fa1050d0-2d95-4712-aba6-ecf138afce13-advanced-1"
-      ],
-      "custom_css": [
-
+        "collection_list_d8Dpc4",
+        "collection_list_JB8NLN",
+        "collection_list_nTAmjk",
+        "collection_list_waGrM4",
+        "collection_list_GDpQAJ",
+        "collection_list_NfpQik"
       ],
       "settings": {
         "full_width": false,
-        "gutter_size": 20,
-        "space_above": false,
-        "space_below": false,
-        "lazyload_images": true
+        "heading": "",
+        "subheading": "",
+        "carousel_type": "collection_list",
+        "items_per_row": 3,
+        "aspect_ratio": "portrait",
+        "button_text": "",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_position": "bottom",
+        "divider": false
       }
     },
-    "c3df44a2-96ab-4b00-b2ae-91c0522b77d7": {
-      "type": "featured-collection",
+    "featured_carousel_AfUjfM": {
+      "type": "featured-carousel",
+      "blocks": {
+        "product_list_nbKHmr": {
+          "type": "product_list",
+          "settings": {
+            "collection": "new-arrivals",
+            "products_to_show": 10
+          }
+        }
+      },
+      "block_order": [
+        "product_list_nbKHmr"
+      ],
       "settings": {
-        "title": "New Arrivals",
-        "home_featured_products": "new-arrivals",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
+        "full_width": false,
+        "heading": "New Arrivals",
+        "subheading": "",
+        "carousel_type": "product_list",
+        "items_per_row": 3,
+        "aspect_ratio": "square",
+        "button_text": "Shop New Arrivals",
+        "button_link": "shopify:\/\/collections\/new-arrivals",
+        "button_position": "bottom",
         "divider": false
       }
     },
@@ -250,42 +201,30 @@
         "lazyload_images": true
       }
     },
-    "6dddd2c0-ca39-4dca-8a31-910cb7b19f3a": {
-      "type": "rich-text",
+    "featured_carousel_zhy7Pq": {
+      "type": "featured-carousel",
       "blocks": {
-        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-heading-1": {
-          "type": "heading",
+        "product_list_ef7qaY": {
+          "type": "product_list",
           "settings": {
-            "title": "Best Sellers"
-          }
-        },
-        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-text-1": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": false,
-            "text": "<p>Find your new favourite wall art. <\/p>"
+            "collection": "all",
+            "products_to_show": 10
           }
         }
       },
       "block_order": [
-        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-heading-1",
-        "template--16755998327008__6dddd2c0-ca39-4dca-8a31-910cb7b19f3a-text-1"
+        "product_list_ef7qaY"
       ],
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "home_featured_products": "all",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": false,
+        "full_width": false,
+        "heading": "Best Sellers",
+        "subheading": "Find your new favourite wall art.",
+        "carousel_type": "product_list",
+        "items_per_row": 3,
+        "aspect_ratio": "square",
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_position": "bottom",
         "divider": false
       }
     },
@@ -332,7 +271,7 @@
             "image": "shopify:\/\/shop_images\/framed-canvas-wall-art.jpg",
             "video_url": "",
             "width": "50",
-            "height": 700,
+            "height": 800,
             "text_size": 100,
             "text_align": "vertical-bottom horizontal-left",
             "color_accent": "#272b2a",
@@ -354,7 +293,7 @@
             "video_url": "",
             "width": "50",
             "height": 700,
-            "text_size": 120,
+            "text_size": 100,
             "text_align": "vertical-bottom horizontal-left",
             "color_accent": "#272b2a",
             "boxed": false,
@@ -367,8 +306,8 @@
         "e11afab5-8e1b-4de8-bbb6-d6efd7230cb3"
       ],
       "settings": {
-        "full_width": true,
-        "gutter_size": 0,
+        "full_width": false,
+        "gutter_size": 30,
         "space_above": false,
         "space_below": false,
         "lazyload_images": true
@@ -501,11 +440,10 @@
     "02d767f2-06ce-4943-849c-037d2db33e92",
     "advanced_content_9ybEjw",
     "f9b42219-17b1-4531-92c0-63610a19ca91",
-    "fa1050d0-2d95-4712-aba6-ecf138afce13",
-    "c3df44a2-96ab-4b00-b2ae-91c0522b77d7",
+    "featured_carousel_KVjbKc",
+    "featured_carousel_AfUjfM",
     "2b847553-ff78-4c74-8fca-6e7e9c5b6410",
-    "6dddd2c0-ca39-4dca-8a31-910cb7b19f3a",
-    "featured-collection",
+    "featured_carousel_zhy7Pq",
     "933f0b2c-8994-4dfc-a74f-bd2021de4353",
     "promo-grid",
     "292dba62-5df5-4664-b113-ec848992da19",

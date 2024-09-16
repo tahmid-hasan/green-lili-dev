@@ -1,3 +1,7 @@
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 <div class="cart__item" data-key="{{ product.key }}">
   <div class="cart__image">
     {% if product.image != blank %}
@@ -85,21 +89,37 @@
         {% if product.original_price != product.final_price %}
           <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
           <small class="cart__price cart__price--strikethrough">
-            {{ product.original_price | money }}
+            {%- if target_markets contains current_market -%}
+              {{ product.original_price | money_without_trailing_zeros }}
+            {%- else -%}
+              {{ product.original_price | money }}
+            {%- endif -%}
           </small>
           <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
           <span class="cart__price cart__discount">
-            {{ product.final_price | money }}
+            {%- if target_markets contains current_market -%}
+              {{ product.final_price | money_without_trailing_zeros }}
+            {%- else -%}
+              {{ product.final_price | money }}
+            {%- endif -%}
           </span>
         {% else %}
           <span class="cart__price">
-            {{ product.original_price | money }}
+            {%- if target_markets contains current_market -%}
+              {{ product.original_price | money_without_trailing_zeros }}
+            {%- else -%}
+              {{ product.original_price | money }}
+            {%- endif -%}
           </span>
         {% endif %}
 
         {%- if product.line_level_discount_allocations != blank -%}
           {%- for discount_allocation in product.line_level_discount_allocations -%}
-            <small class="cart__discount">{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})</small>
+            {% assign discount_allocation_amount = discount_allocation.amount | money %}
+            {%- if target_markets contains current_market -%}
+              {% assign discount_allocation_amount = discount_allocation.amount | money_without_trailing_zeros %}
+            {%- endif -%}
+            <small class="cart__discount">{{ discount_allocation.discount_application.title }} (-{{ discount_allocation_amount }})</small>
           {%- endfor -%}
         {%- endif -%}
 
@@ -114,8 +134,12 @@
               {%- endif -%}
             </span>
           {%- endcapture -%}
-
-          <div class="product__unit-price">{{ product.unit_price | money }}/{{ unit_price_base_unit }}</div>
+          
+          {% assign product_unit_price = product.unit_price | money %}
+          {%- if target_markets contains current_market -%}
+            {% assign product_unit_price = product.unit_price | money_without_trailing_zeros %}
+          {%- endif -%}
+          <div class="product__unit-price">{{ product_unit_price | money }}/{{ unit_price_base_unit }}</div>
         {%- endif -%}
       </div>
     </div>

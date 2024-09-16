@@ -30,6 +30,9 @@
   endcase
 
   assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
 -%}
 
 {%- liquid
@@ -194,7 +197,11 @@
                         <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
                           <span data-compare-price class="product__price product__price--compare">
                             {%- if current_variant.compare_at_price > current_variant.price -%}
-                              {{ current_variant.compare_at_price | money }}
+                              {%- if target_markets contains current_market -%}
+                                {{ current_variant.compare_at_price | money_without_trailing_zeros }}
+                              {%- else -%}
+                                {{ current_variant.compare_at_price | money }}
+                              {%- endif -%}
                             {%- endif -%}
                           </span>
                         </span>
@@ -206,7 +213,11 @@
                       <span data-product-price
                         class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
                         {%- unless product.empty? -%}
-                          {{ current_variant.price | money }}
+                          {%- if target_markets contains current_market -%}
+                            {{ current_variant.price | money_without_trailing_zeros }}
+                          {%- else -%}
+                            {{ current_variant.price | money }}
+                          {%- endif -%}
                         {%- else -%}
                           {{ 1999 | money }}
                         {%- endunless -%}

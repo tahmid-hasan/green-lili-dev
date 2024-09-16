@@ -1,3 +1,7 @@
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {%- form 'product', product, id: form_id, class: 'product-single__form' -%}
 
   {%- liquid

@@ -763,7 +763,6 @@ theme.recentlyViewed = {
   
     register: function(type, constructor, scope) {
       this.constructors[type] = constructor;
-  
       var sections = document.querySelectorAll('[data-section-type="' + type + '"]');
   
       if (scope) {
@@ -3222,6 +3221,7 @@ theme.recentlyViewed = {
     };
   
     function slideshow(el, args) {
+      console.log(args, el)
       this.el = el;
       this.args = Object.assign({}, defaults, args);
   
@@ -3246,6 +3246,7 @@ theme.recentlyViewed = {
       }
   
       this.slideshow = new Flickity(el, this.args);
+      console.log(this.slideshow)
   
       // Prevent dragging on the product slider from triggering a zoom on product images
       if (el.dataset.zoom && el.dataset.zoom === 'true') {
@@ -3299,14 +3300,13 @@ theme.recentlyViewed = {
     slideshow.prototype = Object.assign({}, slideshow.prototype, {
       init: function(el) {
         this.currentSlide = this.el.querySelector(selectors.currentSlide);
-  
+        console.log(el)
         // Optional onInit callback
         if (this.args.callbacks && this.args.callbacks.onInit) {
           if (typeof this.args.callbacks.onInit === 'function') {
             this.args.callbacks.onInit(this.currentSlide);
           }
         }
-  
         if (window.AOS) { AOS.refresh() }
       },
   
@@ -4518,6 +4518,7 @@ theme.recentlyViewed = {
       navLinksWithDropdown: '.site-nav__link--has-dropdown',
       navDropdownLinks: '.site-nav__dropdown-link--second-level',
       navDetails: '.site-nav__details',
+      announcementBar: '.announcement-bar'
     };
   
     var classes = {
@@ -4536,7 +4537,10 @@ theme.recentlyViewed = {
       stickyClass: 'site-header--stuck',
       stickyHeaderWrapper: 'StickyHeaderWrap',
       openTransitionClass: 'site-header--opening',
-      lastScroll: 0
+      lastScroll: 0,
+      // newly added code for sticky announcement bar
+      announcementStickyEnabled: true,
+      announcementStickyClass: 'site-announcement-stuck',
     };
   
     // Elements used in resize functions, defined in init
@@ -4550,9 +4554,16 @@ theme.recentlyViewed = {
       config.stickyEnabled = (siteHeader.dataset.sticky === 'true');
       if (config.stickyEnabled) {
         config.wrapperOverlayed = wrapper.classList.contains(config.overlayedClass);
+
+        // newly added code for sticky announcement bar
+        // Enable announcement sticky when header sticky is enabled
+        var announcementBar = document.querySelector(selectors.announcementBar)
+        if(announcementBar) {
+          config.announcementStickyEnabled = announcementBar.dataset.isSticky == 'true' ? true : false;
+        }
+        
         stickyHeaderCheck();
       }
-  
       theme.settings.overlayHeader = (siteHeader.dataset.overlay === 'true');
       // Disable overlay header if on collection template with no collection image
       if (theme.settings.overlayHeader && Shopify && Shopify.designMode) {
@@ -4694,22 +4705,51 @@ theme.recentlyViewed = {
     }
   
     function scrollHandler() {
+      // newly added code for sticky announcement bar
+      const announcementBar = document.querySelector('.announcement-bar');
+      
       if (window.scrollY > 250) {
         if (config.stickyActive) {
           return;
         }
   
         config.stickyActive = true;
-  
-        siteHeader.classList.add(config.stickyClass);
-        if (config.wrapperOverlayed) {
-          wrapper.classList.remove(config.overlayedClass);
+
+        if(config.announcementStickyEnabled) {
+          setTimeout(function() {
+            siteHeader.classList.add(config.stickyClass);
+            if (config.wrapperOverlayed) {
+              wrapper.classList.remove(config.overlayedClass);
+            }
+          }, 250)
+        } else {
+          siteHeader.classList.add(config.stickyClass);
+          if (config.wrapperOverlayed) {
+            wrapper.classList.remove(config.overlayedClass);
+          }
+        }
+        
+
+        // newly added code for sticky announcement bar
+        // Make the announcement bar sticky with the header if enabled
+        if (config.announcementStickyEnabled && announcementBar) {
+          announcementBar.classList.add(config.announcementStickyClass);
         }
   
         // Add open transition class after element is set to fixed
         // so CSS animation is applied correctly
         setTimeout(function() {
-          siteHeader.classList.add(config.openTransitionClass);
+          if(config.announcementStickyEnabled) {
+            // newly added code for sticky announcement bar
+            announcementBar.classList.add(config.openTransitionClass);
+  
+            setTimeout(function() {
+              siteHeader.classList.add(config.openTransitionClass);
+            }, 250)
+          } else {
+            siteHeader.classList.add(config.openTransitionClass);
+          }
+          
         }, 100);
       } else {
         if (!config.stickyActive) {
@@ -4722,6 +4762,13 @@ theme.recentlyViewed = {
         siteHeader.classList.remove(config.stickyClass);
         if (config.wrapperOverlayed) {
           wrapper.classList.add(config.overlayedClass);
+        }
+
+        // newly added code for sticky announcement bar
+        // Remove the sticky class from the announcement bar if enabled
+        if (config.announcementStickyEnabled && announcementBar) {
+          announcementBar.classList.remove(config.openTransitionClass);
+          announcementBar.classList.remove(config.announcementStickyClass);
         }
       }
     }
@@ -6737,6 +6784,102 @@ theme.recentlyViewed = {
   
     return Collection;
   })();
+
+  theme.FeaturedCarousel = (function() {
+    var selectors = {
+      sliderContainer: '.carousel-container',
+      carouselElement: '.featured-carousel'
+    };
+    
+    function FeaturedCarousel(container) {
+      this.container = container;
+
+      this.selectors = {
+        sliderContainer: selectors.sliderContainer,
+        carouselElement: selectors.carouselElement
+      }
+      this.cacheElements();
+
+      // Start observing only after DOM content is loaded
+      document.addEventListener('DOMContentLoaded', this.initObserver.bind(this));
+    }
+
+    FeaturedCarousel.prototype = Object.assign({}, FeaturedCarousel.prototype, {
+      init: function() {
+        this.initSlider();
+      },
+
+      // Intersection Observer for lazy-loading the slider when in view
+      initObserver: function() {
+        var observerOptions = {
+          root: null, // observe within the viewport
+          rootMargin: '100px', // triggers when the element is 100px away from the viewport
+          threshold: 0 // triggers when any part of the element is visible within the root margin
+        };
+  
+        var observerCallback = function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              // Initialize the slider when the container is in the viewport
+              this.init();
+              console.log('init and exit');
+              observer.disconnect(); // Stop observing once initialized
+            }
+          }.bind(this));
+        }.bind(this);
+  
+        this.observer = new IntersectionObserver(observerCallback, observerOptions);
+        this.observer.observe(this.cache.carouselWrapper);
+      },
+
+      cacheElements: function() {
+        this.cache = {
+          mainSlider: this.container.querySelector(this.selectors.sliderContainer),
+          carouselWrapper: this.container.querySelector(this.selectors.carouselElement)
+        };
+      },
+
+      initSlider: function() {
+        var sliderArgs = {
+          dragThreshold: 3,
+          freeScroll: true,
+          selectedAttraction: 0.025,
+          friction: 0.3,
+          adaptiveHeight: false,
+          avoidReflow: true,
+          initialIndex: 0,
+          pageDots: false, // mobile only with CSS
+          prevNextButtons: true,
+          groupCells: true,
+          wrapAround: false,
+          contain: true,
+          cellAlign: 'left',
+          callbacks: {
+            onInit: this.onSliderInit.bind(this),
+            onChange: this.onSlideChange.bind(this)
+          }
+        };
+        this.flickity = new theme.Slideshow(this.cache.mainSlider, sliderArgs);
+        this.cache.mainSlider.classList.add('loaded')
+        this.flickity.resize();
+
+        setTimeout(() => {
+          this.cache.mainSlider.classList.add('animated')
+        }, 100)
+      },
+
+      onSliderInit: function(slider) {
+        // Logic for when the slider is initialized
+      },
+
+      onSlideChange: function(index) {
+        // Logic for when the slide changes
+      }
+    });
+
+    return FeaturedCarousel;
+  })();
+
   
   theme.FooterSection = (function() {
     var selectors = {
@@ -7298,11 +7441,26 @@ theme.recentlyViewed = {
   
         if (variant) {
           // Regular price
-          this.cache.price.innerHTML = theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
+          let moneyFormat = theme.settings.moneyFormat
+          switch(moneyFormat) {
+            case '${{amount}}':
+              moneyFormat = '${{amount_no_decimals}}';
+              break;
+            case 'CHF {{amount}}':
+              moneyFormat = 'CHF {{amount_no_decimals}}';
+              break;
+            case '€{{amount_with_comma_separator}}':
+              moneyFormat = '€{{amount_no_decimals_with_comma_separator}}';
+              break;
+            default:
+              break;
+          }
+          console.log(moneyFormat, moneyFormat == 'CHF {{amount}}')
+          this.cache.price.innerHTML = theme.Currency.formatMoney(variant.price, moneyFormat);
   
           // Sale price, if necessary
           if (variant.compare_at_price > variant.price) {
-            this.cache.comparePrice.innerHTML = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);
+            this.cache.comparePrice.innerHTML = theme.Currency.formatMoney(variant.compare_at_price, moneyFormat);
             this.cache.priceWrapper.classList.remove(classes.hidden);
             this.cache.price.classList.add(classes.onSale);
             this.cache.comparePriceA11y.setAttribute('aria-hidden', 'false');
@@ -7313,7 +7471,8 @@ theme.recentlyViewed = {
             if (theme.settings.saveType == 'percent') {
               savings = Math.round(((savings) * 100) / variant.compare_at_price) + '%';
             } else {
-              savings = theme.Currency.formatMoney(savings, theme.settings.moneyFormat);
+              
+              savings = theme.Currency.formatMoney(savings, moneyFormat);
             }
   
             this.cache.savePrice.classList.remove(classes.hidden);
@@ -7774,7 +7933,8 @@ theme.recentlyViewed = {
           childNav: this.cache.thumbSlider,
           childNavScroller: this.cache.thumbScroller,
           childVertical: this.cache.thumbSlider.dataset.position === 'beside',
-          pageDots: true, // mobile only with CSS
+          pageDots: false, // mobile only with CSS
+          prevNextButtons: true,
           wrapAround: true,
           callbacks: {
             onInit: this.onSliderInit.bind(this),
@@ -8442,6 +8602,7 @@ theme.recentlyViewed = {
     theme.sections.register('newsletter-popup', theme.NewsletterPopup);
     theme.sections.register('collection-header', theme.CollectionHeader);
     theme.sections.register('collection-grid', theme.Collection);
+    theme.sections.register('featured-carousel', theme.FeaturedCarousel);
 
     theme.initGlobals();
     theme.initQuickShop();

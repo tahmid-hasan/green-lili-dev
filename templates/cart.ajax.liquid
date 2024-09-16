@@ -9,6 +9,10 @@
     as it can change anytime a cart-item changes
 {% endcomment %}
 {% layout none %}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 
 <div class="cart__items"
   data-count="{{ cart.item_count }}"
@@ -21,8 +25,12 @@
   <div>{{ 'cart.general.discounts' | t }}</div>
   <div>
     {% for cart_discount in cart.cart_level_discount_applications %}
+      {%- assign cart_total_allocated_discount = cart_discount.total_allocated_amount | money -%}
+      {%- if target_markets contains current_market -%}
+        {%- assign cart_total_allocated_discount = cart_discount.total_allocated_amount | money_without_trailing_zeros -%}
+      {%- endif -%}
       <div class="cart__discount">
-        {{ cart_discount.title }} (-{{ cart_discount.total_allocated_amount | money }})
+        {{ cart_discount.title }} (-{{ cart_total_allocated_discount }})
       </div>
     {% endfor %}
   </div>

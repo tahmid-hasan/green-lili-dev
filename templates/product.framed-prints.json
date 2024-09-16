@@ -331,10 +331,10 @@
       ],
       "custom_css": [
         "h3 {font-size: 30px; margin-bottom: 30px;}",
-        ".feature-body-template--18405650759904__ss_feature_18_JaFpkK {background: #e8e8e1;}",
-        ".feature-text-template--18405650759904__ss_feature_18_JaFpkK p {max-width: 80%; margin: 0 auto;}",
-        ".feature-content-template--18405650759904__ss_feature_18_JaFpkK {padding: 50px 0px;}",
-        ".feature-items-template--18405650759904__ss_feature_18_JaFpkK {max-width: 80%;}"
+        ".feature-body-template--18412156387552__ss_feature_18_JaFpkK {background: #e8e8e1;}",
+        ".feature-text-template--18412156387552__ss_feature_18_JaFpkK p {max-width: 80%; margin: 0 auto;}",
+        ".feature-content-template--18412156387552__ss_feature_18_JaFpkK {padding: 50px 0px;}",
+        ".feature-items-template--18412156387552__ss_feature_18_JaFpkK {max-width: 80%;}"
       ],
       "settings": {
         "body_gap": 0,

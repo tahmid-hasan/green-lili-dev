@@ -226,6 +226,55 @@
         "default": "poppins_n7"
       },
       {
+        "type": "text",
+        "id": "type_header_font_family_custom",
+        "label": "t:settings_schema.typography.settings.custom_fonts.type_header_font_family_custom"
+      },
+      {
+        "type": "select",
+        "id": "type_header_font_weight_custom",
+        "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label",
+        "options": [
+          {
+            "value": "100",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_thin"
+          },
+          {
+            "value": "200",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_extra_light"
+          },
+          {
+            "value": "300",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_light"
+          },
+          {
+            "value": "400",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_regular"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_medium"
+          },
+          {
+            "value": "600",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_semi_bold"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_bold"
+          },
+          {
+            "value": "800",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_extra_bold"
+          },
+          {
+            "value": "900",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_black"
+          }
+        ],
+        "default": "400"
+      },
+      {
         "type": "select",
         "id": "type_header_spacing",
         "label": "t:settings_schema.typography.settings.type_header_spacing.label",
@@ -316,6 +365,55 @@
         "default": "poppins_n5"
       },
       {
+        "type": "text",
+        "id": "type_base_font_family_custom",
+        "label": "t:settings_schema.typography.settings.custom_fonts.type_header_font_family_custom"
+      },
+      {
+        "type": "select",
+        "id": "type_base_font_weight_custom",
+        "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label",
+        "options": [
+          {
+            "value": "100",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_thin"
+          },
+          {
+            "value": "200",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_extra_light"
+          },
+          {
+            "value": "300",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_light"
+          },
+          {
+            "value": "400",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_regular"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_medium"
+          },
+          {
+            "value": "600",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_semi_bold"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_bold"
+          },
+          {
+            "value": "800",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_extra_bold"
+          },
+          {
+            "value": "900",
+            "label": "t:settings_schema.typography.settings.custom_fonts.font_weight.label_black"
+          }
+        ],
+        "default": "400"
+      },
+      {
         "type": "select",
         "id": "type_base_spacing",
         "label": "t:settings_schema.typography.settings.type_base_spacing.label",
@@ -390,6 +488,15 @@
         "id": "type_body_align_text",
         "label": "t:settings_schema.typography.settings.type_body_align_text.label",
         "default": true
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.custom_fonts.label"
+      },
+      {
+        "type": "textarea",
+        "id": "font_family_custom",
+        "label": "t:settings_schema.typography.settings.type_header_font_family.label"
       },
       {
         "type": "header",

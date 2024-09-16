@@ -39,7 +39,10 @@
     }
   }
 {%- endstyle -%}
-
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 <div class="promo-grid{% if section.settings.space_above %} promo-grid--space-top{% endif %}{% if section.settings.space_below %} promo-grid--space-bottom{% endif %}">
   <div class="flex-grid flex-grid--gutters flex-grid--{{ section.id }}">
     {%- for block in section.blocks -%}
@@ -455,7 +458,11 @@
                                 {%- endif -%}
                                 {%- if block.settings.enable_price -%}
                                   <div class="type-product__label type-product__label--secondary">
-                                    {{ product.price | money }}
+                                    {%- if target_markets contains current_market -%}
+                                      {{ product.price | money_without_trailing_zeros }}
+                                    {%- else -%}
+                                      {{ product.price | money }}
+                                    {%- endif -%}
                                   </div>
                                 {%- endif -%}
                               </div>

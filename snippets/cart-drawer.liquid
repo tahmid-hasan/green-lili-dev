@@ -1,3 +1,7 @@
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {%- if settings.cart_type == 'drawer' -%}
   <div id="CartDrawer" class="drawer drawer--right">
     <form id="CartDrawerForm" action="{{ routes.cart_url }}" method="post" novalidate class="drawer__contents" data-location="cart-drawer">
@@ -33,7 +37,11 @@
                 <div class="text-right">
                   {% for cart_discount in cart.cart_level_discount_applications %}
                     <div class="cart__discount">
-                      {{ cart_discount.title }} (-{{ cart_discount.total_allocated_amount | money }})
+                      {%- assign cart_discount_total = cart_discount.total_allocated_amount | money -%}
+                      {%- if target_markets contains current_market -%}
+                        {%- assign cart_discount_total = cart_discount.total_allocated_amount | money_without_trailing_zeros -%}
+                      {%- endif -%}
+                      {{ cart_discount.title }} (-{{ cart_discount_total }})
                     </div>
                   {% endfor %}
                 </div>
@@ -43,7 +51,13 @@
 
           <div class="cart__item-sub cart__item-row">
             <div class="ajaxcart__subtotal">{{ 'cart.general.subtotal' | t }}</div>
-            <div data-subtotal>{{ cart.total_price | money }}</div>
+            <div data-subtotal>
+              {%- if target_markets contains current_market -%}
+                {{ cart.total_price | money_without_trailing_zeros }}
+              {%- else -%}
+                {{ cart.total_price | money }}
+              {%- endif -%}
+            </div>
           </div>
 
           <div class="cart__item-row text-center">

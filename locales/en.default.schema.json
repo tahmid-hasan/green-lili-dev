@@ -3219,6 +3219,22 @@
         "type_body_align_text": {
           "label": "Center text"
         },
+        "custom_fonts": {
+          "label": "Custom fonts",
+          "type_header_font_family_custom": "Custom font family",
+          "font_weight": {
+            "label": "Custom font weight",
+            "label_thin": "Thin",
+            "label_extra_light": "ExtraLight",
+            "label_light": "Light",
+            "label_regular": "Regular",
+            "label_medium": "Medium",
+            "label_semi_bold": "SemiBold",
+            "label_bold": "Bold",
+            "label_extra_bold": "ExtraBold",
+            "label_black": "Black"
+          }
+        },
         "header_extras": "Extras",
         "type_navigation_style": {
           "label": "Navigation font",

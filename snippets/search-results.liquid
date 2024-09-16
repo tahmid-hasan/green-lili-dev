@@ -2,6 +2,9 @@
   assign resources = predictive_search.resources
   assign columnCount = resources.queries.size | plus: resources.pages.size | plus: resources.articles.size | plus: resources.collections.size
   assign totalCount = resources.queries.size | plus: resources.pages.size | plus: resources.articles.size | plus: resources.collections.size | plus: resources.products.size
+
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
 %}
 
 {%- if predictive_search.performed -%}
@@ -100,15 +103,30 @@
                       {% if settings.predictive_search_show_price %}
                         {%- if on_sale -%}
                           <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                          <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span>
+                          <span class="grid-product__price--original">
+                            {%- if target_markets contains current_market -%}
+                              {{ product.compare_at_price | money_without_trailing_zeros }}
+                            {%- else -%}
+                              {{ product.compare_at_price | money }}
+                            {%- endif -%}
+                          </span>
                           <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
                         {%- endif -%}
 
                         {%- if product.price_varies -%}
                           {%- assign price = product.price_min | money -%}
+                          {%- if target_markets contains current_market -%}
+                            {%- assign price = product.price_min | money_without_trailing_zeros -%}
+                          {%- endif -%}
                           <span class="grid-product__price">{{ 'products.general.from_text_html' | t: price: price }}</span>
                         {%- else -%}
-                          <span class="grid-product__price">{{ product.price | money }}</span>
+                          <span class="grid-product__price">
+                            {%- if target_markets contains current_market -%}
+                              {{ product.price | money_without_trailing_zeros }}
+                            {%- else -%}
+                              {{ product.price | money }}
+                            {%- endif -%}
+                          </span>
                         {%- endif -%}
                         {%- if on_sale -%}
                           {%- if settings.product_save_amount -%}

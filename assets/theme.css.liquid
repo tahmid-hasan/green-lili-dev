@@ -263,10 +263,10 @@
 }
 
 .flickity-button{
-  background:var(--colorBtnPrimary);
+  background:var(--colorBtnPrimaryText);
   border:none;
   border-radius:50%;
-  color:var(--colorBtnPrimaryText);
+  color:var(--colorBtnPrimary);
   position:absolute;
 }
 
@@ -288,19 +288,11 @@
 }
 
 .flickity-prev-next-button{
-  height:40px;
   top:50%;
   transform:translateY(-50%);
-  width:40px;
+  width:30px;
+  height:30px;
 }
-
-@media only screen and (max-width:768px){
-
-.flickity-prev-next-button{
-    height:33px;
-    width:33px;
-}
-  }
 
 .flickity-prev-next-button:hover{
   transform:translateY(-50%) scale(1.12);
@@ -5819,36 +5811,63 @@ form+.footer__social{
 }
   }
 
-.site-header--stuck{
+.announcement-bar {
+  position: relative;
+}
+
+.site-header--stuck {
+  left:0;
+  position:fixed;
+  right:0;
+  top: 0;
+  transform:translate3d(0, -100%, 0);
+  transition:none;
+  z-index:20;
+}
+
+.transition-body:has(.announcement-bar[data-is-sticky="true"]) .site-header--stuck {
+  top:42.44px;
+}
+
+.site-announcement-stuck {
   left:0;
   position:fixed;
   right:0;
   top:0;
   transform:translate3d(0, -100%, 0);
   transition:none;
-  z-index:20;
+  z-index:29;
 }
 
-.js-drawer-open--search .site-header--stuck{
+.js-drawer-open--search .site-header--stuck {
     z-index:28;
+}
+
+.js-drawer-open--search .site-announcement-stuck{
+    z-index:29;
 }
 
 @media only screen and (min-width:769px){
 
-.site-header--stuck{
+.site-header--stuck, .site-announcement-stuck {
     padding:10px 0;
 }
   }
 
 @media screen and (min-width:700px) and (max-height:550px){
-  .site-header--stuck{
+  .site-header--stuck, .site-announcement-stuck {
     position:static;
   }
 }
 
 .site-header--opening{
   transform:translateZ(0);
-  transition:transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.site-announcement-stuck.site-header--opening{
+  transform:translateZ(0);
+  transition:transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .site-header__logo{
@@ -10620,7 +10639,6 @@ html[dir=rtl] .background-media-text__text{
   color:var(--colorAnnouncementText);
   font-size:calc(var(--typeBaseSize)*0.75);
   padding:10px 0;
-  position:relative;
   text-align:center;
 }
 
