@@ -1,70 +1,61 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
+  "name": "t:sections.footer.name",
   "type": "footer",
-  "name": "t:sections.footer-group.name",
   "sections": {
-    "footer-promotions": {
-      "type": "footer-promotions",
-      "settings": {
-        "hide_homepage": false
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
-        "8db2fd23-31a4-4abb-a7ab-9c1d964a6400": {
+        "menu_DEKGYP": {
           "type": "menu",
           "settings": {
-            "show_footer_title": false,
+            "block_width": 25,
+            "heading": "Shop",
+            "heading_size": "h4",
             "menu": "customer-service",
-            "container_width": 25
+            "open_default": false,
+            "show_divider": true
           }
         },
-        "1b3b3842-3cac-491a-beb7-c2b10738365e": {
+        "menu_4eCrBB": {
           "type": "menu",
           "settings": {
-            "show_footer_title": false,
-            "menu": "about-green-lili",
-            "container_width": 25
-          }
-        },
-        "b30a6352-7b8c-4848-a38f-0f710fe4dc0b": {
-          "type": "newsletter",
-          "settings": {
-            "show_footer_title": false,
-            "title": "",
-            "text": "",
-            "container_width": 25
-          }
-        },
-        "follow_shop_cta_rb4R4E": {
-          "type": "follow_shop_cta",
-          "settings": {
-            "container_width": 25
+            "block_width": 17,
+            "heading": "Customer care",
+            "heading_size": "h4",
+            "menu": "footer",
+            "open_default": false,
+            "show_divider": true
           }
         }
       },
       "block_order": [
-        "8db2fd23-31a4-4abb-a7ab-9c1d964a6400",
-        "1b3b3842-3cac-491a-beb7-c2b10738365e",
-        "b30a6352-7b8c-4848-a38f-0f710fe4dc0b",
-        "follow_shop_cta_rb4R4E"
+        "menu_DEKGYP",
+        "menu_4eCrBB"
       ],
-      "custom_css": [
-        ".payment-icons {text-align: center;}",
-        ".footer__small-text {padding-bottom: 30px;}"
-      ],
+      "custom_css": [],
       "settings": {
-        "show_locale_selector": true,
-        "show_currency_selector": true,
-        "show_currency_flags": true,
-        "show_payment_icons": true,
-        "show_copyright": true,
-        "copyright_text": "Ltd. Reg in England No. 09918028. Reg Office: 9 Thorne Road, Doncaster, DN1 2HJ. VAT No: GB273779161"
+        "color_scheme": "scheme-3",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "footer_bottom_menu": "legal",
+        "show_section_divider": false,
+        "divider_width": "full"
       }
     }
   },
   "order": [
-    "footer-promotions",
     "footer"
   ]
 }

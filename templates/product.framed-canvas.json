@@ -1,542 +1,673 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_yVh9nt": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"height: 40px;\">&nbsp;</div>"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {
+            "show_soldout_badge": true,
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "reviews_io_reviewsio_rating_output_jYPbNQ": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_9dq6g6": {
+          "type": "text",
+          "settings": {
+            "text": "Fine art print on 400gsm cotton canvas, set in a sustainably sourced hardwood float frame.",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "inventory": {
+          "type": "inventory",
           "settings": {
+            "text_style": "body",
+            "inventory_threshold": 20,
+            "show_inventory_quantity": true
           }
         },
-        "reviews_io_reviewsio_rating_output_EXPANM": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "text_B4ArTT": {
+          "type": "text",
           "settings": {
-          }
-        },
-        "custom_JKJzcD": {
-          "type": "custom",
-          "settings": {
-            "code": ""
+            "text": "",
+            "text_style": "body"
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "variant_labels": true,
             "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": true
+            "swatch_type": "color_swatch",
+            "button_style": "circle",
+            "button_size": 40,
+            "size_title": "Size chart, Size of each canvas",
+            "size_chart_from_page": "size-chart"
+          }
+        },
+        "custom_liquid_3XiHEr": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"height: 10px;\">&nbsp;</div>"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": false,
-            "show_gift_card_recipient": false
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
           }
         },
-        "custom_y8ckmP": {
-          "type": "custom",
+        "klarna_on_site_messaging_app_block_UyeGN8": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
           "settings": {
-            "code": "<div id='ss-trust-badge'><\/div>"
-          }
-        },
-        "b6e995aa-0a57-4e41-b177-9556d4df7b53": {
-          "type": "custom",
-          "disabled": true,
-          "settings": {
-            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' %}\n    <p>{{ 'Product.Shipping.Free_Shipping' | t }}<\/p>\n  {% else %}\n\n  {% when 'US' %}\n  <p>🇺🇸 Made in the USA. Free shipping in 3-7 Days.<\/p>\n\n  {% when 'AU' %}\n  <p>🇦🇺 Free shipping from Australia (3-7 days)<\/p>\n\n  {% when 'GB' %}\n<div class=\"ship\">\n                       <span class=\"icon-and-text\">\n\n                               <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewBox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}<\/style><\/defs><path class=\"a\" d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"\/><circle class=\"a\" cx=\"20.24\" cy=\"43.76\" r=\"3.74\"\/><path class=\"a\" d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"\/><\/svg>\n                              \n                              <span>Free UK Shipping in 3-7 days<\/span>\n<\/span>\n<\/div>\n                          \n{% endcase %}"
-          }
-        },
-        "b6d95a91-8626-4891-a3a5-58ddd44d5224": {
-          "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "disabled": true,
-          "settings": {
-            "data_key": "credit-promotion-badge",
-            "locale_option": "geolocation",
-            "locale_fallback": "",
-            "theme": "light",
+            "data_key": "credit-promotion-auto-size",
+            "theme": "default",
             "topPadding": "0",
             "bottomPadding": "0",
             "messagePrefix": ""
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
+        "custom_liquid_MEDzkM": {
+          "type": "custom_liquid",
           "settings": {
-            "is_tab": false
+            "custom_liquid": "<div style=\"height: 5px;\">&nbsp;</div>"
           }
         },
-        "db445427-c573-45fc-b8fc-0db05cdcbd8a": {
-          "type": "custom",
+        "shipping_dQLyN7": {
+          "type": "shipping",
           "settings": {
-            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' or 'US' or 'GB' or 'AU' or 'CH' or 'CA'  %}\n\n  {% else %}\n\n {% for tag in product.tags %}\n{% if tag contains 'natural-frame' %}\n    <p class=\"BF\">*Natural frame is  UK, US, EU & AU only<\/p>\n  {% endif %}\n\n{% endfor %}\n{% endcase %}"
+            "deliver_text": "Estimated delivery:",
+            "deliver_days": "7",
+            "date_format": "%b %d"
           }
         },
-        "b1482a76-b7eb-4cc7-9ef1-6018292b5d1b": {
-          "type": "custom",
-          "disabled": true,
+        "icon_with_text": {
+          "type": "icon-with-text",
           "settings": {
-            "code": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' or 'GB' or 'CA' or 'CH'  %}\n\n  {% for tag in product.tags %}\n    {% if tag contains 'large-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>M<\/td>\n          <td>51cm<\/td>\n          <td>71cm<\/td>\n          <td><strong>55x75cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>71cm<\/td>\n          <td>102cm<\/td>\n          <td><strong>75x105cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>XL<\/td>\n          <td>91cm<\/td>\n          <td>127cm<\/td>\n          <td><strong>95x131cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n    {% if tag contains 'small-med-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n          <tr>\n          <td>M<\/td>\n          <td>51cm<\/td>\n          <td>71cm<\/td>\n          <td><strong>55x75cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>71cm<\/td>\n          <td>102cm<\/td>\n          <td><strong>75x106cm<\/strong><\/td>\n        <\/tr>\n      \n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n\n\n\n\n\n  {% if tag contains 'square-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>81x81cm<\/td>\n          <td><strong>85x85cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n  {% if tag contains 'small-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>61cm<\/td>\n          <td>61cm<\/td>\n          <td><strong>65x65cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n    {% if tag contains 'mixed-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>M<\/td>\n          <td>61x61cm<\/td>\n          <td><strong>65x65cm<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>L<\/td>\n          <td>81x81cm<\/td>\n          <td><strong>85x85cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n      {% if tag contains 'large-square-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>M<\/td>\n          <td>61x61cm<\/td>\n          <td><strong>65x65cm<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>L<\/td>\n          <td>81x81cm<\/td>\n          <td><strong>85x85cm<\/strong><\/td>\n        <\/tr>\n              <tr>\n                <td>XL<\/td>\n          <td>102x102cm<\/td>\n          <td><strong>106x106cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n\n    {% if tag contains 'reg-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>71cm<\/td>\n          <td>102cm<\/td>\n          <td><strong>75 x 106cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n{% endfor %}\n\n  {% else %}\n\n  {% when 'US' or 'AU' %}\n\n  {% for tag in product.tags %}\n    {% if tag contains 'large-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n           <tr>\n          <td>M<\/td>\n          <td>20x28\"<\/td>\n          <td><strong>21.4x29.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>XL<\/td>\n          <td>36x50\"<\/td>\n          <td><strong>37.4x51.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n    {% if tag contains 'small-med-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        \n     <tr>\n          <td>M<\/td>\n          <td>20x28\"<\/td>\n          <td><strong>21.4x29.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n   \n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n\n\n\n  {% if tag contains 'square-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n  {% if tag contains 'small-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n    {% if tag contains 'mixed-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Medium<\/td>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>Large<\/td>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n      {% if tag contains 'large-square-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Medium<\/td>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>Large<\/td>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n           <tr>\n            <td>Extra Large<\/td>\n          <td>40x40\"<\/td>\n          <td><strong>41.4x41.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n\n    {% if tag contains 'reg-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n{% endfor %}\n\n\n{% endcase %}"
+            "layout": "vertical",
+            "title_font": "body",
+            "title_size": "text-base",
+            "icon_1": "package",
+            "heading_1": "<strong>Free</strong> shipping in <strong>3-7 days</strong>",
+            "icon_2": "check-circle",
+            "heading_2": "No customs, duties or tariffs.",
+            "icon_3": "star-four",
+            "heading_3": ""
           }
         },
-        "custom_RgxTyz": {
-          "type": "custom",
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "collapsible_tab_YLLxKj": {
+          "type": "collapsible_tab",
           "settings": {
-            "code": "<div id='ss-tabs-icon-insert-block'><\/div>"
+            "heading": "About the artwork",
+            "icon": "none",
+            "content": "",
+            "custom_liquid": "{{ product.description }}\n\n{% if product.metafields.shopify[\"color-pattern\"].value %}\n  <p>Artwork colours: \n  {% for color in product.metafields.shopify[\"color-pattern\"].value %}\n    {{ color.label }}{% unless forloop.last %}, {% endunless %}\n  {% endfor %}</p>\n{% endif %}\n\n{% if product.collections contains collections['wall-art-sets'] %}\n  <p><em>This is a set, so you will receive 2 artworks.</em></p>\n{% endif %}",
+            "page": "",
+            "default_open": false
           }
         },
-        "custom_MqiWAV": {
-          "type": "custom",
-          "disabled": true,
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
           "settings": {
-            "code": "<a style=\"display: none\" data-picture-it-trigger>View in your own room<\/a>"
+            "heading": "Print & Frame details",
+            "icon": "none",
+            "content": "<ul><li>12-colour Giclée fine art print  </li><li>400gsm slightly textured heavyweight cotton canvas</li><li>Museum-quality finish designed to last for years</li><li>Stretched by hand and professionally printed to order</li><li>Framed with a hardwood float frame</li><li>Sustainably sourced materials and water-based inks</li></ul>",
+            "custom_liquid": "",
+            "page": "",
+            "default_open": false
           }
         },
-        "share": {
-          "type": "share",
-          "disabled": true,
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "none",
+            "content": "",
+            "custom_liquid": "<div style=\"margin:10px 0px;\">\n\n{% if localization.market.handle == 'eu' %}\n\n  <p><strong>Enjoy FREE delivery to {{ localization.country.name }} in 3–7 days.</strong><br> <em>There are no customs or extra charges.</em></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it with DPD from the Netherlands. You’ll receive an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>As we make every piece to order, we are unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n\n{% elsif localization.country.iso_code == 'GB' %}\n  <p><strong>Enjoy FREE UK delivery in 3–7 days.</strong></p>\n  <p>We print and frame each canvas to order here in the UK, which usually takes 3–5 working days. Once it’s ready, we’ll ship it with DPD or FedEx on a tracked next-day service. You’ll receive an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>If you’re in the UK, you can return your artwork within 14 days for a full refund. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. \n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n\n{% elsif localization.country.iso_code == 'US' %}\n  <p><strong>Enjoy FREE US shipping in 3–7 days.</strong> <br><em>There are no customs or extra charges.</em></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it with UPS Ground from North Carolina. You’ll get an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n  <p><a href=\"{{ routes['pages.return-policy'] }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n{% elsif localization.country.iso_code == 'AU' %}\n  <p><strong>Enjoy FREE delivery within Australia in 3–7 days.</strong> <br><em>There are no customs or extra charges.</em></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it from within Australia. You’ll receive an email with the tracking link as \n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you.</p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n{% elsif localization.country.iso_code == 'CH' %}\n  <p><strong>Enjoy FREE delivery to Switzerland in 3–7 days.</strong></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it from the UK. You’ll receive an email with the tracking link as soon as it’s on the way. </p>\n  <p><em>Please note: You may be required to pay local duties and taxes. These are out of our control and will be collected by the shipping carrier upon delivery.</em></p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you.</p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n\n{% elsif localization.country.iso_code == 'IM' or localization.country.iso_code == 'JE' or localization.country.iso_code == 'GG' %}\n  <p><strong>Enjoy FREE delivery in 3–7 days.</strong></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it from the UK. You’ll receive an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n{% elsif localization.country.iso_code == 'CA' %}\n  <p><strong>Enjoy FREE delivery to Canada.</strong></p>\n  <p>Orders are printed and framed locally when available. Some items ship from the UK.</p>\n  <table class=\"prod-size\">\n    <thead>\n      <tr>\n        <th style=\"width:20%\">Frame</th>\n        <th style=\"width:20%\">Ships from</th>\n        <th style=\"width:20%\">Business Days</th>\n        <th style=\"width:20%\">Cost</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Black</td>\n        <td>Canada</td>\n        <td><strong>5–7</strong></td>\n        <td>Free</td>\n      </tr>\n      <tr>\n        <td>Natural</td>\n        <td>UK</td>\n        <td><strong>7–10</strong></td>\n        <td>Free</td>\n      </tr>\n    </tbody>\n  </table>\n  <p class=\"product-tab-content\">\n    <em>Please note: For items that ship from the UK to Canada, you may be required to pay local duties and taxes. These are out of our control and will be collected by the shipping carrier upon delivery.</em>\n  </p>\n\n    <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n    <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n{% endif %}\n\n{% unless localization.market.handle == 'eu'\n    or localization.country.iso_code == 'GB'\n    or localization.country.iso_code == 'US'\n    or localization.country.iso_code == 'CA'\n    or localization.country.iso_code == 'AU'\n    or localization.country.iso_code == 'IM'\n    or localization.country.iso_code == 'JE'\n    or localization.country.iso_code == 'CH'\n    or localization.country.iso_code == 'GG' %}\n\n  <p>\n    It looks like we don’t currently ship to {{ localization.country.name }}. But please <a href=\"{{ routes.contact_url }}\" class=\"delivery-link\">get in touch</a> — we’ll do our best to accommodate you.\n  </p>\n\n{% endunless %}\n\n</div>",
+            "page": "",
+            "default_open": false
+          }
+        },
+        "custom_liquid_bHC3b6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<a href=\"/products/sample\" style=\"display: flex; width: 100%; text-decoration: none; font-size: 14px; font-weight: 500; box-sizing: border-box; margin-top: 0px; border: 0px dotted #1a1a1a; color: #1a1a1a;\">\n  \n  <!-- Left section with \"NEW\" + main text + price -->\n  <span style=\"flex: 0 0 85%; display: flex; align-items: center; justify-content: center; padding: 1.5rem; box-sizing: border-box; border-right: 2px solid #fff; background-color: #ece8de;\">\n    <span style=\"background-color: #ffde00; color: #000; font-size: 12px; font-weight: bold; padding: 2px 6px; margin-right: 8px; display: inline-block;\">\n      NEW\n    </span>\n    ORDER A SWATCH SAMPLE \n    <span style=\"margin-left: 8px; font-weight: bold;\">£8</span>\n  </span>\n  \n  <!-- Right section with circled \"i\" -->\n  <span style=\"flex: 0 0 15%; display: flex; align-items: center; justify-content: center; background-color: #ece8de;\">\n    <span style=\"font-weight: bold; font-size: 14px; border: 2px solid #ece8de; color:#ece8de; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center;background:#56523f; justify-content: center; line-height: 1;\">i</span>\n  </span>\n</a>"
           }
         }
       },
       "block_order": [
+        "custom_liquid_yVh9nt",
+        "badges",
+        "reviews_io_reviewsio_rating_output_jYPbNQ",
+        "title",
+        "text_9dq6g6",
         "price",
-        "reviews_io_reviewsio_rating_output_EXPANM",
-        "custom_JKJzcD",
+        "inventory",
+        "text_B4ArTT",
         "variant_picker",
+        "custom_liquid_3XiHEr",
         "buy_buttons",
-        "custom_y8ckmP",
-        "b6e995aa-0a57-4e41-b177-9556d4df7b53",
-        "b6d95a91-8626-4891-a3a5-58ddd44d5224",
-        "description",
-        "db445427-c573-45fc-b8fc-0db05cdcbd8a",
-        "b1482a76-b7eb-4cc7-9ef1-6018292b5d1b",
-        "custom_RgxTyz",
-        "custom_MqiWAV",
-        "share"
+        "klarna_on_site_messaging_app_block_UyeGN8",
+        "custom_liquid_MEDzkM",
+        "shipping_dQLyN7",
+        "icon_with_text",
+        "pickup_availability",
+        "collapsible_tab_YLLxKj",
+        "collapsible-row-1",
+        "collapsible-row-3",
+        "custom_liquid_bHC3b6"
       ],
       "custom_css": [
-
+        ".loox-rating {margin-top: -1rem;}",
+        ".complementary-products__container .product-card__wrapper .btn--secondary {background-color: transparent;}",
+        ".product__block {--product-blocks-gap: 1.4rem; --product-blocks-gap-large: 3.2rem; margin: var(--product-blocks-gap) 0;}",
+        ".product__tax.rte {display: none;}",
+        ".product__block--collapsible_tab {margin: 0px;}"
       ],
       "settings": {
-        "sku_enable": false,
-        "image_position": "left",
-        "image_size": "large",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_height": "flexible",
-        "thumbnail_arrows": true,
-        "mobile_layout": "full",
+        "color_scheme": "scheme-3",
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "gallery_layout": "carousel",
+        "mobile_thumbnails": "show",
+        "enable_image_zoom": false,
         "enable_video_looping": true,
-        "product_video_style": "muted"
+        "padding_top": 0,
+        "padding_bottom": 100
       }
     },
-    "1724267066344fcb5d": {
-      "type": "apps",
+    "custom_liquid_TUwapW": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"3inwubkC5Dohfz6A\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "multicolumn_CEkELd": {
+      "type": "multicolumn",
       "blocks": {
-        "reviews_io_reviewsio_nuggets_7hyfGw": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-nuggets\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "column_RrcpY4": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/muesum2.svg",
+            "image_width": "medium",
+            "title": "<em>Museum-quality</em> finish",
+            "heading_size": "h4",
+            "text": "<p>12-colour Giclée fine art prints on a slightly textured 400gsm cotton canvas.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "horizontal"
+          }
+        },
+        "column_VEHA3D": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/sustainable-frames.svg",
+            "image_width": "medium",
+            "title": "<em>Sustainably-sourced </em>frames",
+            "heading_size": "h4",
+            "text": "<p>We use deep sustainably sourced hardwood frames for a premium feel. </p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "horizontal"
+          }
+        },
+        "column_pkf8w8": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/art-icon.svg",
+            "image_width": "medium",
+            "title": "Lightweight & <em>easy to hang</em>",
+            "heading_size": "h4",
+            "text": "<p>Easy hanging with a screw for a secure, flush fit to the wall. <em>No fixings required. </em></p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "horizontal"
+          }
+        },
+        "column_FBqtye": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/handmade.svg",
+            "image_width": "medium",
+            "title": "<em>Handmade</em> in the UK",
+            "heading_size": "h4",
+            "text": "<p>Made to order, stretched by hand and professionally framed in the UK.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "horizontal"
+          }
+        }
+      },
+      "block_order": [
+        "column_RrcpY4",
+        "column_VEHA3D",
+        "column_pkf8w8",
+        "column_FBqtye"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "center",
+        "columns_desktop": 4,
+        "column_gap": "extra-large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "product_tabs_iB3whf": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_4cJDFt": {
+          "type": "tab",
+          "settings": {
+            "title": "Pairs well with",
+            "collection": "",
+            "show_complementary_products": "complementary"
+          }
+        },
+        "tab_MyJ3QE": {
+          "type": "tab",
+          "settings": {
+            "title": "You may also like",
+            "collection": "",
+            "show_complementary_products": "related"
+          }
+        }
+      },
+      "block_order": [
+        "tab_4cJDFt",
+        "tab_MyJ3QE"
+      ],
+      "name": "t:sections.product-tabs.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "limit": 4,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--secondary",
+        "tabs_nav_style": "design-2",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "collage_tabs_M47VH6": {
+      "type": "collage-tabs",
+      "blocks": {
+        "tab_VhgTee": {
+          "type": "tab",
+          "settings": {
+            "content_color_scheme": "scheme-3",
+            "navigation_title": "Artwork",
+            "image": "{{ product.metafields.custom.lifestyle_shot.value }}",
+            "heading": "Inspired by nature. <em>Designed for slow living.</em>",
+            "heading_size": "h1",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "<p>At Green Lili, we believe in a slower, more considered way of life. Each nature-inspired canvas is thoughtfully designed with timeless palettes and sustainably sourced materials, creating simpler, more relaxing, and meaningful spaces.</p>",
+            "text_size": "text-base",
+            "text_alignment": "left",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "tab_Hqi6a4": {
+          "type": "tab",
           "disabled": true,
           "settings": {
-            "widget_id": "nZkWjSE8aHBmC9u2",
-            "is_product_specific": true,
-            "tags": "",
-            "branch": ""
+            "content_color_scheme": "scheme-3",
+            "navigation_title": "Frames",
+            "image": "shopify://shop_images/SET0070-CORNER-NATURAL_fdd963d6-047f-4615-a03e-cf72f0b3b544.webp",
+            "heading": "Collage tab heading",
+            "heading_size": "h1",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "<p>Fill in the text content of the tab item here. You can provide details information tab item here.</p>",
+            "text_size": "text-base",
+            "text_alignment": "center",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "tab_kP8T6Q": {
+          "type": "tab",
+          "settings": {
+            "content_color_scheme": "scheme-3",
+            "navigation_title": "How to hang",
+            "image": "shopify://shop_images/How-to-hang-a-canvas.jpg",
+            "heading": "How to hang",
+            "heading_size": "h1",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "<p>Our framed canvases are lightweight and designed for easy hanging with just a couple of standard screws for a secure, flush fit to the wall. </p><p>Here’s how to do it:</p><ul><li>Choose your screws – one for medium canvases, two for large and XL.</li><li>Drill one or two holes and insert a screw into each, leaving about 10mm exposed. (Depending on your walls, you might want a red wall plug.)</li><li>Use a level to check they’re straight.</li><li>Hang the canvas directly onto the screws by the frame for a secure, flush fit.</li><li>Step back and enjoy!</li></ul><p><em>While some people choose to use traditional hanging kits or even extra-strong command strips for smaller sizes, we believe a standard wood screw offers the best overall stability and appearance.</em></p>",
+            "text_size": "text-base",
+            "text_alignment": "left",
+            "button_label": "WATCH THE VIDEO",
+            "button_link": "shopify://pages/how-to-hang-a-large-canvas",
+            "button_style": "btn--primary"
           }
         }
       },
       "block_order": [
-        "reviews_io_reviewsio_nuggets_7hyfGw"
+        "tab_VhgTee",
+        "tab_Hqi6a4",
+        "tab_kP8T6Q"
+      ],
+      "name": "t:sections.collage-tabs.presets.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading_size": "h4",
+        "desktop_navigation_alignment": "center",
+        "desktop_image_position": "right",
+        "desktop_image_width": 50,
+        "image_aspect_ratio": "adapt",
+        "padding_top": 50,
+        "padding_bottom": 80,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "rich_text_zAUz4E": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yc8Ew4": {
+          "type": "heading",
+          "settings": {
+            "heading": "As seen in",
+            "heading_size": "h2",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yc8Ew4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "scrolling_promotion_8bGY83": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_6wH6T6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-decor.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_WnQiYq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/apartment-therapy.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_T4ytqb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/living-etc.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_jniqg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-beautiful.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_ny46b3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stylist-magazine.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_dQRTBG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/real-homes.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_6wH6T6",
+        "image_WnQiYq",
+        "image_T4ytqb",
+        "image_jniqg3",
+        "image_ny46b3",
+        "image_dQRTBG"
+      ],
+      "custom_css": [
+        ".scrolling-promotion {max-width: 1400px; margin: 0 auto;}"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "vertical_alignment": "center",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.1,
+        "h_spacing": 100,
+        "v_spacing": 10,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_divider": false,
+        "divider_layout": "vertical",
+        "custom_class": ""
+      }
+    },
+    "image_with_text_MgddA8": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_XLgqVJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "THE TIRED MAN"
+          }
+        },
+        "heading_J7mctK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lets you sink into its plush and comforting embrace after a day.",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_A3Dahr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Considered one of Denmark’s greatest and most influential architects, Mogens Lassen pioneered Danish Functionalism, taking his cues from Bauhaus sensibilities. His interior designs are a natural continuation of his architectural approach and add energy and atmosphere to everyday living spaces and tasks. From decorative objects to larger furniture designs, his designs delicately balance presence without drawing undue attention, finding their natural place in any space.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_iVbnNU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XLgqVJ",
+        "heading_J7mctK",
+        "text_A3Dahr",
+        "button_iVbnNU"
       ],
       "disabled": true,
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "ss_trust_badges_pro_QAx8Yj": {
-      "type": "ss-trust-badges-pro",
-      "blocks": {
-        "item_ahQbtn": {
-          "type": "item",
-          "settings": {
-            "icon": "truck",
-            "text": "Free shipping in 3-7 days",
-            "url": "",
-            "action": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "controls": true,
-            "autoplay": true,
-            "loop": true
-          }
-        },
-        "item_Vgxwgg": {
-          "type": "item",
-          "settings": {
-            "icon": "guarantee",
-            "text": "Museum-quality finish",
-            "url": "",
-            "action": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "controls": true,
-            "autoplay": true,
-            "loop": true
-          }
-        },
-        "item_y6Q9Ee": {
-          "type": "item",
-          "settings": {
-            "icon": "heart",
-            "text": "Lightweight & easy to hang",
-            "url": "",
-            "action": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "controls": true,
-            "autoplay": true,
-            "loop": true
-          }
-        }
-      },
-      "block_order": [
-        "item_ahQbtn",
-        "item_Vgxwgg",
-        "item_y6Q9Ee"
+      "custom_css": [
+        "@media (max-width: 767.98px) {.image-with-text .image-with-text__inner {padding-top: 4.8rem; }}"
       ],
       "settings": {
-        "badge_position": "below_buy",
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "assistant_n4",
-        "heading_size": 48,
-        "heading_size_mobile": 32,
-        "heading_height": 130,
-        "heading_align": "center",
-        "heading_align_mobile": "center",
-        "items_row": 3,
-        "items_row_mobile": 3,
-        "items_gap": 10,
-        "items_gap_mobile": 10,
-        "items_mt": 0,
-        "badge_icon_size": 30,
-        "badge_icon_size_mobile": 30,
-        "icon_align": "center",
-        "icon_align_mobile": "center",
-        "text_custom": false,
-        "text_font": "assistant_n4",
-        "text_size": 12,
-        "text_size_mobile": 12,
-        "text_height": 130,
-        "text_align": "center",
-        "text_align_mobile": "center",
-        "text_mt": 6,
-        "modal_width": 70,
-        "modal_width_mobile": 100,
-        "modal_padding_vertical": 0,
-        "modal_padding_vertical_mobile": 0,
-        "modal_padding_horizontal": 0,
-        "modal_padding_horizontal_mobile": 0,
-        "modal_radius": 16,
-        "modal_border_thickness": 0,
-        "modal_overlay": 50,
-        "close_size": 42,
-        "close_size_mobile": 42,
-        "close_icon_size": 16,
-        "close_icon_size_mobile": 16,
-        "modal_video_ratio": "landscape",
-        "modal_video_ratio_mobile": "landscape",
-        "text_color": "#121212",
-        "icon_color": "#121212",
-        "close_bg": "#000000",
-        "close_icon": "#ffffff",
-        "heading_color": "#232323",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "border_thickness": 0,
-        "lazy": true
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "image": "{{ product.metafields.custom.lifestyle_shot.value }}",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "1695562662fc3b172b": {
+    "175369499936cd4de2": {
       "type": "apps",
       "blocks": {
-        "c3c2bc91-23d4-42ac-9109-4a01dccb9f80": {
-          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-product\/577480e8-b5be-4890-968c-06ccfb458c74",
+        "covet_instagram_feed_reviews_app_block_product_7zWxU9": {
+          "type": "shopify://apps/covet-instagram-feed-reviews/blocks/app-block-product/577480e8-b5be-4890-968c-06ccfb458c74",
           "settings": {
             "show_text": true,
             "hide_title_if_empty": true,
             "title_text": "Styled by you.",
-            "title_color": "#272b2a",
-            "title_size": 25,
+            "title_color": "#000000",
+            "title_size": 32,
             "subtitle_text": "",
-            "subtitle_color": "#ffffff",
+            "subtitle_color": "#000000",
             "subtitle_size": 14,
             "text_alignment": "center",
-            "margin": 50,
+            "margin": 40,
             "custom_html_above": "",
-            "custom_html_below": "<div class=\"covet-pics-product-gallery-section\"><\/div>"
+            "custom_html_below": ""
           }
         }
       },
       "block_order": [
-        "c3c2bc91-23d4-42ac-9109-4a01dccb9f80"
-      ],
-      "custom_css": [
-        ".swiper-button-next svg,.swiper-button-prev svg {opacity: 0.5 !important;}",
-        ".swiper-scrollbar-drag {background: var(--swiper-scrollbar-drag-bg-color, #6f8d5e) !important;}",
-        ".covet-pics-product-gallery-section {margin-bottom: 100px;}"
+        "covet_instagram_feed_reviews_app_block_product_7zWxU9"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": false
-      }
-    },
-    "ss_feature_18_JaFpkK": {
-      "type": "ss-feature-18",
-      "blocks": {
-        "feature_ciGaqH": {
-          "type": "feature",
-          "settings": {
-            "icon": "pin",
-            "heading": "<p>Handmade in the UK<\/p>"
-          }
-        },
-        "feature_W48dfw": {
-          "type": "feature",
-          "settings": {
-            "icon": "plant",
-            "heading": "<p>Sustainable Materials<\/p>"
-          }
-        },
-        "feature_aVDXXA": {
-          "type": "feature",
-          "settings": {
-            "icon": "heart",
-            "heading": "<p>Buy Once. Love Forever.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "feature_ciGaqH",
-        "feature_W48dfw",
-        "feature_aVDXXA"
-      ],
-      "custom_css": [
-        "h3 {font-size: 30px; margin-bottom: 30px;}",
-        ".feature-body-template--18412156059872__ss_feature_18_JaFpkK {background: #e8e8e1;}",
-        ".feature-text-template--18412156059872__ss_feature_18_JaFpkK p {max-width: 80%; margin: 0 auto;}",
-        ".feature-content-template--18412156059872__ss_feature_18_JaFpkK {padding: 50px 0px;}",
-        ".feature-items-template--18412156059872__ss_feature_18_JaFpkK {max-width: 80%;}"
-      ],
-      "settings": {
-        "body_gap": 0,
-        "body_gap_mobile": 0,
-        "image": "{{ product.metafields.custom.lifestyle_shot.value }}",
-        "image_position": "right",
-        "image_position_mobile": "top",
-        "image_radius": 0,
-        "image_border_thickness": 0,
-        "image_ratio": "square",
-        "image_ratio_mobile": "square",
-        "content_horizontal_align": "center",
-        "content_horizontal_align_mobile": "center",
-        "text": "<h3>Go with the slow<\/h3><p>At Green Lili, we believe in a slower, more considered way of life. We thoughtfully design each nature-inspired canvas with timeless palettes and sustainably sourced materials, creating simpler, more relaxing, and meaningful spaces. <\/p>",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 16,
-        "text_size_mobile": 14,
-        "text_height": 150,
-        "feature_row": 3,
-        "feature_row_mobile": 3,
-        "feature_gap": 24,
-        "feature_gap_mobile": 10,
-        "feature_mt": 32,
-        "feature_mt_mobile": 32,
-        "icon_size": 42,
-        "icon_size_mobile": 42,
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 13,
-        "heading_size_mobile": 12,
-        "heading_height": 130,
-        "heading_mt": 16,
-        "heading_mt_mobile": 12,
-        "button": "",
-        "button_url": "",
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 16,
-        "button_size_mobile": 16,
-        "button_height": 100,
-        "button_mt": 36,
-        "button_mt_mobile": 36,
-        "button_padding_vertical": 12,
-        "button_padding_vertical_mobile": 12,
-        "button_padding_horizontal": 32,
-        "button_padding_horizontal_mobile": 32,
-        "button_radius": 100,
-        "button_border_thickness": 0,
-        "button_style": "link",
-        "text_color": "#000000",
-        "icon_color": "#000000",
-        "heading_color": "#000000",
-        "button_color": "#000000",
-        "button_hover_color": "#777777",
-        "button_bg_color": "",
-        "button_bg_hover_color": "",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "image_border_color": "#ffffff",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#ffffff",
-        "margin_top": 0,
-        "margin_bottom": 100,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
+        "include_margins": true,
         "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "full_width": false,
-        "content_width": 80,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
+        "padding_bottom": 100,
+        "custom_class": ""
       }
     },
-    "ss_tabs_block_CLEceg": {
-      "type": "ss-tabs-block",
-      "blocks": {
-        "tab_EDXmV7": {
-          "type": "tab",
-          "settings": {
-            "svg_color": "#121212",
-            "icon": "none",
-            "question": "About the artwork",
-            "answer": "",
-            "answer_html": "{{ product.description }}"
-          }
-        },
-        "tab_fwAYCK": {
-          "type": "tab",
-          "settings": {
-            "svg_color": "#121212",
-            "icon": "none",
-            "question": "Size chart",
-            "answer": "",
-            "answer_html": "{% case localization.country.iso_code %}\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK' or 'GB' or 'CA' or 'CH'  %}\n\n  {% for tag in product.tags %}\n    {% if tag contains 'large-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>M<\/td>\n          <td>51cm<\/td>\n          <td>71cm<\/td>\n          <td><strong>55x75cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>71cm<\/td>\n          <td>102cm<\/td>\n          <td><strong>75x105cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>XL<\/td>\n          <td>91cm<\/td>\n          <td>127cm<\/td>\n          <td><strong>95x131cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n    {% if tag contains 'small-med-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n          <tr>\n          <td>M<\/td>\n          <td>51cm<\/td>\n          <td>71cm<\/td>\n          <td><strong>55x75cm<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>71cm<\/td>\n          <td>102cm<\/td>\n          <td><strong>75x106cm<\/strong><\/td>\n        <\/tr>\n      \n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n\n\n\n\n\n  {% if tag contains 'square-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>81x81cm<\/td>\n          <td><strong>85x85cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n  {% if tag contains 'small-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>61cm<\/td>\n          <td>61cm<\/td>\n          <td><strong>65x65cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n    {% if tag contains 'mixed-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>M<\/td>\n          <td>61x61cm<\/td>\n          <td><strong>65x65cm<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>L<\/td>\n          <td>81x81cm<\/td>\n          <td><strong>85x85cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n      {% if tag contains 'large-square-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>M<\/td>\n          <td>61x61cm<\/td>\n          <td><strong>65x65cm<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>L<\/td>\n          <td>81x81cm<\/td>\n          <td><strong>85x85cm<\/strong><\/td>\n        <\/tr>\n              <tr>\n                <td>XL<\/td>\n          <td>102x102cm<\/td>\n          <td><strong>106x106cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n\n    {% if tag contains 'reg-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas (w)<\/th>\n          <th>Canvas (h)<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>71cm<\/td>\n          <td>102cm<\/td>\n          <td><strong>75 x 106cm<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n{% endfor %}\n\n  {% else %}\n\n  {% when 'US' or 'AU' %}\n\n  {% for tag in product.tags %}\n    {% if tag contains 'large-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n           <tr>\n          <td>M<\/td>\n          <td>20x28\"<\/td>\n          <td><strong>21.4x29.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>XL<\/td>\n          <td>36x50\"<\/td>\n          <td><strong>37.4x51.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n    {% if tag contains 'small-med-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        \n     <tr>\n          <td>M<\/td>\n          <td>20x28\"<\/td>\n          <td><strong>21.4x29.4\"<\/strong><\/td>\n        <\/tr>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n   \n      <\/tbody>\n    <\/table>\n    {% endif %}\n\n\n\n\n  {% if tag contains 'square-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n  {% if tag contains 'small-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n    {% if tag contains 'mixed-square-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Medium<\/td>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>Large<\/td>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n      {% if tag contains 'large-square-canvas' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Medium<\/td>\n          <td>24x24\"<\/td>\n          <td><strong>25.4x25.4\"<\/strong><\/td>\n        <\/tr>\n          <tr>\n            <td>Large<\/td>\n          <td>32x32\"<\/td>\n          <td><strong>33.4x33.4\"<\/strong><\/td>\n        <\/tr>\n           <tr>\n            <td>Extra Large<\/td>\n          <td>40x40\"<\/td>\n          <td><strong>41.4x41.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n\n\n    {% if tag contains 'reg-canvas-points' %}\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th>Size<\/th>\n          <th>Canvas Size<\/th>\n          <th>Size (inc Frame)<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>L<\/td>\n          <td>28x40\"<\/td>\n          <td><strong>29.4x41.4\"<\/strong><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  {% endif %}\n{% endfor %}\n\n\n{% endcase %}"
-          }
-        },
-        "tab_bi3Mzq": {
-          "type": "tab",
-          "settings": {
-            "svg_color": "#121212",
-            "icon": "none",
-            "question": "The details",
-            "answer": "",
-            "answer_html": "<p>All of our canvases are 12-colour Giclée fine art prints on slightly textured 400gsm heavyweight cotton canvas, ensuring a museum-quality finish that will last for years to come. <\/p>\n\n<p>Each canvas is stretched by hand, professionally printed and framed to order with sustainably sourced materials and water-based inks. <\/p>\n\n<p>We use a 12mm hardwood float frame that sits approx 5mm from the edge of the canvas.<\/p>"
-          }
-        },
-        "tab_jhmDDg": {
-          "type": "tab",
-          "settings": {
-            "svg_color": "#121212",
-            "icon": "none",
-            "question": "Shipping",
-            "answer": "",
-            "answer_html": "{% case localization.country.iso_code %}\n  \n  {% when 'GB' %}\n\n  <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n              \n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>FedEx<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td>Free<\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n\n\n\n  {% when 'DE' or 'NL' or 'FR' or 'AT' or 'BE' or 'IE' or 'IT' or 'PL' or 'PT' or 'SK' or 'ES' or 'SE' or 'DK'  %}\n\n\n  <span class=\"product-tab-content\">🇳🇱 Ships from the Netherlands. All customs & duties included. <\/span>\n\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Various<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td>Free<\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n\n    {% when 'CH'  %}\n\n\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>DHL<\/td>\n          <td><strong>5-7<\/strong><\/td>\n          <td>Free<\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n      <span class=\"product-tab-content\">Orders for Switzerland ship from the UK. You may be required to pay local duties and taxes. These are out of our control and will be collected by the shipping carrier upon delivery. For more information, please contact your local customs office. <\/span>\n\n\n\n    {% when 'CA'  %}\n\n\n\n    <table class=\"prod-size\">\n      <thead>\n        <tr>\n          <th style=\"width:20%\">Frame<\/th>\n          <th style=\"width:20%\">Ships from<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n        <\/tr>\n      <\/thead>\n      <tbody>\n        <tr>\n          <td>Black<\/td>\n           <td>Canada<\/td>\n          <td><strong>5-7<\/strong><\/td>\n          <td>Free<\/td>\n          <\/tr>\n\n            <tr>\n          <td>Natural<\/td>\n           <td>UK<\/td>\n          <td><strong>7-10<\/strong><\/td>\n          <td>Free<\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n    <span class=\"product-tab-content\">Please note for items that ship from the UK to Canada, you may be required to pay local duties and taxes. These are out of our control and will be collected by the shipping carrier upon delivery. For more information, please contact your local customs office. <\/span>\n\n  {% when 'US' %}\n\n <span class=\"product-tab-content\"> 🇺🇸 Ships from the USA. All customs & duties included. <\/span>\n\n      <table class=\"prod-size\">\n      <thead>\n        <tr>\n        \n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Business Days<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n    \n        <\/tr>\n      <\/thead>\n      <tbody>\n\n        <tr>\n     \n          <td>UPS<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n      <\/tbody>\n    <\/table>\n\n  {% when 'AU' %}\n\n    <span class=\"product-tab-content\"> 🇦🇺 Ships from Australia. All customs & duties included. <\/span>\n\n        <table class=\"prod-size\">\n      <thead>\n        <tr>\n\n          <th style=\"width:20%\">Courier<\/th>\n          <th style=\"width:20%\">Shipping time<\/th>\n          <th style=\"width:20%\">Cost<\/th>\n    \n        <\/tr>\n      <\/thead>\n      <tbody>\n\n        <tr>\n   \n          <td>AUS Post<\/td>\n          <td><strong>3-7<\/strong><\/td>\n          <td><strong>Free<\/strong><\/td>\n          <\/tr>\n\n        \n      <\/tbody>\n    <\/table>\n\n\n{% endcase %}\n\n <span class=\"product-tab-content\">For more info or shipping times for other products please check our <a class=\"delivery-link\" href=\"\/pages\/delivery-returns\">delivery page.<\/a><\/span>"
-          }
-        }
-      },
-      "block_order": [
-        "tab_EDXmV7",
-        "tab_fwAYCK",
-        "tab_bi3Mzq",
-        "tab_jhmDDg"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "close_other": false,
-        "open_default": false,
-        "subtitle": "",
-        "subtitle_color": "#121212",
-        "subtitle_font_size": 18,
-        "title": "",
-        "title_font_size": 21,
-        "title_color": "#121212",
-        "arrow_size": 12,
-        "arrow_color": "#121212",
-        "icon_width": 22,
-        "text_color": "#121212",
-        "question_font_size": 15,
-        "answer_color": "#121212",
-        "answer_font_size": 15,
-        "border_color": "#f2f2f2",
-        "background-color": "#ffffff",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "padding_x_desktop": 0,
-        "padding_x": 0,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "button_padding_y": 10
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "product_recommendations_heading": "You may also like",
-        "related_count": 4,
-        "products_per_row": 4
-      }
-    },
-    "sub": {
-      "type": "product-full-width",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "max_width": false
-      }
-    },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "disabled": true,
-      "settings": {
-        "recent_count": 5
-      }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "settings": {
-      }
-    },
-    "16705207551b1a9f9b": {
+    "1752847188fe45d453": {
       "type": "apps",
       "blocks": {
-        "b2cc2f00-a063-4af0-9173-30d130521e88": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "reviews_io_reviewsio_polaris_EVXa8T": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "#000000",
-            "review_type": "product_review",
-            "per_page": 3,
+            "review_type": "product_review,store_review,questions",
+            "per_page": 4,
             "primary_btn_bg_color": "#000000",
             "primary_btn_border_color": "#000000",
             "primary_btn_text_color": "#ffffff",
             "secondary_btn_border_color": "#000000",
             "secondary_btn_text_color": "#000000",
-            "border_color": "#000000",
+            "border_color": "#d9d9d9",
             "heading_text_color": "#000000",
             "heading_font": "helvetica_n4",
             "body_text_color": "#000000",
@@ -546,69 +677,141 @@
             "show_location": true,
             "show_tab_selector": false,
             "show_dates": true,
-            "show_avatar": false,
+            "show_avatar": true,
+            "enable_sentiment_analysis": false,
             "enable_replies": true,
             "widget_spacing": 0,
-            "capitalise_headers": false,
-            "capitalise_buttons": false,
-            "show_review_title": true,
+            "capitalise_headers_and_buttons": false,
+            "show_review_title": false,
             "default_sort": "date_desc"
           }
         }
       },
       "block_order": [
-        "b2cc2f00-a063-4af0-9173-30d130521e88"
+        "reviews_io_reviewsio_polaris_EVXa8T"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "custom_class": ""
       }
     },
-    "advanced_content_k6rctK": {
-      "type": "advanced-content",
+    "collapsible_tabs_hM3eRg": {
+      "type": "collapsible-tabs",
       "blocks": {
-        "image_XP4anH": {
-          "type": "image",
+        "collapsible_item_9GhzGE": {
+          "type": "collapsible_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BA0075-ROOM-3.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
           }
         },
-        "liquid_JkMTh6": {
-          "type": "liquid",
+        "collapsible_item_zcVzdi": {
+          "type": "collapsible_item",
           "settings": {
-            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
-            "width": "50%",
-            "alignment": "center"
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_jTk9dL": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
           }
         }
       },
       "block_order": [
-        "image_XP4anH",
-        "liquid_JkMTh6"
+        "collapsible_item_9GhzGE",
+        "collapsible_item_zcVzdi",
+        "collapsible_item_jTk9dL"
       ],
-      "disabled": true,
+      "name": "t:sections.collapsible-tabs.presets.name",
       "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "Framed Canvas FAQ's",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "column_gap": "large",
+        "row_gap": "inherit",
+        "item_style": "standard",
+        "item_color_scheme": "",
+        "item_heading_font": "heading",
+        "item_heading_size": "h4",
+        "item_icon_size": "extra-large",
+        "padding_top": 50,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "size_chart_j4wgU8": {
+      "type": "size-chart",
+      "blocks": {
+        "size_details_cx9qpF": {
+          "type": "size_details",
+          "settings": {
+            "title": "Size details",
+            "image": "{{ product.metafields.custom.size_chart_image.value }}",
+            "content": "{{ product.metafields.custom.dynamic_size_chart.value }}",
+            "portrait_image": "shopify://shop_images/PORTRAIT-CANVAS-SIZES.webp",
+            "page_portrait": "size-chart-portrait-landscape",
+            "square_image": "shopify://shop_images/SQUARE-CANVAS-SIZES-SCALE.webp",
+            "page_square": "size-chart-square"
+          }
+        },
+        "size_guide_gFzAtJ": {
+          "type": "size_guide",
+          "settings": {
+            "title": "How to choose your size",
+            "content": "how-to-choose-your-size"
+          }
+        }
+      },
+      "block_order": [
+        "size_details_cx9qpF",
+        "size_guide_gFzAtJ"
+      ],
+      "name": "Size Chart",
+      "settings": {
+        "heading": ""
       }
     }
   },
   "order": [
     "main",
-    "1724267066344fcb5d",
-    "ss_trust_badges_pro_QAx8Yj",
-    "1695562662fc3b172b",
-    "ss_feature_18_JaFpkK",
-    "ss_tabs_block_CLEceg",
-    "product-recommendations",
-    "sub",
-    "recently-viewed",
-    "collection-return",
-    "16705207551b1a9f9b",
-    "advanced_content_k6rctK"
+    "custom_liquid_TUwapW",
+    "multicolumn_CEkELd",
+    "product_tabs_iB3whf",
+    "collage_tabs_M47VH6",
+    "rich_text_zAUz4E",
+    "scrolling_promotion_8bGY83",
+    "image_with_text_MgddA8",
+    "175369499936cd4de2",
+    "1752847188fe45d453",
+    "collapsible_tabs_hM3eRg",
+    "size_chart_j4wgU8"
   ]
 }

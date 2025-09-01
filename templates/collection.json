@@ -1,65 +1,289 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "afaab357-0ff4-44e5-b86c-3c6b318ffff3": {
-      "type": "advanced-content",
+    "image_with_text_jwAncU": {
+      "type": "image-with-text",
       "blocks": {
-        "template--16755997966560__afaab357-0ff4-44e5-b86c-3c6b318ffff3-liquid-1": {
-          "type": "liquid",
+        "subheading_cPEkM9": {
+          "type": "subheading",
           "settings": {
-            "code": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"PqOHeMksE8DjTVup\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ><\/div>\n<script src='\/\/widget.reviews.io\/modern-widgets\/rating-bar.js'><\/script>",
-            "width": "100%",
-            "alignment": "center"
+            "subheading": "{{ collection.metafields.custom.collection_tag_line.value }}"
+          }
+        },
+        "heading_eqBjf9": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_gkthmL": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "text_size": "text-base"
           }
         }
       },
       "block_order": [
-        "template--16755997966560__afaab357-0ff4-44e5-b86c-3c6b318ffff3-liquid-1"
+        "subheading_cPEkM9",
+        "heading_eqBjf9",
+        "text_gkthmL"
       ],
+      "custom_css": [
+        ".rich-text > *:first-child:is(.rich-text__subheading) {margin-bottom: 0px;}",
+        "@media (max-width: 767.98px) {.image-with-text.color-inherit .image-with-text__inner {padding-top: 2.4rem; padding-bottom: 2.4rem; }}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "full_width": true,
-        "space_around": false,
-        "lazyload_images": true
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image": "{{ collection.image }}",
+        "image_height": "small",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "collection-header": {
-      "type": "collection-header",
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "collection_info_zUNyKV": {
+          "type": "collection_info",
+          "settings": {
+            "heading_size": "hd3",
+            "heading_tag": "h1",
+            "show_description": true,
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_info_zUNyKV"
+      ],
       "disabled": true,
+      "custom_css": [
+        ".collection-hero__description {max-width: 1200px;}"
+      ],
       "settings": {
-        "enable": true,
-        "collection_image_enable": false,
-        "parallax": false,
-        "parallax_direction": "top"
+        "color_scheme": "scheme-11",
+        "text_alignment": "center",
+        "show_collection_image": false,
+        "image_overlay_opacity": 0,
+        "image_position": "top",
+        "image_height": "extra-small",
+        "enable_parallax": true,
+        "parallax_direction": "vertical",
+        "image_height_mobile": "auto",
+        "padding_top": 0,
+        "padding_bottom": 60
       }
     },
-    "main-collection": {
-      "type": "main-collection-with-sidebar",
+    "custom_content_RecVe9": {
+      "type": "custom-content",
       "blocks": {
-        "product_grid": {
-          "type": "product_grid",
+        "image_card_3BJ74T": {
+          "type": "image_card",
           "settings": {
-            "enable_collection_count": true,
-            "per_row": 3,
-            "rows_per_page": 20,
-            "mobile_flush_grid": false
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 30,
+            "heading": "Eye care",
+            "heading_size": "h4",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "content_position": "middle-center",
+            "content_alignment": "center",
+            "content_spacing": "small",
+            "card_link": "",
+            "color_scheme_mobile": "",
+            "show_text_below": true,
+            "content_alignment_mobile": "left",
+            "width": "20%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_GRXz6y": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 30,
+            "heading": "Accessories",
+            "heading_size": "h4",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "content_position": "middle-center",
+            "content_alignment": "center",
+            "content_spacing": "small",
+            "card_link": "",
+            "color_scheme_mobile": "",
+            "show_text_below": true,
+            "content_alignment_mobile": "left",
+            "width": "20%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_BAAmnt": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 30,
+            "heading": "Moisturizers",
+            "heading_size": "h4",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "content_position": "middle-center",
+            "content_alignment": "center",
+            "content_spacing": "small",
+            "card_link": "",
+            "color_scheme_mobile": "",
+            "show_text_below": true,
+            "content_alignment_mobile": "left",
+            "width": "20%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_EA8TmL": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 30,
+            "heading": "Treatments",
+            "heading_size": "h4",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "content_position": "middle-center",
+            "content_alignment": "center",
+            "content_spacing": "small",
+            "card_link": "",
+            "color_scheme_mobile": "",
+            "show_text_below": true,
+            "content_alignment_mobile": "left",
+            "width": "20%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_Cab8TR": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 30,
+            "heading": "Cleansers",
+            "heading_size": "h4",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "content_position": "middle-center",
+            "content_alignment": "center",
+            "content_spacing": "small",
+            "card_link": "",
+            "color_scheme_mobile": "",
+            "show_text_below": true,
+            "content_alignment_mobile": "left",
+            "width": "20%",
+            "alignment": "center",
+            "block_custom_class": ""
           }
         }
       },
       "block_order": [
-        "product_grid"
+        "image_card_3BJ74T",
+        "image_card_GRXz6y",
+        "image_card_BAAmnt",
+        "image_card_EA8TmL",
+        "image_card_Cab8TR"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".card-media {--padding-y-mobile: 1.2rem;}",
+        "@media (max-width: 767px) {.card-media--mobile-content-below .bg-overlay {display: none !important; }}"
       ],
       "settings": {
-        "enable_sidebar": false,
-        "collapsed": true,
-        "filter_style": "drawer",
-        "enable_color_swatches": false,
-        "enable_sort": true,
-        "side_menu": "2023-side-menu"
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "column_gap": "extra-small",
+        "row_gap": "none",
+        "swipe_on_mobile": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-9",
+        "products_per_page": 36,
+        "columns_desktop": 3,
+        "grid_layout": "standard",
+        "pagination": "load_more",
+        "enable_color_swatch": true,
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_sorting": true,
+        "expand_filter_groups": "Product type, Artwork colour, Orientation, Size Availability",
+        "columns_mobile": "2",
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "show_section_divider": true,
+        "divider_width": "fixed"
       }
     }
   },
   "order": [
-    "afaab357-0ff4-44e5-b86c-3c6b318ffff3",
-    "collection-header",
-    "main-collection"
+    "image_with_text_jwAncU",
+    "banner",
+    "custom_content_RecVe9",
+    "product-grid"
   ]
 }

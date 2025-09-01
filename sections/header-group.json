@@ -1,107 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
+  "name": "t:sections.header.name",
   "type": "header",
-  "name": "t:sections.header-group.name",
   "sections": {
-    "announcement": {
-      "type": "announcement",
+    "announcement_bar_i39KEQ": {
+      "type": "announcement-bar",
       "blocks": {
-        "announcement_7afagN": {
-          "type": "announcement",
+        "announcement_bar_XX6Gpg": {
+          "type": "announcement_bar",
           "settings": {
-            "text": "",
-            "link_text": "Free Shipping in 3-7 days",
+            "text": "<a href=\"/pages/newsletter-sign-up\" title=\"Join Our Community\"><strong>GET 10% OFF YOUR FIRST ORDER</strong></a>",
             "link": ""
           }
         },
-        "announcement-0": {
-          "type": "announcement",
+        "announcement_bar_FCCaeU": {
+          "type": "announcement_bar",
           "settings": {
-            "text": "Get 10% Off",
-            "link_text": "Join The Tribe!",
-            "link": "shopify:\/\/pages\/newsletter-sign-up"
-          }
-        },
-        "announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "NEW CANVAS SETS",
-            "link_text": "Shop Now!",
-            "link": "shopify:\/\/collections\/wall-art-sets"
+            "text": "<strong>Free</strong> <strong>shipping</strong> in <strong>3-7 days. </strong>",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_7afagN",
-        "announcement-0",
-        "announcement-1"
-      ],
-      "custom_css": [
-
+        "announcement_bar_XX6Gpg",
+        "announcement_bar_FCCaeU"
       ],
       "settings": {
-        "announcement_compact": true,
-        "is_sticky": true
+        "color_scheme": "scheme-2",
+        "content_width": 43,
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "header": {
       "type": "header",
       "blocks": {
-        "header-0": {
-          "type": "logo",
+        "product_list_rj7mwc": {
+          "type": "product_list",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/GreenLili_Logo.png",
-            "desktop_logo_width": 150,
-            "mobile_logo_width": 100
+            "menu_title": "Shop",
+            "collections": [
+              "all",
+              "new-arrivals",
+              "best-sellers"
+            ],
+            "menu_columns": 4,
+            "show_menu_column_divider": true,
+            "promotions_width": 38,
+            "number_of_columns": 4,
+            "product_list": [],
+            "heading": ""
           }
         }
       },
       "block_order": [
-        "header-0"
+        "product_list_rj7mwc"
       ],
       "custom_css": [
-        ".site-header__logo {margin-left: 10px;}"
+        ".card-media__description {opacity: 0.6;}"
       ],
       "settings": {
-        "main_menu_link_list": "main-menu",
-        "hover_menu": true,
-        "mega_menu_images": true,
-        "main_menu_alignment": "left-center",
-        "header_style": "sticky",
-        "sticky_index": false,
-        "sticky_collection": false,
-        "toolbar_menu": "mobile-second",
-        "toolbar_social": false,
-        "show_locale_selector": false,
-        "show_currency_selector": false,
-        "show_currency_flags": true
-      }
-    },
-    "advanced_content_At3JgL": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_qG3ktq": {
-          "type": "liquid",
-          "settings": {
-            "code": "<div class=\"summer-sale\"><p class=\"summer-sale-title\">15% SUMMER SALE<\/p>Use code:<strong> 'SUMMERLOVIN'<\/strong> until 28\/7\n<\/div>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_qG3ktq"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "space_around": false,
-        "lazyload_images": false
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "menu": "megamenu",
+        "menu_mobile": "",
+        "header_layout": "left-center",
+        "sticky_header": "always",
+        "menu_trigger": "hover",
+        "show_sperator_line": true,
+        "hide_sperator_on_pages": "index,lookbook",
+        "enable_transparent_header": false,
+        "transparent_header_color": "#ffffff",
+        "logo_mobile_position": "center",
+        "show_social_media_icons": true,
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "padding_top": 20,
+        "padding_bottom": 26
       }
     }
   },
   "order": [
-    "announcement",
-    "header",
-    "advanced_content_At3JgL"
+    "announcement_bar_i39KEQ",
+    "header"
   ]
 }

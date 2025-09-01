@@ -1,153 +1,353 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "image_with_text_kQz36n": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qWt4XY": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_kiLgi8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hey, we're Green Lili! We believe in a slower, more thoughtful way of living—designing art that sparks creativity, connects with nature, and brings warmth into everyday spaces. Join us in creating simple, meaningful spaces that truly <em>feel like home</em>.</p>",
+            "text_size": "text-lg"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qWt4XY",
+        "text_kiLgi8"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/Green-lili-team.jpg",
+        "image_height": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "a099f832-acef-47d7-b342-f99beca77470": {
-      "type": "advanced-content",
-      "blocks": {
-        "template--16714588848352__a099f832-acef-47d7-b342-f99beca77470-1671555763a2a0af21-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "<div class=\"rte\"><div class=\"collection-description\">\n<h1>About Us<\/h1>\n<p>Green Lili is an independent home decor, art & lifestyle brand founded in Sheffield in 2015. Our shop features a collection of <a href=\"\/collections\/art-prints\">framed art prints<\/a>, <a href=\"\/collections\/large-framed-canvas-wall-art\">large canvas art<\/a> & <a href=\"\/collections\/rugs\">rugs<\/a> designed in our Sheffield studio by artist and founder Michelle Collins – and brought to life in cosy homes around the world.<\/p>\n<\/div><\/div>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--16714588848352__a099f832-acef-47d7-b342-f99beca77470-1671555763a2a0af21-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
-      }
-    },
-    "59b65ad4-0db7-470e-842e-2c9f4957ffab": {
-      "type": "advanced-content",
-      "blocks": {
-        "template--16714588848352__59b65ad4-0db7-470e-842e-2c9f4957ffab-1671555763a2a0af21-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Greenlili-down-to-earth.jpg",
-            "link": "",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--16714588848352__59b65ad4-0db7-470e-842e-2c9f4957ffab-1671555763a2a0af21-0"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
-      }
-    },
-    "c354ac68-970d-454a-9382-fb8ddf731f6d": {
+    "rich_text_nbnnaj": {
       "type": "rich-text",
       "blocks": {
-        "template--16714588848352__c354ac68-970d-454a-9382-fb8ddf731f6d-16715558957a789138-1": {
+        "heading_JAV8rp": {
+          "type": "heading",
+          "settings": {
+            "heading": "“Our pieces are designed to slow things down, creating warm, inviting spaces with fewer, more meaningful choices”",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_RrkJRr": {
           "type": "text",
           "settings": {
-            "enlarge_text": true,
-            "text": "<p>Our mission is to help you to tell stories and pack personality and good vibes into your every day – and there’s no better place to do that than your home.<\/p>"
+            "text": "<p><em>Michelle Collins, Artist & Founder</em></p>",
+            "text_size": "text-base"
           }
         }
       },
       "block_order": [
-        "template--16714588848352__c354ac68-970d-454a-9382-fb8ddf731f6d-16715558957a789138-1"
+        "heading_JAV8rp",
+        "text_RrkJRr"
       ],
+      "custom_css": [
+        ".rich-text {max-width: 1200px; margin: 0 auto;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "1670516213ee264ffb": {
-      "type": "apps",
+    "image_with_text_nV4iVY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mttCag": {
+          "type": "heading",
+          "settings": {
+            "heading": "Art by <em>Michelle Collins</em>",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_JtQ6TB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Michelle Collins is the founder and artist behind Green Lili. Her love of nature and travel continuously inspires her, shaping the earthy palettes and organic forms she brings to life in each abstract piece. Embracing a slower pace of living, Michelle enjoys simple pleasures like peaceful walks or diving into an interior book with a chai latte. Her art is designed to bring that same sense of calm and warmth into your home.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_BGpNxG": {
+          "type": "button",
+          "settings": {
+            "button_label": "MEET MICHELLE",
+            "button_link": "shopify://blogs/inspiration/meet-michelle-collins",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mttCag",
+        "text_JtQ6TB",
+        "button_BGpNxG"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image": "shopify://shop_images/Michelle-collins-artist.jpg",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "eb1f4b96-77fb-40f3-92ea-fcf5d564b3bb": {
-      "type": "text-and-image",
+    "image_with_text_Lpz7Eh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bW7EKp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our <em>artwork</em>",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_7FWwgg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed in our Sheffield studio, our artwork captures the beauty of the outdoors with a laid-back, loosely painted style. From bold minimalist artwork to dreamy abstract landscapes, each piece brings subtle warmth and uplifting energy to modern organic interiors. With a commitment to thoughtful design, we've become the go-to for large Giclée abstract art that stands the test of time, crafted with sustainably sourced materials for quality you can feel good about.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_3qVyF9": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP BEST SELLERS",
+            "button_link": "shopify://collections/best-sellers",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bW7EKp",
+        "text_7FWwgg",
+        "button_3qVyF9"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ABOUT-SHELL-GOLD.jpg",
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "Meet the artist",
-        "title": "Michelle Collins",
-        "text": "<p>Hey, I'm Michelle! We started Green Lili to provide a place that we hope will inspire your creativity, connect with nature and lift emotions - transforming your space with bold colours and simple styles that aren't overly busy but still have heart and meaning.<\/p>",
-        "button_label": "About Michelle",
-        "button_link": "shopify:\/\/blogs\/inspiration\/meet-michelle-collins",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "right",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image": "shopify://shop_images/our-artwork-frames.jpg",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "17c5278b-2fd1-4907-a021-ef7c5eb6241e": {
-      "type": "text-and-image",
+    "image_with_text_xECLCk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WMC4XP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Loved by homeowners, <em>recommended by designers.</em>",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_8wDFwY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We partner with interior designers, stylists, and home stagers who choose our artwork for its simplicity and thoughtful design. Crafted to blend seamlessly into modern interiors, our pieces make it easy to create warm, inviting spaces with fewer, more meaningful choices.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_7eTDyz": {
+          "type": "button",
+          "settings": {
+            "button_label": "OPEN A TRADE ACCOUNT",
+            "button_link": "shopify://pages/art-for-trade",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WMC4XP",
+        "text_8wDFwY",
+        "button_7eTDyz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify:\/\/shop_images\/BLOG-ABSTRACT-SETS.jpg",
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "press & tv",
-        "title": "Features",
-        "text": "<p>We've been in ElleDecor, LivingEtc, Real Homes, Ideal Home, Stylist, House Beautiful, & The Telegraph. Our art has also been featured on Grand Designs, George Clarke’s Old House New Home, <a href=\"https:\/\/green-lili.myshopify.com\/blogs\/inspiration\/ugly-house-to-lovely-house\" title=\"Ugly House To Lovely House\">Ugly House<\/a> to Lovely House, Extraordinary Extensions and Britains Most Expensive Houses. <\/p><p>If you’d like to feature any of our art, please get in touch – we’re always happy to share images & samples. <\/p>",
-        "button_label": "Get in touch",
-        "button_link": "shopify:\/\/pages\/contact",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "left",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image": "shopify://shop_images/abstract-wall-art-set-hanging.jpg",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "c296b3d2-5853-441b-a54d-e636569f7ec6": {
-      "type": "text-and-image",
+    "scrolling_promotion_XFp3j9": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_Rz8gm8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-decor.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_NDjP8n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/apartment-therapy.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_Ez4rjV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-beautiful.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_eALC87": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/real-homes.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_TBmRC8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/living-etc.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_HnkDdD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stylist-magazine.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_Rz8gm8",
+        "image_NDjP8n",
+        "image_Ez4rjV",
+        "image_eALC87",
+        "image_TBmRC8",
+        "image_HnkDdD"
+      ],
+      "custom_css": [
+        ".scrolling-promotion {max-width: 1400px; margin: 0 auto;}"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
       "settings": {
-        "image": "shopify:\/\/shop_images\/GLXFC-PALMSPRINGS.jpg",
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "Collaborations",
-        "text": "<p>We love to collaborate with brands that have a similar outlook to ours. We've done collaborations with <a href=\"\/blogs\/collaborations\/green-lili-x-french-connection-home\" title=\"Green Lili X French Connection Home\">French Connection Home<\/a> and <a href=\"\/blogs\/collaborations\/green-lili-x-john-lewis\" title=\"Green Lili X John Lewis\">John Lewis<\/a>, and our art has sold in retailers including Ikea, Dunelm, Target, and Rockett St George.<\/p>",
-        "button_label": "Let's Collaborate",
-        "button_link": "shopify:\/\/pages\/contact",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "right",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
+        "color_scheme": "",
+        "vertical_alignment": "center",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.1,
+        "h_spacing": 100,
+        "v_spacing": 10,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_divider": false,
+        "divider_layout": "vertical",
+        "custom_class": ""
       }
     }
   },
   "order": [
+    "image_with_text_kQz36n",
     "main",
-    "a099f832-acef-47d7-b342-f99beca77470",
-    "59b65ad4-0db7-470e-842e-2c9f4957ffab",
-    "c354ac68-970d-454a-9382-fb8ddf731f6d",
-    "1670516213ee264ffb",
-    "eb1f4b96-77fb-40f3-92ea-fcf5d564b3bb",
-    "17c5278b-2fd1-4907-a021-ef7c5eb6241e",
-    "c296b3d2-5853-441b-a54d-e636569f7ec6"
+    "rich_text_nbnnaj",
+    "image_with_text_nV4iVY",
+    "image_with_text_Lpz7Eh",
+    "image_with_text_xECLCk",
+    "scrolling_promotion_XFp3j9"
   ]
 }

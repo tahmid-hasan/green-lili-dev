@@ -1,0 +1,584 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_pzQqfq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qiA8bA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Art for interior designers, home stagers & developers.",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_6PXYtW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Elevate your next project with thoughtfully designed wall art. Enjoy easy ordering, exclusive discounts, and fast, free delivery to the UK, EU, and US — let’s work together to bring your vision to life.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_LjYwEn": {
+          "type": "button",
+          "settings": {
+            "button_label": "APPLY FOR A TRADE ACCOUNT",
+            "button_link": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qiA8bA",
+        "text_6PXYtW",
+        "button_LjYwEn"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/abstract-set-above-sofa.jpg",
+        "image_height": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "multicolumn_4A7PF3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_eifgMF": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/discount-icon.svg",
+            "image_width": "medium",
+            "title": "Trade <em>discounts</em>",
+            "heading_size": "h4",
+            "text": "<p>Get generous discounts with no min order.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_GJyRNy": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/art-icon.svg",
+            "image_width": "medium",
+            "title": "<em>Bespoke</em> options",
+            "heading_size": "h4",
+            "text": "<p>Bespoke colours, sizes & frames options.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_N3aM7B": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/shipping.svg",
+            "image_width": "medium",
+            "title": "Fast, <em>free delivery</em>",
+            "heading_size": "h4",
+            "text": "<p>Free shipping on all orders in 3-7 days.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_wLafDh": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/handshake-icon.svg",
+            "image_width": "medium",
+            "title": "<em>Collab</em> opportunties",
+            "heading_size": "h4",
+            "text": "<p>Marketing collabs & creative partnerships.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_eifgMF",
+        "column_GJyRNy",
+        "column_N3aM7B",
+        "column_wLafDh"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "center",
+        "columns_desktop": 4,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "multicolumn_LWj6HT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9fQXAi": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/art-for-home-staging_0411c2c5-4b84-415e-901c-14f7b900c260.jpg",
+            "image_width": "full",
+            "title": "Show homes & <em>staging</em>",
+            "heading_size": "h2",
+            "text": "<p>Every detail counts when creating a space buyers will love. Our timeless artwork adds the perfect finishing touch, helping you set your space apart and showcase its full potential.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_8YqzJK": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/desert-landscape-art-bedroom-warm-colours.jpg",
+            "image_width": "full",
+            "title": "Interior <em>design</em>",
+            "heading_size": "h2",
+            "text": "<p>From residential interiors to offices, hotels, and restaurants, our artwork creates inspiring focal points that breathe life into spaces. With a range of timeless designs in modern colour schemes, it's easy to personalise your projects, stimulating conversations for guests and clients.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_dKkxCU": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/high-spirits-omaze-show.jpg",
+            "image_width": "full",
+            "title": "TV shows & <em>shoots</em>",
+            "heading_size": "h2",
+            "text": "<p>If you're working on a show, get in touch - we love to see our artwork on the box! We've featured on make-over shows with George Clarke, Grand Designs, DIY SOS, Extraordinary Extensions, Britains Most Expensive Houses and tv & films on AppleTV & Netflix.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_9fQXAi",
+        "column_8YqzJK",
+        "column_dKkxCU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 3,
+        "column_gap": "extra-large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "testimonials_f93kTG": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_p6GLYf": {
+          "type": "testimonial",
+          "settings": {
+            "show_image": false,
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "here;s the bio",
+            "product": "",
+            "icon": "5-stars"
+          }
+        },
+        "testimonial_qHGx47": {
+          "type": "testimonial",
+          "settings": {
+            "show_image": false,
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": "",
+            "icon": "5-stars"
+          }
+        },
+        "testimonial_ENHtGc": {
+          "type": "testimonial",
+          "settings": {
+            "show_image": false,
+            "text": "<p>We've had the pleasure of incorporating Green Lili pieces into one of our home staging projects, and they worked beautifully. The art fit perfectly with the style we were aiming for and really elevated the final result. The whole experience was smooth—great quality, fast communication, and Jack has been super friendly and helpful throughout. Highly recommended!</p>",
+            "author": "Pauline",
+            "bio": "Home Stager - Spain",
+            "product": "",
+            "icon": "5-stars"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_p6GLYf",
+        "testimonial_qHGx47",
+        "testimonial_ENHtGc"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "What our <em>clients say</em>",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "card_color_scheme": "",
+        "card_layout": "2",
+        "card_text_size": "text-base",
+        "columns_desktop": 3,
+        "column_gap": "extra-large",
+        "enable_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "rich_text_kTba7D": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dCzGzJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Got a project?",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_ekYUAR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drop us a message to learn about our designer discounts or get some friendly advice on which artwork would suit your space. We'd love to hear from you!</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dCzGzJ",
+        "text_ekYUAR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_qHHrC4": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align:center;\"><a class=\"btn btn--primary\">APPLY FOR A TRADE ACCOUNT<a><div>",
+        "color_scheme": "scheme-2",
+        "padding_top": 40,
+        "padding_bottom": 80,
+        "custom_class": ""
+      }
+    },
+    "rich_text_mfXWUj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6aahhR": {
+          "type": "heading",
+          "settings": {
+            "heading": "As seen in",
+            "heading_size": "h3",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6aahhR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "scrolling_promotion_EUjpzG": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_QHprhp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-decor.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_iWBzYK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/apartment-therapy.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_UEm6hA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-beautiful.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_gmMTqD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/living-etc.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_dJ4h9j": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/real-homes.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_G3X6Wz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stylist-magazine.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_QHprhp",
+        "image_iWBzYK",
+        "image_UEm6hA",
+        "image_gmMTqD",
+        "image_dJ4h9j",
+        "image_G3X6Wz"
+      ],
+      "custom_css": [
+        ".scrolling-promotion {max-width: 1400px; margin: 0 auto;}"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "vertical_alignment": "center",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.1,
+        "h_spacing": 100,
+        "v_spacing": 10,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_divider": false,
+        "divider_layout": "vertical",
+        "custom_class": ""
+      }
+    },
+    "collapsible_tabs_cDF46H": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "collapsible_item_X87864": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "I'm based in the EU, can I get a tax invoice?",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_fiPRR6": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_nmR4bM": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_item_X87864",
+        "collapsible_item_fiPRR6",
+        "collapsible_item_nmR4bM"
+      ],
+      "name": "t:sections.collapsible-tabs.presets.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "Trade FAQ's",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "column_gap": "large",
+        "row_gap": "inherit",
+        "item_style": "standard",
+        "item_color_scheme": "",
+        "item_heading_font": "heading",
+        "item_heading_size": "h4",
+        "item_icon_size": "extra-large",
+        "padding_top": 80,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "featured_blog_J3iLPN": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "blog": "b2b",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "card_title_size": "h3",
+        "show_date": true,
+        "show_excerpt": true,
+        "show_button": true,
+        "padding_top": 50,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_pzQqfq",
+    "multicolumn_4A7PF3",
+    "multicolumn_LWj6HT",
+    "testimonials_f93kTG",
+    "rich_text_kTba7D",
+    "custom_liquid_qHHrC4",
+    "rich_text_mfXWUj",
+    "scrolling_promotion_EUjpzG",
+    "collapsible_tabs_cDF46H",
+    "featured_blog_J3iLPN"
+  ]
+}

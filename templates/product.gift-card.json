@@ -1,95 +1,512 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_yVh9nt": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"height: 40px;\">&nbsp;</div>"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {
+            "show_soldout_badge": true,
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "reviews_io_reviewsio_rating_output_jYPbNQ": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "inventory": {
+          "type": "inventory",
           "settings": {
+            "text_style": "body",
+            "inventory_threshold": 20,
+            "show_inventory_quantity": true
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "text_B4ArTT": {
+          "type": "text",
           "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
+            "text": "",
+            "text_style": "body"
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "picker_type": "button",
+            "swatch_type": "color_swatch",
+            "button_style": "circle",
+            "button_size": 40,
+            "size_title": "Size chart, Size of each canvas",
+            "size_chart_from_page": "size-chart"
           }
         },
-        "inventory_status": {
-          "type": "inventory_status",
+        "custom_liquid_3XiHEr": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "<div style=\"height: 10px;\">&nbsp;</div>"
           }
         },
-        "share": {
-          "type": "share",
+        "buy_buttons": {
+          "type": "buy_buttons",
           "settings": {
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
           }
         },
-        "sales_point": {
-          "type": "sales_point",
+        "klarna_on_site_messaging_app_block_UyeGN8": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
           "settings": {
+            "data_key": "credit-promotion-auto-size",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
           }
         },
-        "tab": {
-          "type": "tab",
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "collapsible_tab_YLLxKj": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "About the artwork",
+            "icon": "none",
+            "content": "",
+            "custom_liquid": "{{ product.description }}\n\n{{ product.metafields.shopify[\"color-pattern\"] | metafield_tag: field: 'label' }}\n\n{% if product.collections contains collections['wall-art-sets'] %}\n  <p><em>This is a set, so you will receive 2 artworks.</em></p>\n{% endif %}",
+            "page": "",
+            "default_open": false
           }
         },
-        "text": {
-          "type": "text",
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Print & Frame details",
+            "icon": "none",
+            "content": "<ul><li>12-colour Giclée fine art print  </li><li>400gsm slightly textured heavyweight cotton canvas</li><li>Museum-quality finish designed to last for years</li><li>Stretched by hand and professionally printed to order</li><li>Framed with a hardwood float frame</li><li>Sustainably sourced materials and water-based inks</li></ul>",
+            "custom_liquid": "",
+            "page": "",
+            "default_open": false
           }
         },
-        "separator": {
-          "type": "separator",
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
           "settings": {
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "none",
+            "content": "",
+            "custom_liquid": "<div style=\"margin:10px 0px;\">\n\n{% if localization.market.handle == 'eu' %}\n\n  <p><strong>Enjoy FREE delivery to {{ localization.country.name }} in 3–7 days.</strong><br> <em>There are no customs or extra charges.</em></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it with DPD from the Netherlands. You’ll receive an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>As we make every piece to order, we are unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n\n{% elsif localization.country.iso_code == 'GB' %}\n  <p><strong>Enjoy FREE UK delivery in 3–7 days.</strong></p>\n  <p>We print and frame each canvas to order here in the UK, which usually takes 3–5 working days. Once it’s ready, we’ll ship it with DPD or FedEx on a tracked next-day service. You’ll receive an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>If you’re in the UK, you can return your artwork within 14 days for a full refund. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. \n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n\n{% elsif localization.country.iso_code == 'US' %}\n  <p><strong>Enjoy FREE US shipping in 3–7 days.</strong> <br><em>There are no customs or extra charges.</em></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it with UPS Ground from North Carolina. You’ll get an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n  <p><a href=\"{{ routes['pages.return-policy'] }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n{% elsif localization.country.iso_code == 'AU' %}\n  <p><strong>Enjoy FREE delivery within Australia in 3–7 days.</strong> <br><em>There are no customs or extra charges.</em></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it from within Australia. You’ll receive an email with the tracking link as \n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you.</p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n{% elsif localization.country.iso_code == 'CH' %}\n  <p><strong>Enjoy FREE delivery to Switzerland in 3–7 days.</strong></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it from the UK. You’ll receive an email with the tracking link as soon as it’s on the way. </p>\n  <p><em>Please note: You may be required to pay local duties and taxes. These are out of our control and will be collected by the shipping carrier upon delivery.</em></p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you.</p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n\n\n{% elsif localization.country.iso_code == 'IM' or localization.country.iso_code == 'JE' or localization.country.iso_code == 'GG' %}\n  <p><strong>Enjoy FREE delivery in 3–7 days.</strong></p>\n  <p>We print and frame each canvas to order, which usually takes 3–5 working days. Once it’s ready, we’ll ship it from the UK. You’ll receive an email with the tracking link as soon as it’s on the way.</p>\n  <p><em>Need it quickly?</em> <a href=\"{{ pages['contact'].url }}\" class=\"delivery-link\">Get in touch</a> and we’ll see what we can do.</p>\n  <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n  <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n{% elsif localization.country.iso_code == 'CA' %}\n  <p><strong>Enjoy FREE delivery to Canada.</strong></p>\n  <p>Orders are printed and framed locally when available. Some items ship from the UK.</p>\n  <table class=\"prod-size\">\n    <thead>\n      <tr>\n        <th style=\"width:20%\">Frame</th>\n        <th style=\"width:20%\">Ships from</th>\n        <th style=\"width:20%\">Business Days</th>\n        <th style=\"width:20%\">Cost</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Black</td>\n        <td>Canada</td>\n        <td><strong>5–7</strong></td>\n        <td>Free</td>\n      </tr>\n      <tr>\n        <td>Natural</td>\n        <td>UK</td>\n        <td><strong>7–10</strong></td>\n        <td>Free</td>\n      </tr>\n    </tbody>\n  </table>\n  <p class=\"product-tab-content\">\n    <em>Please note: For items that ship from the UK to Canada, you may be required to pay local duties and taxes. These are out of our control and will be collected by the shipping carrier upon delivery.</em>\n  </p>\n\n    <p style=\"margin-top:20px;\"><strong>RETURNS</strong></p>\n  <p>Each piece is made to order, so we’re unable to offer returns if you change your mind. Please double-check the sizes before you buy. These are large pieces and we want to make sure they’ll fit your space. In the unfortunate event your artwork arrives damaged or faulty, we’ll arrange a free replacement for you. </p>\n    <p><a href=\"{{ pages['returns-policy'].url }}\" class=\"delivery-link\">Read our full returns policy</a></p>\n\n{% endif %}\n\n{% unless localization.market.handle == 'eu'\n    or localization.country.iso_code == 'GB'\n    or localization.country.iso_code == 'US'\n    or localization.country.iso_code == 'CA'\n    or localization.country.iso_code == 'AU'\n    or localization.country.iso_code == 'IM'\n    or localization.country.iso_code == 'JE'\n    or localization.country.iso_code == 'CH'\n    or localization.country.iso_code == 'GG' %}\n\n  <p>\n    It looks like we don’t currently ship to {{ localization.country.name }}. But please <a href=\"{{ routes.contact_url }}\" class=\"delivery-link\">get in touch</a> — we’ll do our best to accommodate you.\n  </p>\n\n{% endunless %}\n\n</div>",
+            "page": "",
+            "default_open": false
           }
         }
       },
       "block_order": [
-        "description",
-        "separator",
+        "custom_liquid_yVh9nt",
+        "badges",
+        "reviews_io_reviewsio_rating_output_jYPbNQ",
+        "title",
+        "price",
+        "inventory",
+        "text_B4ArTT",
         "variant_picker",
+        "custom_liquid_3XiHEr",
         "buy_buttons",
-        "share"
+        "klarna_on_site_messaging_app_block_UyeGN8",
+        "pickup_availability",
+        "collapsible_tab_YLLxKj",
+        "collapsible-row-1",
+        "collapsible-row-3"
+      ],
+      "custom_css": [
+        ".loox-rating {margin-top: -1rem;}",
+        ".complementary-products__container .product-card__wrapper .btn--secondary {background-color: transparent;}",
+        ".product__block {--product-blocks-gap: 1.4rem; --product-blocks-gap-large: 3.2rem; margin: var(--product-blocks-gap) 0;}",
+        ".product__tax.rte {display: none;}",
+        ".product__block--collapsible_tab {margin: 0px;}"
       ],
       "settings": {
+        "color_scheme": "scheme-3",
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "gallery_layout": "carousel",
+        "mobile_thumbnails": "show",
+        "enable_image_zoom": false,
+        "enable_video_looping": true,
+        "padding_top": 0,
+        "padding_bottom": 100
       }
     },
-    "sub": {
-      "type": "product-full-width",
-      "disabled": true,
+    "custom_liquid_TUwapW": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
+        "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"3inwubkC5Dohfz6A\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "disabled": true,
+    "rich_text_zAUz4E": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yc8Ew4": {
+          "type": "heading",
+          "settings": {
+            "heading": "As seen in",
+            "heading_size": "h2",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yc8Ew4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "scrolling_promotion_8bGY83": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_6wH6T6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-decor.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_WnQiYq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/apartment-therapy.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_T4ytqb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/living-etc.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_jniqg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-beautiful.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_ny46b3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stylist-magazine.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_dQRTBG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/real-homes.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_6wH6T6",
+        "image_WnQiYq",
+        "image_T4ytqb",
+        "image_jniqg3",
+        "image_ny46b3",
+        "image_dQRTBG"
+      ],
+      "custom_css": [
+        ".scrolling-promotion {max-width: 1400px; margin: 0 auto;}"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "vertical_alignment": "center",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.1,
+        "h_spacing": 100,
+        "v_spacing": 10,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_divider": false,
+        "divider_layout": "vertical",
+        "custom_class": ""
+      }
+    },
+    "image_with_text_MgddA8": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_XLgqVJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "THE TIRED MAN"
+          }
+        },
+        "heading_J7mctK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lets you sink into its plush and comforting embrace after a day.",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_A3Dahr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Considered one of Denmark’s greatest and most influential architects, Mogens Lassen pioneered Danish Functionalism, taking his cues from Bauhaus sensibilities. His interior designs are a natural continuation of his architectural approach and add energy and atmosphere to everyday living spaces and tasks. From decorative objects to larger furniture designs, his designs delicately balance presence without drawing undue attention, finding their natural place in any space.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_iVbnNU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XLgqVJ",
+        "heading_J7mctK",
+        "text_A3Dahr",
+        "button_iVbnNU"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 767.98px) {.image-with-text .image-with-text__inner {padding-top: 4.8rem; }}"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "image": "{{ product.metafields.custom.lifestyle_shot.value }}",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "175369499936cd4de2": {
+      "type": "apps",
+      "blocks": {
+        "covet_instagram_feed_reviews_app_block_product_7zWxU9": {
+          "type": "shopify://apps/covet-instagram-feed-reviews/blocks/app-block-product/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "show_text": true,
+            "hide_title_if_empty": true,
+            "title_text": "Styled by you.",
+            "title_color": "#000000",
+            "title_size": 32,
+            "subtitle_text": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 40,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "covet_instagram_feed_reviews_app_block_product_7zWxU9"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "custom_class": ""
+      }
+    },
+    "1752847188fe45d453": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_polaris_EVXa8T": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "product_review,store_review,questions",
+            "per_page": 4,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#000000",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#d9d9d9",
+            "heading_text_color": "#000000",
+            "heading_font": "helvetica_n4",
+            "body_text_color": "#000000",
+            "badge_icon_color": "#000000",
+            "badge_text_color": "#000000",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_sentiment_analysis": false,
+            "enable_replies": true,
+            "widget_spacing": 0,
+            "capitalise_headers_and_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_polaris_EVXa8T"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "custom_class": ""
+      }
+    },
+    "collapsible_tabs_hM3eRg": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "collapsible_item_9GhzGE": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_zcVzdi": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_jTk9dL": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible tab heading",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_item_9GhzGE",
+        "collapsible_item_zcVzdi",
+        "collapsible_item_jTk9dL"
+      ],
+      "name": "t:sections.collapsible-tabs.presets.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "Gift Card FAQ's",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "column_gap": "large",
+        "row_gap": "inherit",
+        "item_style": "standard",
+        "item_color_scheme": "",
+        "item_heading_font": "heading",
+        "item_heading_size": "h4",
+        "item_icon_size": "extra-large",
+        "padding_top": 50,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     }
   },
   "order": [
     "main",
-    "sub",
-    "recently-viewed"
+    "custom_liquid_TUwapW",
+    "rich_text_zAUz4E",
+    "scrolling_promotion_8bGY83",
+    "image_with_text_MgddA8",
+    "175369499936cd4de2",
+    "1752847188fe45d453",
+    "collapsible_tabs_hM3eRg"
   ]
 }

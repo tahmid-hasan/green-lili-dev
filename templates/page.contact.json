@@ -1,44 +1,168 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "1e006660-42bb-4b91-b83d-6235961dbff7": {
-      "type": "advanced-content",
+    "image_with_text_7bzhgX": {
+      "type": "image-with-text",
       "blocks": {
-        "template--16714588881120__1e006660-42bb-4b91-b83d-6235961dbff7-1671557059abebdbd0-1": {
-          "type": "liquid",
+        "heading_PHyDRA": {
+          "type": "heading",
           "settings": {
-            "code": "<div class=\"rte\"><div class=\"collection-description\">\n<h1>Contact Us<\/h1>\n<p>Contact our team for friendly advice about choosing wall art, product questions or an order you placed — we'd love to hear from you! We reply to most enquiries within 24 hours. <\/p><p>You can also hop on <a href=\"javascript:;\" onclick=\"tidioChatApi.display(true);tidioChatApi.open()\">live chat!*<\/a><\/p>No bots. Just real people.<\/br>*10am - 5pm, Mon - Fri. (UK)<\/p>\n<\/div><\/div>",
-            "width": "100%",
-            "alignment": "center"
+            "heading": "Contact us",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_adRzqe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact our team for friendly advice about choosing wall art for you home, product questions or an order you placed — we'd love to hear from you! <strong>We reply to most enquiries within 24 hours</strong>.</p>",
+            "text_size": "text-base"
           }
         }
       },
       "block_order": [
-        "template--16714588881120__1e006660-42bb-4b91-b83d-6235961dbff7-1671557059abebdbd0-1"
+        "heading_PHyDRA",
+        "text_adRzqe"
       ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/michelle-collins-neutral-anemone-art-above-fire.jpg",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "multicolumn_6bhzkP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_gV97EY": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/chat_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg",
+            "image_width": "medium",
+            "title": "Live chat",
+            "heading_size": "h2",
+            "text": "<p>No bots. Just real people. 10am - 5pm, Mon - Fri. (UK)</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "button_link": "",
+            "mobile_layout": "horizontal"
+          }
+        },
+        "column_gqbpeQ": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/live_help_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg",
+            "image_width": "medium",
+            "title": "Help & FAQ's",
+            "heading_size": "h2",
+            "text": "<p>Got a question? </p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "horizontal"
+          }
+        }
+      },
+      "block_order": [
+        "column_gV97EY",
+        "column_gqbpeQ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "center",
+        "columns_desktop": 2,
+        "column_gap": "medium",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "custom_field_8AQYaC": {
+          "type": "custom_field",
+          "settings": {
+            "field_type": "phone",
+            "heading": "Phone",
+            "placeholder": "Phone",
+            "required": false,
+            "full_width": true,
+            "select_options": "",
+            "checkbox_checked_value": "Yes",
+            "checkbox_uncheck_value": "No",
+            "radio_options": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_field_8AQYaC"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.card-media {border-radius: 0; }}",
+        "@media (max-width: 767px) {.contact-form {padding-block-end: 0; } .contact-form__wrapper {border-radius: 0; margin-left: -1.5rem; margin-right: -1.5rem; } .card-media {padding: 0 1.5rem 4.8rem; }}"
+      ],
       "settings": {
-        "title": "",
-        "text": "",
-        "show_phone": false,
-        "narrow_column": false
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
+        "heading": "Get in touch",
+        "heading_size": "hd3",
+        "heading_highlight_style": "none",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main",
-    "1e006660-42bb-4b91-b83d-6235961dbff7",
-    "form"
+    "image_with_text_7bzhgX",
+    "multicolumn_6bhzkP",
+    "form",
+    "main"
   ]
 }

@@ -1,356 +1,647 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "02d767f2-06ce-4943-849c-037d2db33e92": {
-      "type": "hero-video",
+    "image_with_text_overlay_Hy88bE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_4PVM7n": {
+          "type": "heading",
+          "settings": {
+            "heading": "Modern abstract wall art. <em>Designed for slow spaces</em>",
+            "heading_size": "hd2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_Kbd8JE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Large canvas wall art that makes a quiet statement. Inspired by nature, designed for slow living. Calm, considered, and made to <em>feel at home</em>.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_cHJAyU": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE LARGE CANVAS ART",
+            "button_link": "shopify://collections/large-framed-canvas-wall-art",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4PVM7n",
+        "text_Kbd8JE",
+        "button_cHJAyU"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/DSC08269.jpg",
+        "desktop_height": "large",
+        "overlay_opacity": 25,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-left",
+        "content_alignment": "left",
+        "mobile_height": "auto",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "image_with_text_888gPG": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_gmaqzk": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "★★★★★ 4.9 Based on 1,500+ reviews"
+          }
+        },
+        "heading_krWXpj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Modern abstract wall art. <em>Designed for slow spaces</em>",
+            "heading_size": "hd2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_zJUGTj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Large canvas wall art that makes a quiet statement. Inspired by nature, designed for slow living. Calm, considered, and made to <em>feel at home</em>.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_VYWn9P": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE LARGE CANVAS ART",
+            "button_link": "shopify://collections/large-framed-canvas-wall-art",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gmaqzk",
+        "heading_krWXpj",
+        "text_zJUGTj",
+        "button_VYWn9P"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/DSC08269.jpg",
+        "image_height": "extra-medium",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "horizontal",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_xJKEwR": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"YNbqxJRyzerX0ViQ\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
+    },
+    "scrolling_promotion_Y7AXtc": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_Pazncc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-decor.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_GdHy7N": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/apartment-therapy.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_dhK4ye": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-beautiful.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_Y4Lzrh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/real-homes.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_4DMTFe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/living-etc.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        },
+        "image_iqHR74": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stylist-magazine.png",
+            "image_height": 120,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_Pazncc",
+        "image_GdHy7N",
+        "image_dhK4ye",
+        "image_Y4Lzrh",
+        "image_4DMTFe",
+        "image_iqHR74"
+      ],
       "custom_css": [
-        ".animation-cropper {overflow: visible;}",
-        ".hero {background: white;}"
+        ".scrolling-promotion {max-width: 1400px; margin: 0 auto;}"
       ],
+      "name": "t:sections.scrolling-promotion.presets.name",
       "settings": {
-        "title": "Find your new favourite artwork",
-        "title_size": 80,
-        "subheading": "",
-        "link_text": "SHOP LARGE CANVAS ART",
-        "link": "shopify:\/\/collections\/large-framed-canvas-wall-art",
-        "color_accent": "#424842",
-        "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cc27e476c62d4d2fb5cdd88a701db5ac.mp4",
-        "overlay_opacity": 0,
-        "section_height": "650px",
-        "mobile_height": "auto"
+        "color_scheme": "scheme-3",
+        "vertical_alignment": "center",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.1,
+        "h_spacing": 100,
+        "v_spacing": 10,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_divider": false,
+        "divider_layout": "vertical",
+        "custom_class": ""
       }
     },
-    "advanced_content_9ybEjw": {
-      "type": "advanced-content",
+    "collection_list_Jbx97m": {
+      "type": "collection-list",
       "blocks": {
-        "liquid_MQw9D9": {
-          "type": "liquid",
+        "featured_collection_g8EbUF": {
+          "type": "featured_collection",
           "settings": {
-            "code": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"PqOHeMksE8DjTVup\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ><\/div>\n<script src='\/\/widget.reviews.io\/modern-widgets\/rating-bar.js'><\/script>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_MQw9D9"
-      ],
-      "settings": {
-        "full_width": true,
-        "space_around": false,
-        "lazyload_images": false
-      }
-    },
-    "f9b42219-17b1-4531-92c0-63610a19ca91": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-heading-1": {
-          "type": "heading",
-          "settings": {
-            "title": ""
-          }
-        },
-        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-text-1": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": false,
-            "text": "<h1>Modern wall art for slow, feel-good spaces<\/h1><p>At Green Lili, we design modern abstract wall art for cosy spaces that inspire & invite — a place to relax that feels like home. Our collections of <a href=\"https:\/\/green-lili.myshopify.com\/collections\/art-prints\">framed art prints<\/a> and <a href=\"https:\/\/green-lili.myshopify.com\/collections\/large-framed-canvas-wall-art\">large canvas wall art<\/a> celebrate timeless design through laid-back styles and nature-inspired colour palettes, creating feel-good spaces that embrace slow living.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-heading-1",
-        "template--16755998327008__f9b42219-17b1-4531-92c0-63610a19ca91-text-1"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": false,
-        "divider": false
-      }
-    },
-    "featured_carousel_KVjbKc": {
-      "type": "featured-carousel",
-      "blocks": {
-        "collection_list_d8Dpc4": {
-          "type": "collection_list",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/ABSTRACT-ART_52696d1a-96d2-4976-904e-ee5c13e962ea.jpg",
-            "title": "Abstract Wall Art",
-            "text": "<p>A piece for every space. <\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/abstract-wall-art"
-          }
-        },
-        "collection_list_JB8NLN": {
-          "type": "collection_list",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/FLORAL-BOTANICAL_b853f3fe-fbf6-4835-8f79-8d7f7be7d3ad.jpg",
-            "title": "Florals & Botanicals",
-            "text": "<p>A refreshing bunch. <\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/floral-botanical-wall-art"
-          }
-        },
-        "collection_list_nTAmjk": {
-          "type": "collection_list",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/LANDSCAPES-SEASCAPES_da5088cd-5cea-4238-a15c-107af9e7227c.jpg",
-            "title": "Landscapes & Seascapes",
-            "text": "<p>Let your mind wonder. <\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/abstract-landscape-wall-art"
-          }
-        },
-        "collection_list_waGrM4": {
-          "type": "collection_list",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/WALLART-SETS.jpg",
-            "title": "Boho Wall Art",
-            "text": "<p>Packed with personality.<\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/bohemian-wall-art"
-          }
-        },
-        "collection_list_GDpQAJ": {
-          "type": "collection_list",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/NEUTRAL-ART_cd26ba42-5905-4da7-9d79-c67108aec240.jpg",
+            "collection": "neutral-wall-art",
+            "image": "shopify://shop_images/neutral-wall-art.webp",
             "title": "Neutral Wall Art",
-            "text": "<p>Simple and timeless.<\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/neutral-wall-art"
+            "description": "<p>Simple & Timeless</p>"
           }
         },
-        "collection_list_NfpQik": {
-          "type": "collection_list",
+        "featured_collection_VRdbRe": {
+          "type": "featured_collection",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/RECONNECT-STAYGROUNDED.jpg",
-            "title": "Wall Art Sets",
-            "text": "<p>Born to hang together.<\/p>",
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/wall-art-sets"
+            "collection": "abstract-landscape-wall-art",
+            "image": "shopify://shop_images/landscapes-seascapes.webp",
+            "title": "Landscapes & Seascapes",
+            "description": "<p>Let your mind wonder. </p>"
+          }
+        },
+        "featured_collection_CdV3dF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wall-art-sets",
+            "image": "shopify://shop_images/WALLART-SETS.jpg",
+            "title": "Wall art sets",
+            "description": "<p>Born to hang together</p>"
+          }
+        },
+        "featured_collection_8EcRFr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shapes-and-forms",
+            "image": "shopify://shop_images/shapes-forms.webp",
+            "title": "Shapes & Forms",
+            "description": "<p>Playful energy, effortless style.</p>"
+          }
+        },
+        "featured_collection_LVRJyK": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "floral-botanical-wall-art",
+            "image": "shopify://shop_images/FLORAL-BOTANICAL_b853f3fe-fbf6-4835-8f79-8d7f7be7d3ad.jpg",
+            "title": "Florals & Botanicals",
+            "description": "<p>A refreshing bunch</p>"
           }
         }
       },
       "block_order": [
-        "collection_list_d8Dpc4",
-        "collection_list_JB8NLN",
-        "collection_list_nTAmjk",
-        "collection_list_waGrM4",
-        "collection_list_GDpQAJ",
-        "collection_list_NfpQik"
+        "featured_collection_g8EbUF",
+        "featured_collection_VRdbRe",
+        "featured_collection_CdV3dF",
+        "featured_collection_8EcRFr",
+        "featured_collection_LVRJyK"
+      ],
+      "custom_css": [
+        "p {max-width: 1000px; margin: 0 auto;}"
       ],
       "settings": {
-        "full_width": false,
-        "heading": "",
+        "color_scheme": "scheme-3",
+        "layout": "standard",
         "subheading": "",
-        "carousel_type": "collection_list",
-        "items_per_row": 3,
-        "aspect_ratio": "portrait",
-        "button_text": "",
-        "button_link": "shopify:\/\/collections\/all",
-        "button_position": "bottom",
-        "divider": false
+        "heading": "Find your new<em> favourite artwork</em>",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "description": "<p>Set the vibe by choosing artwork that reflects your style, tells a story and packs personality into your every day. Whether you're decorating a bedroom, living room, a new apartment, or your first home — our framed wall art is available in colours and sizes to fit your interior.</p>",
+        "text_size": "text-inherit",
+        "card_color_inherited": false,
+        "show_product_count": false,
+        "show_icon": false,
+        "card_style": "style-1",
+        "card_image_ratio": "adapt",
+        "content_alignment": "left",
+        "columns_desktop": 4,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "featured_carousel_AfUjfM": {
-      "type": "featured-carousel",
+    "product_tabs_jhb9aJ": {
+      "type": "product-tabs",
       "blocks": {
-        "product_list_nbKHmr": {
-          "type": "product_list",
+        "tab_d4xCmQ": {
+          "type": "tab",
           "settings": {
+            "title": "New arrivals",
             "collection": "new-arrivals",
-            "products_to_show": 10
+            "show_complementary_products": "none"
+          }
+        },
+        "tab_XDJLTi": {
+          "type": "tab",
+          "settings": {
+            "title": "BEST SELLERS",
+            "collection": "best-sellers",
+            "show_complementary_products": "none"
           }
         }
       },
       "block_order": [
-        "product_list_nbKHmr"
+        "tab_d4xCmQ",
+        "tab_XDJLTi"
+      ],
+      "custom_css": [
+        ".f-grid--row-gap-medium {--row-gap-mobile: 2.4rem;}",
+        "@media (min-width: 768px) {.tabs__header {--tab-spacing: 4rem; }}"
       ],
       "settings": {
-        "full_width": false,
-        "heading": "New Arrivals",
+        "color_scheme": "",
+        "header_layout": "horizontal",
+        "heading": "Our picks <em>for you</em>",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "limit": 6,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "grid_layout": "standard",
+        "pcard_image_ratio": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "tabs_nav_style": "design-1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "rich_text_c9VbXH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8G694q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Backed by more than 1400 5-star reviews",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8G694q"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_3Fkj8n": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script src=\"https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2025081316\"></script>\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/css/widgets/carousel-widget.css?_t=2025081316\">\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/iconfont/reviewsio-icons/style.css?_t=2025081316\">\n<div id=\"reviewsio-carousel-widget\"></div>\n<script>\n\nnew carouselInlineWidget('reviewsio-carousel-widget',{\n      /*Your REVIEWS.io account ID:*/\n      store: 'www.greenlili.com',\n      sku: '',\n      lang: 'en',\n      carousel_type: 'topHeader',\n      styles_carousel: 'CarouselWidget--topHeader--withcards',\n\n      /*Widget settings:*/\n      options:{\n        general:{\n          /*What reviews should the widget display? Available options: company, product, third_party. You can choose one type or multiple separated by comma.*/\n          review_type: 'company, product',\n          /*Minimum number of reviews required for widget to be displayed*/\n          min_reviews: '1',\n          /*Maximum number of reviews to include in the carousel widget.*/\n          max_reviews: '20',\n          address_format: 'CITY, COUNTRY',\n          /*Carousel auto-scrolling speed. 3000 = 3 seconds. If you want to disable auto-scroll, set this value to false.*/\n          enable_auto_scroll: 10000,\n        },\n        header:{\n          /*Show overall rating stars*/\n          enable_overall_stars: true,\n          rating_decimal_places: 1,\n        },\n        reviews: {\n          /*Show customer name*/\n          enable_customer_name: true,\n          /*Show customer location*/\n          enable_customer_location: true,\n          /*Show \"verified review\" badge*/\n          enable_verified_badge: true,\n          /*Show \"verified subscriber\" badge*/\n          enable_subscriber_badge: true,\n          /*Show \"I recommend this product\" badge (Only for product reviews)*/\n          enable_recommends_badge: true,\n          /*Show photos attached to reviews*/\n          enable_photos: true,\n          /*Show videos attached to reviews*/\n          enable_videos: true,\n          /*Show when review was written*/\n          enable_review_date: true,\n          /*Hide reviews written by the same customer (This may occur when customer reviews multiple products)*/\n          disable_same_customer: true,\n          /*Minimum star rating*/\n          min_review_percent: 4,\n          /*Show 3rd party review source*/\n          third_party_source: true,\n          /*Hide reviews without comments (still shows if review has a photo)*/\n          hide_empty_reviews: true,\n          /*Show product name*/\n          enable_product_name: true,\n          /*Show only reviews which have specific tags (multiple semicolon separated tags allowed i.e tag1;tag2)*/\n          tags: \"\",\n          /*Show branch, only one input*/\n          branch: \"\",\n          enable_branch_name: false,\n        },\n        popups: {\n          /*Make review items clickable (When they are clicked, a popup appears with more information about a customer and review)*/\n          enable_review_popups:  true,\n          /*Show \"was this review helpful\" buttons*/\n          enable_helpful_buttons: true,\n          /*Show how many times review was upvoted as helpful*/\n          enable_helpful_count: true,\n          /*Show share buttons*/\n          enable_share_buttons: true,\n        },\n    },\n    translations: {\n      verified_customer:  \"Verified Customer\",\n    },\n    styles:{\n      /*Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.*/\n      '--base-font-size': '16px',\n      '--base-maxwidth':'100%',\n\n      /*Logo styles:*/\n      '--reviewsio-logo-style':'var(--logo-normal)',\n\n      /*Star styles:*/\n      '--common-star-color':' #0E1311',\n      '--common-star-disabled-color':' rgba(0,0,0,0.25)',\n      '--medium-star-size':' 22px',\n      '--small-star-size':'19px', /*Modal*/\n      '--x-small-star-size':'16px',\n      '--x-small-star-display':'inline-flex',\n\n      /*Header styles:*/\n      '--header-order':'1',\n      '--header-width':'160px',\n      '--header-bg-start-color':'transparent',\n      '--header-bg-end-color':'transparent',\n      '--header-gradient-direction':'135deg',\n      '--header-padding':'0.5em',\n      '--header-border-width':'0px',\n      '--header-border-color':'rgba(0,0,0,0.1)',\n      '--header-border-radius':'0px',\n      '--header-shadow-size':'0px',\n      '--header-shadow-color':'rgba(0, 0, 0, 0.1)',\n\n      /*Header content styles:*/\n      '--header-star-color':'inherit',\n      '--header-disabled-star-color':'inherit',\n      '--header-heading-text-color':'inherit',\n      '--header-heading-font-size':'inherit',\n      '--header-heading-font-weight':'inherit',\n      '--header-heading-line-height':'inherit',\n      '--header-heading-text-transform':'inherit',\n      '--header-subheading-text-color':'inherit',\n      '--header-subheading-font-size':'inherit',\n      '--header-subheading-font-weight':'inherit',\n      '--header-subheading-line-height':'inherit',\n      '--header-subheading-text-transform':'inherit',\n\n      /*Review item styles:*/\n      '--item-maximum-columns':'5',/*Must be 3 or larger*/\n      '--item-background-start-color':'#ffffff',\n      '--item-background-end-color':'#ffffff',\n      '--item-gradient-direction':'135deg',\n      '--item-padding':'1.5em',\n      '--item-border-width':'0px',\n      '--item-border-color':'rgba(0,0,0,0.1)',\n      '--item-border-radius':'0px',\n      '--item-shadow-size':'10px',\n      '--item-shadow-color':'rgba(0,0,0,0.05)',\n\n      /*Heading styles:*/\n      '--heading-text-color':' #0E1311',\n      '--heading-text-font-weight':' 600',\n      '--heading-text-font-family':' inherit',\n      '--heading-text-line-height':' 1.4',\n      '--heading-text-letter-spacing':'0',\n      '--heading-text-transform':'none',\n\n      /*Body text styles:*/\n      '--body-text-color':' #0E1311',\n      '--body-text-font-weight':'400',\n      '--body-text-font-family':' inherit',\n      '--body-text-line-height':' 1.4',\n      '--body-text-letter-spacing':'0',\n      '--body-text-transform':'none',\n\n      /*Scroll button styles:*/\n      '--scroll-button-icon-color':'#0E1311',\n      '--scroll-button-icon-size':'24px',\n      '--scroll-button-bg-color':'transparent',\n\n      '--scroll-button-border-width':'0px',\n      '--scroll-button-border-color':'rgba(0,0,0,0.1)',\n\n      '--scroll-button-border-radius':'60px',\n      '--scroll-button-shadow-size':'0px',\n      '--scroll-button-shadow-color':'rgba(0,0,0,0.1)',\n      '--scroll-button-horizontal-position':'0px',\n      '--scroll-button-vertical-position':'0px',\n\n      /*Badge styles:*/\n      '--badge-icon-color':'#0E1311',\n      '--badge-icon-font-size':'15px',\n      '--badge-text-color':'#0E1311',\n      '--badge-text-font-size':'inherit',\n      '--badge-text-letter-spacing':'inherit',\n      '--badge-text-transform':'inherit',\n\n      /*Author styles:*/\n      '--author-font-size':'inherit',\n      '--author-font-weight':'inherit',\n      '--author-text-transform':'inherit',\n\n      /*Product photo or review photo styles:*/\n      '--photo-video-thumbnail-size':'60px',\n      '--photo-video-thumbnail-border-radius':'0px',\n\n      /*Popup styles:*/\n      '--popup-backdrop-color':'rgba(0,0,0,0.75)',\n      '--popup-color':'#ffffff',\n      '--popup-star-color':'inherit',\n      '--popup-disabled-star-color':'inherit',\n      '--popup-heading-text-color':'inherit',\n      '--popup-body-text-color':'inherit',\n      '--popup-badge-icon-color':'inherit',\n      '--popup-badge-icon-font-size':'19px',\n      '--popup-badge-text-color':'inherit',\n      '--popup-badge-text-font-size':'14px',\n      '--popup-border-width':'0px',\n      '--popup-border-color':'rgba(0,0,0,0.1)',\n      '--popup-border-radius':'0px',\n      '--popup-shadow-size':'0px',\n      '--popup-shadow-color':'rgba(0,0,0,0.1)',\n      '--popup-icon-color':'#0E1311',\n\n      /*Tooltip styles:*/\n      '--tooltip-bg-color':'#0E1311',\n      '--tooltip-text-color':'#ffffff',\n    },\n});\n\n</script>",
+        "color_scheme": "scheme-3",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
+    },
+    "video_with_text_ANbiWf": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_cnkQQz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Modern abstract wall art. <em>Designed for slow spaces. </em>",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_LdRieB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Large canvas wall art that makes a quiet statement. Inspired by nature, designed for slow living. Calm, considered, and made to <em>feel at home</em>.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_aLXmKf": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE LARGE CANVAS ART",
+            "button_link": "shopify://collections/large-framed-canvas-wall-art",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cnkQQz",
+        "text_LdRieB",
+        "button_aLXmKf"
+      ],
+      "disabled": true,
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "video": "shopify://files/videos/homepage-3-4.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_ratio": "1/1",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "video_placement": "second",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 10,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_content_K7Wztp": {
+      "type": "custom-content",
+      "blocks": {
+        "text_bgeUpk": {
+          "type": "text",
+          "settings": {
+            "heading": "Inspired by nature, <em>designed for slow living.</em>",
+            "heading_size": "h1",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "<p>At Green Lili, we design modern abstract wall art for cosy spaces that inspire & invite — a place to relax that feels like home. Our collections of large canvas wall art and framed art prints celebrate timeless design through laid-back styles and nature-inspired colour palettes, creating feel-good spaces that embrace slow living.</p>",
+            "text_size": "text-base",
+            "button_label": "ABOUT US",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "btn--primary",
+            "content_alignment": "left",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_aGHCzW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BA0076-ROOM-14.jpg",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_bgeUpk",
+        "image_aGHCzW"
+      ],
+      "name": "t:sections.custom-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-3",
+        "enable_sticky_column": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
         "subheading": "",
-        "carousel_type": "product_list",
-        "items_per_row": 3,
-        "aspect_ratio": "square",
-        "button_text": "Shop New Arrivals",
-        "button_link": "shopify:\/\/collections\/new-arrivals",
-        "button_position": "bottom",
-        "divider": false
+        "description": "",
+        "column_gap": "extra-large",
+        "row_gap": "large",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "2b847553-ff78-4c74-8fca-6e7e9c5b6410": {
-      "type": "advanced-content",
-      "blocks": {
-        "template--16755998327008__2b847553-ff78-4c74-8fca-6e7e9c5b6410-1675938138a49050c3-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "<div class=\"press-holder\"><p class=\"press-quote\">\"{{ 'Homepage.Quote.Evening_Standard' | t }}\"<\/p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2271\/6167\/files\/Evening_Standard_logo.png?v=1675938816\"><\/div>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--16755998327008__2b847553-ff78-4c74-8fca-6e7e9c5b6410-1675938138a49050c3-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "space_around": true,
-        "lazyload_images": true
-      }
-    },
-    "featured_carousel_zhy7Pq": {
-      "type": "featured-carousel",
-      "blocks": {
-        "product_list_ef7qaY": {
-          "type": "product_list",
-          "settings": {
-            "collection": "all",
-            "products_to_show": 10
-          }
-        }
-      },
-      "block_order": [
-        "product_list_ef7qaY"
-      ],
-      "settings": {
-        "full_width": false,
-        "heading": "Best Sellers",
-        "subheading": "Find your new favourite wall art.",
-        "carousel_type": "product_list",
-        "items_per_row": 3,
-        "aspect_ratio": "square",
-        "button_text": "Shop Now",
-        "button_link": "shopify:\/\/collections\/all",
-        "button_position": "bottom",
-        "divider": false
-      }
-    },
-    "933f0b2c-8994-4dfc-a74f-bd2021de4353": {
+    "rich_text_xPXGet": {
       "type": "rich-text",
       "blocks": {
-        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-heading-1": {
+        "heading_tHn4me": {
           "type": "heading",
           "settings": {
-            "title": "Discover new artwork for every room in the home"
+            "heading": "\"Best affordable art for making a statement\"",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tHn4me"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_Rrtfrj": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {max-width: 180px; display: block; margin: 0 auto;}"
+      ],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/2271/6167/files/Evening_Standard_logo.png?v=1675938816\">",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 80,
+        "custom_class": ""
+      }
+    },
+    "image_with_text_amEirX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xVRGMg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Art for interior designers, home stagers & developers.",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
           }
         },
-        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-text-1": {
+        "text_nJftQP": {
           "type": "text",
           "settings": {
-            "enlarge_text": false,
-            "text": "<p>Set the vibe by choosing artwork that reflects your style, tells a story and packs personality into your every day. Whether you're decorating a bedroom, living room, a new apartment, or your first home — our framed wall art is available in colours and sizes to fit your interior.<br\/> <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-heading-1",
-        "template--16755998327008__933f0b2c-8994-4dfc-a74f-bd2021de4353-text-1"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
-    "promo-grid": {
-      "type": "promo-grid",
-      "blocks": {
-        "promo-0": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "",
-            "heading": "Large Canvas Wall Art",
-            "textarea": "",
-            "cta_text1": "Shop Large Canvas Art",
-            "cta_link1": "shopify:\/\/collections\/large-framed-canvas-wall-art",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/framed-canvas-wall-art.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 800,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#272b2a",
-            "boxed": false,
-            "framed": false
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base"
           }
         },
-        "e11afab5-8e1b-4de8-bbb6-d6efd7230cb3": {
-          "type": "advanced",
+        "button_NQnBWg": {
+          "type": "button",
           "settings": {
-            "subheading": "",
-            "heading": "Framed Art Prints",
-            "textarea": "",
-            "cta_text1": "Shop Art Prints",
-            "cta_link1": "shopify:\/\/collections\/art-prints",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/framed-art-prints.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 700,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-left",
-            "color_accent": "#272b2a",
-            "boxed": false,
-            "framed": false
+            "button_label": "OPEN A TRADE ACCOUNT",
+            "button_link": "shopify://pages/art-for-trade",
+            "button_style": "btn--primary"
           }
         }
       },
       "block_order": [
-        "promo-0",
-        "e11afab5-8e1b-4de8-bbb6-d6efd7230cb3"
+        "heading_xVRGMg",
+        "text_nJftQP",
+        "button_NQnBWg"
       ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "full_width": false,
-        "gutter_size": 30,
-        "space_above": false,
-        "space_below": false,
-        "lazyload_images": true
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "image": "shopify://shop_images/deep-connection-canvas-dining-room.jpg",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "292dba62-5df5-4664-b113-ec848992da19": {
+    "rich_text_JRjCiE": {
       "type": "rich-text",
       "blocks": {
-        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-heading-1": {
+        "heading_mn9MRy": {
           "type": "heading",
           "settings": {
-            "title": "Come hang with us"
+            "heading": "Come hang with us",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
           }
         },
-        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-text-1": {
+        "text_NwUHbL": {
           "type": "text",
           "settings": {
-            "enlarge_text": false,
-            "text": "<p><a href=\"https:\/\/www.instagram.com\/greenliliart\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/greenliliart\">@greenliliart<\/a><\/p>"
+            "text": "<p>@greenliliart</p>",
+            "text_size": "text-base"
           }
         }
       },
       "block_order": [
-        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-heading-1",
-        "template--16755998327008__292dba62-5df5-4664-b113-ec848992da19-text-1"
+        "heading_mn9MRy",
+        "text_NwUHbL"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
-    "1671461419a287332f": {
+    "175370727213b96030": {
       "type": "apps",
       "blocks": {
-        "223e4eee-ce33-4d0f-96d3-718eea711efe": {
-          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+        "covet_instagram_feed_reviews_app_block_standard_jTFmHT": {
+          "type": "shopify://apps/covet-instagram-feed-reviews/blocks/app-block-standard/577480e8-b5be-4890-968c-06ccfb458c74",
           "settings": {
             "gallery_embed_id": 109660,
             "show_text": false,
-            "title_text": "",
-            "title_color": "#333333",
-            "title_size": 24,
+            "title_text": "Covet.pics gallery",
+            "title_color": "#000000",
+            "title_size": 22,
             "subtitle_text": "",
             "subtitle_color": "#000000",
             "subtitle_size": 14,
@@ -362,92 +653,91 @@
         }
       },
       "block_order": [
-        "223e4eee-ce33-4d0f-96d3-718eea711efe"
-      ],
-      "custom_css": [
-
+        "covet_instagram_feed_reviews_app_block_standard_jTFmHT"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": false
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": ""
       }
     },
-    "4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c": {
-      "type": "logo-list",
+    "multicolumn_7rDGcU": {
+      "type": "multicolumn",
       "blocks": {
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-0": {
-          "type": "logo_image",
+        "column_JbNpxT": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Elle-decor-logo.jpg",
-            "link": ""
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Free,<em> fast shipping</em>",
+            "heading_size": "h4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
           }
         },
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-1": {
-          "type": "logo_image",
+        "column_HPACrn": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/living-etc-logo.jpg",
-            "link": ""
-          }
-        },
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-2": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/real-homes.jpg",
-            "link": ""
-          }
-        },
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ideal-home-logo.jpg",
-            "link": ""
-          }
-        },
-        "cf2e0b0f-1124-4baf-93e9-000f89d79e07": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/house-beautiful.jpg",
-            "link": ""
-          }
-        },
-        "bc2fcf90-1682-4d3d-9b63-333b8b55b86d": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/stylist-logo.jpg",
-            "link": ""
+            "show_image": true,
+            "image_width": "medium",
+            "title": "<em>Sustainably</em> sourced materials",
+            "heading_size": "h4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
           }
         }
       },
       "block_order": [
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-0",
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-1",
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-2",
-        "template--16714588782816__4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c-1671460672231bda5c-3",
-        "cf2e0b0f-1124-4baf-93e9-000f89d79e07",
-        "bc2fcf90-1682-4d3d-9b63-333b8b55b86d"
+        "column_JbNpxT",
+        "column_HPACrn"
       ],
-      "custom_css": [
-
-      ],
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "As seen in",
-        "logo_opacity": 76,
-        "divider": false
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 4,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     }
   },
   "order": [
-    "02d767f2-06ce-4943-849c-037d2db33e92",
-    "advanced_content_9ybEjw",
-    "f9b42219-17b1-4531-92c0-63610a19ca91",
-    "featured_carousel_KVjbKc",
-    "featured_carousel_AfUjfM",
-    "2b847553-ff78-4c74-8fca-6e7e9c5b6410",
-    "featured_carousel_zhy7Pq",
-    "933f0b2c-8994-4dfc-a74f-bd2021de4353",
-    "promo-grid",
-    "292dba62-5df5-4664-b113-ec848992da19",
-    "1671461419a287332f",
-    "4e7c9194-a7d2-4d07-ad65-6080c7e4ef9c"
+    "image_with_text_overlay_Hy88bE",
+    "image_with_text_888gPG",
+    "custom_liquid_xJKEwR",
+    "scrolling_promotion_Y7AXtc",
+    "collection_list_Jbx97m",
+    "product_tabs_jhb9aJ",
+    "rich_text_c9VbXH",
+    "custom_liquid_3Fkj8n",
+    "video_with_text_ANbiWf",
+    "custom_content_K7Wztp",
+    "rich_text_xPXGet",
+    "custom_liquid_Rrtfrj",
+    "image_with_text_amEirX",
+    "rich_text_JRjCiE",
+    "175370727213b96030",
+    "multicolumn_7rDGcU"
   ]
 }

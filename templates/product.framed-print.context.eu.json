@@ -1,8 +1,0 @@
-{
-  "parent": "product.framed-print.json",
-  "context": {
-    "market": "eu"
-  },
-  "sections": {
-  }
-}

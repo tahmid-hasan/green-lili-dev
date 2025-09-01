@@ -1,32 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
+    "main-cart": {
       "type": "main-cart",
+      "blocks": {
+        "free_shipping_goal_W8bXKE": {
+          "type": "free_shipping_goal",
+          "settings": {}
+        },
+        "cart_note_qpALBg": {
+          "type": "cart_note",
+          "settings": {}
+        },
+        "cart_shipping_rate_bnhQBk": {
+          "type": "cart_shipping_rate",
+          "settings": {}
+        },
+        "subtotal_LeUiVY": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons_drwbch": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "free_shipping_goal_W8bXKE",
+        "cart_note_qpALBg",
+        "cart_shipping_rate_bnhQBk",
+        "subtotal_LeUiVY",
+        "buttons_drwbch"
+      ],
       "settings": {
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {
-        "recent_count": 5
-      }
-    },
-    "320eeff1-7e52-4737-a0c6-2bfa379db464": {
+    "featured_collection_Y4GDWA": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best Sellers",
-        "home_featured_products": "all",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "You may also like",
+        "heading_size": "h1",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "limit": 4,
+        "columns": 4,
+        "column_gap": "extra-small",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed"
       }
     }
   },
   "order": [
-    "main",
-    "recently-viewed",
-    "320eeff1-7e52-4737-a0c6-2bfa379db464"
+    "main-cart",
+    "featured_collection_Y4GDWA"
   ]
 }
