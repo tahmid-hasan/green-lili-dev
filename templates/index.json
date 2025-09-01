@@ -119,6 +119,7 @@
     },
     "custom_liquid_xJKEwR": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"YNbqxJRyzerX0ViQ\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
@@ -450,55 +451,50 @@
         "custom_class": ""
       }
     },
-    "custom_content_K7Wztp": {
-      "type": "custom-content",
+    "image_with_text_9QGHTx": {
+      "type": "image-with-text",
       "blocks": {
-        "text_bgeUpk": {
-          "type": "text",
+        "heading_pw6ceV": {
+          "type": "heading",
           "settings": {
             "heading": "Inspired by nature, <em>designed for slow living.</em>",
-            "heading_size": "h1",
-            "heading_highlight_style": "none",
-            "subheading": "",
-            "description": "<p>At Green Lili, we design modern abstract wall art for cosy spaces that inspire & invite — a place to relax that feels like home. Our collections of large canvas wall art and framed art prints celebrate timeless design through laid-back styles and nature-inspired colour palettes, creating feel-good spaces that embrace slow living.</p>",
-            "text_size": "text-base",
-            "button_label": "ABOUT US",
-            "button_link": "shopify://pages/about-us",
-            "button_style": "btn--primary",
-            "content_alignment": "left",
-            "width": "50%",
-            "alignment": "center",
-            "block_custom_class": ""
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
           }
         },
-        "image_aGHCzW": {
-          "type": "image",
+        "text_JgWDiB": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/BA0076-ROOM-14.jpg",
-            "width": "50%",
-            "alignment": "center",
-            "block_custom_class": ""
+            "text": "<p>At Green Lili, we design modern abstract wall art for cosy spaces that inspire & invite — a place to relax that feels like home. Our collections of large canvas wall art celebrate timeless design through laid-back styles and nature-inspired colour palettes, creating feel-good spaces that embrace slow living.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_nmbRUD": {
+          "type": "button",
+          "settings": {
+            "button_label": "ABOUT US",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "btn--primary"
           }
         }
       },
       "block_order": [
-        "text_bgeUpk",
-        "image_aGHCzW"
+        "heading_pw6ceV",
+        "text_JgWDiB",
+        "button_nmbRUD"
       ],
-      "name": "t:sections.custom-content.name",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "container": "fixed",
+        "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-3",
-        "enable_sticky_column": false,
-        "heading": "",
-        "heading_size": "h1",
-        "heading_highlight_style": "none",
-        "subheading": "",
-        "description": "",
-        "column_gap": "extra-large",
-        "row_gap": "large",
-        "swipe_on_mobile": false,
-        "columns_mobile": "1",
+        "image": "shopify://shop_images/BA0076-ROOM-14.jpg",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
         "padding_top": 50,
         "padding_bottom": 50,
         "show_section_divider": false,
@@ -732,7 +728,7 @@
     "rich_text_c9VbXH",
     "custom_liquid_3Fkj8n",
     "video_with_text_ANbiWf",
-    "custom_content_K7Wztp",
+    "image_with_text_9QGHTx",
     "rich_text_xPXGet",
     "custom_liquid_Rrtfrj",
     "image_with_text_amEirX",

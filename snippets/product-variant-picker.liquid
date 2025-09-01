@@ -114,7 +114,7 @@
           {%- if size_chart_content != blank and attach_size_chart -%}
             <button
               class="open-size-chart no-js-hidden btn--link tracking-normal"
-              aria-controls="SizeChartDrawer"
+              aria-controls="{{ size_chart_modal_id }}"
               aria-haspopup="dialog"
             >
               {{ 'products.product.open_size_chart' | t }}
