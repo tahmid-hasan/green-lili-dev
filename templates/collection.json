@@ -97,6 +97,17 @@
         "padding_bottom": 60
       }
     },
+    "custom_liquid_hW6dya": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"YNbqxJRyzerX0ViQ\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
     "custom_content_RecVe9": {
       "type": "custom-content",
       "blocks": {
@@ -283,6 +294,7 @@
   "order": [
     "image_with_text_jwAncU",
     "banner",
+    "custom_liquid_hW6dya",
     "custom_content_RecVe9",
     "product-grid"
   ]

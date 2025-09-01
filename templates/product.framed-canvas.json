@@ -766,38 +766,6 @@
         "divider_width": "fixed",
         "custom_class": ""
       }
-    },
-    "size_chart_j4wgU8": {
-      "type": "size-chart",
-      "blocks": {
-        "size_details_cx9qpF": {
-          "type": "size_details",
-          "settings": {
-            "title": "Size details",
-            "image": "{{ product.metafields.custom.size_chart_image.value }}",
-            "content": "{{ product.metafields.custom.dynamic_size_chart.value }}",
-            "portrait_image": "shopify://shop_images/PORTRAIT-CANVAS-SIZES.webp",
-            "page_portrait": "size-chart-portrait-landscape",
-            "square_image": "shopify://shop_images/SQUARE-CANVAS-SIZES-SCALE.webp",
-            "page_square": "size-chart-square"
-          }
-        },
-        "size_guide_gFzAtJ": {
-          "type": "size_guide",
-          "settings": {
-            "title": "How to choose your size",
-            "content": "how-to-choose-your-size"
-          }
-        }
-      },
-      "block_order": [
-        "size_details_cx9qpF",
-        "size_guide_gFzAtJ"
-      ],
-      "name": "Size Chart",
-      "settings": {
-        "heading": ""
-      }
     }
   },
   "order": [
@@ -811,7 +779,6 @@
     "image_with_text_MgddA8",
     "175369499936cd4de2",
     "1752847188fe45d453",
-    "collapsible_tabs_hM3eRg",
-    "size_chart_j4wgU8"
+    "collapsible_tabs_hM3eRg"
   ]
 }
