@@ -649,16 +649,27 @@ class ModalComponent extends HTMLElement {
   get focusElement() {
     return this.querySelector('button');
   }
+
+  get isSizeChartDrawer() {
+    return this.tagName.toLowerCase() === 'size-chart-drawer';
+  }
   connectedCallback() {
     // Initialize the AbortController
     this.abortController = new AbortController();
 
     // Add click event listeners to all controls
-    this.controls.forEach((button) => {
-      button.addEventListener('click', this.onButtonClick.bind(this), {
-        signal: this.abortController.signal,
-      });
-    });
+    this.rebindClickEvents();
+
+    // Re-initialize controls ONLY for size-chart drawer on variant change
+    if (this.isSizeChartDrawer) {
+      document.addEventListener(
+        'variant:changed',
+        () => {
+          this.rebindClickEvents();
+        },
+        { signal: this.abortController.signal }
+      );
+    }
 
     // Add keyup event listener to document for handling the Escape key
     document.addEventListener(
@@ -693,6 +704,20 @@ class ModalComponent extends HTMLElement {
         }
       );
     }
+  }
+
+  rebindClickEvents() {
+    // Remove old listeners by aborting & re-creating controller
+    if (this.controlsAbortController) {
+      this.controlsAbortController.abort();
+    }
+    this.controlsAbortController = new AbortController();
+
+    this.controls.forEach((button) => {
+      button.addEventListener('click', this.onButtonClick.bind(this), {
+        signal: this.controlsAbortController.signal,
+      });
+    });
   }
 
   disconnectedCallback() {
@@ -2617,6 +2642,59 @@ class ProductForm extends HTMLFormElement {
   };
 }
 customElements.define('product-form', ProductForm, { extends: 'form' });
+
+class OrderSample extends HTMLElement {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  connectedCallback() {
+    this.form = this.querySelector('form[is="product-form"]');
+    this.link = this.querySelector('[data-submit-sample]');
+
+    if (!this.form || !this.link) return;
+    this.link.addEventListener('click', this.handleClick);
+  }
+
+  disconnectedCallback() {
+    if (this.link) {
+      this.link.removeEventListener('click', this.handleClick);
+    }
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    if (!this.form) return;
+
+    // mimic theme's loading state
+    // this.link.classList.add('btn--loading');
+    this.link.setAttribute('aria-disabled', 'true');
+
+    // submit via native requestSubmit (triggers ProductForm logic)
+    this.form.requestSubmit();
+
+    // // wait for ProductForm to clean up (theme removes loading states)
+    // const observer = new MutationObserver(() => {
+    //   if (!this.form.querySelector('.btn--loading')) {
+    //     this.link.classList.remove('btn--loading');
+    //     this.link.removeAttribute('aria-disabled');
+    //     observer.disconnect();
+    //   }
+    // });
+    // observer.observe(this.form, {
+    //   attributes: true,
+    //   subtree: true,
+    //   attributeFilter: ['class'],
+    // });
+  }
+
+  get submitButtonElement() {
+    return (this._submitButtonElement = this._submitButtonElement || this.querySelector('[data-submit-sample]'));
+  }
+}
+
+customElements.define('order-sample', OrderSample);
 
 class HighlightText extends HTMLElement {
   constructor() {

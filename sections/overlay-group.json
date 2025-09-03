@@ -148,12 +148,24 @@
         "teaser_popup_bg": "#d63a2f",
         "teaser_popup_text": "#ffffff"
       }
+    },
+    "localization_switcher_TdfEWB": {
+      "type": "localization-switcher",
+      "name": "Localization drawer",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "Select your location",
+        "text": "<p>Update the store settings for your location for a smoother checkout.</p>",
+        "show_country_selector": true,
+        "show_language_selector": true
+      }
     }
   },
   "order": [
     "cart-drawer",
     "search-drawer",
     "quick-view",
-    "popup"
+    "popup",
+    "localization_switcher_TdfEWB"
   ]
 }

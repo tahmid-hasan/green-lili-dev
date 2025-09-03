@@ -164,8 +164,19 @@
         },
         "custom_liquid_bHC3b6": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<a href=\"/products/sample\" style=\"display: flex; width: 100%; text-decoration: none; font-size: 14px; font-weight: 500; box-sizing: border-box; margin-top: 0px; border: 0px dotted #1a1a1a; color: #1a1a1a;\">\n  \n  <!-- Left section with \"NEW\" + main text + price -->\n  <span style=\"flex: 0 0 85%; display: flex; align-items: center; justify-content: center; padding: 1.5rem; box-sizing: border-box; border-right: 2px solid #fff; background-color: #ece8de;\">\n    <span style=\"background-color: #ffde00; color: #000; font-size: 12px; font-weight: bold; padding: 2px 6px; margin-right: 8px; display: inline-block;\">\n      NEW\n    </span>\n    ORDER A SWATCH SAMPLE \n    <span style=\"margin-left: 8px; font-weight: bold;\">£8</span>\n  </span>\n  \n  <!-- Right section with circled \"i\" -->\n  <span style=\"flex: 0 0 15%; display: flex; align-items: center; justify-content: center; background-color: #ece8de;\">\n    <span style=\"font-weight: bold; font-size: 14px; border: 2px solid #ece8de; color:#ece8de; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center;background:#56523f; justify-content: center; line-height: 1;\">i</span>\n  </span>\n</a>"
+          }
+        },
+        "order_a_sample_Uyg4Dj": {
+          "type": "order_a_sample",
+          "settings": {
+            "include_stylesheet": true,
+            "sample_product": "{{ product.metafields.custom.sample_product.value }}",
+            "button_text": "Order a swatch sample",
+            "show_badge": true,
+            "badge_text": "New"
           }
         }
       },
@@ -189,7 +200,8 @@
         "collapsible_tab_YLLxKj",
         "collapsible-row-1",
         "collapsible-row-3",
-        "custom_liquid_bHC3b6"
+        "custom_liquid_bHC3b6",
+        "order_a_sample_Uyg4Dj"
       ],
       "custom_css": [
         ".loox-rating {margin-top: -1rem;}",
@@ -766,6 +778,49 @@
         "divider_width": "fixed",
         "custom_class": ""
       }
+    },
+    "size_chart_j4wgU8": {
+      "type": "size-chart",
+      "blocks": {
+        "size_details_cx9qpF": {
+          "type": "size_details",
+          "settings": {
+            "title": "Size details",
+            "image": "{{ product.metafields.custom.size_chart_image.value }}",
+            "content": "{{ product.metafields.custom.dynamic_size_chart.value }}",
+            "portrait_image": "shopify://shop_images/PORTRAIT-CANVAS-SIZES.webp",
+            "page_portrait": "size-chart-portrait-landscape",
+            "square_image": "shopify://shop_images/SQUARE-CANVAS-SIZES-SCALE.webp",
+            "page_square": "size-chart-square"
+          }
+        },
+        "size_guide_gFzAtJ": {
+          "type": "size_guide",
+          "settings": {
+            "title": "How to choose your size",
+            "content": "how-to-choose-your-size"
+          }
+        }
+      },
+      "block_order": [
+        "size_details_cx9qpF",
+        "size_guide_gFzAtJ"
+      ],
+      "name": "Size Chart",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "product_sample_j3fFPt": {
+      "type": "product-sample",
+      "name": "Product sample drawer",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "product": "{{ product.metafields.custom.sample_product.value }}",
+        "title": "{{ product.title }} Sample",
+        "product_image": "{{ section.settings.product.featured_image }}",
+        "product_description": "{{ section.settings.product.description }}"
+      }
     }
   },
   "order": [
@@ -779,6 +834,8 @@
     "image_with_text_MgddA8",
     "175369499936cd4de2",
     "1752847188fe45d453",
-    "collapsible_tabs_hM3eRg"
+    "collapsible_tabs_hM3eRg",
+    "size_chart_j4wgU8",
+    "product_sample_j3fFPt"
   ]
 }

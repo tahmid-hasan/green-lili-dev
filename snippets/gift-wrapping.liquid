@@ -1,4 +1,8 @@
 {%- if gift_wrapping != null -%}
+  {%- liquid
+    assign target_markets = "EUR,USD,CAD,AUD,CHF"
+    assign current_market = localization.country.currency.iso_code
+  -%}
   <gift-wrapping
     data-gift-wrap-id="{{ gift_wrap_id }}"
     data-gift-wrapping="{{ cart.attributes.gift-wrapping | escape }}"
@@ -23,7 +27,11 @@
       </div>
       <label for="GiftWrap-{{ section.id }}" class="text-sm cursor-pointer">
         {%- liquid
-          assign gift_price = gift_wrapping.object.price | money
+          if target_markets contains current_market
+            assign gift_price = gift_wrapping.object.price | money_without_trailing_zeros
+          else
+            assign gift_price = gift_wrapping.object.price | money
+          endif
           echo 'general.cart.gift_wrapping.message_html' | t: price: gift_price
         -%}
       </label>

@@ -1,0 +1,106 @@
+<script src="{{ 'product-sample.js' | asset_url }}" defer></script>
+{%- liquid
+  assign title = section.settings.title
+
+  assign sample_product = section.settings.product
+  assign product_image = sample_product.featured_image
+  assign product_description = sample_product.description
+
+  if section.settings.product_image != blank
+    assign product_image = section.settings.product_image
+  endif
+
+  if section.settings.product_description != blank
+    assign product_description = section.settings.product_description
+  endif
+
+  if request.design_mode
+    if product_description == blank
+      assign product_description = '<p>No product description found. Please connect a dynamic description source or add a description in sample product. Otherwise, customers will see an empty drawer."</p>'
+    endif
+  endif
+-%}
+<product-sample-drawer id="ProductSampleDrawer-{{ product.id }}" class="drawer drawer--right product-sample-drawer" shopify-design-mode hidden>
+  <div class="fixed-overlay" aria-controls="ProductSampleDrawer-{{ product.id }}"></div>
+  <div class="drawer__inner color-{{ section.settings.color_scheme }}">
+    <button class="drawer__close-btn z-1" aria-controls="ProductSampleDrawer-{{ product.id }}" type="button">
+      {% render 'icon-close' %}
+    </button>
+    <div class="drawer__content flex flex-col h-full w-full">
+      <div class="drawer__header localization-drawer__header flex flex-col gap-5 items-start">
+        <div class="drawer__heading flex items-center gap-3">
+          {%- if title -%}
+            <h2 class="drawer__heading h3 flex items-center">
+              {{ title }}
+            </h2>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="v-scrollable drawer__body flex-grow flex flex-col">
+        <div class="sample-product__image flex-grow">
+          {%- unless product_image == blank -%}
+            {%- if request.design_mode -%}
+              {{ product_image | image_url: width: 800 | image_tag }}
+            {%- endif -%}
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag }}
+          {%- endunless -%}
+        </div>
+        <div class="sample-product__description flex-grow">
+          {{ product_description }}
+        </div>
+      </div>
+    </div>
+  </div>
+</product-sample-drawer>
+{% schema %}
+  {
+    "name": "Product sample drawer",
+    "enabled_on": {
+      "templates": ["product"]
+    },
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color scheme"
+      },
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Drawer title",
+        "default": "Sample product"
+      },
+      {
+        "type": "header",
+        "content": "Product details"
+      },
+      {
+        "type": "image_picker",
+        "id": "product_image",
+        "label": "Product image",
+        "info": "If not set, featured image of sample product will be displayed as a fallback."
+      },
+      {
+        "type": "richtext",
+        "id": "product_description",
+        "label": "Product description",
+        "info": "Connect dynamic source for product description. If not set, product description of the sample product will be set as fallback"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product sample drawer",
+        "category": "Product",
+        "settings": {
+          "color_scheme": "color-scheme"
+        }
+      }
+    ]
+  }
+{% endschema %}

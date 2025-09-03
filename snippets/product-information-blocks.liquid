@@ -6,6 +6,9 @@
   else
     assign title_tag = 'h2'
   endif
+
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
 -%}
 <div
   id="ProductInfo-{{ section.id }}"
@@ -337,11 +340,20 @@
             class="product__block product__block--{{ block.type }}"
             {{ block.shopify_attributes }}
           >
+            {%- capture market_place -%}
+              {%- form 'localization', id: formId -%}
+                --market:{{ localization.market.handle }}
+              {%- endform -%}
+            {%- endcapture -%}
+            
+            {%- assign market_place = market_place | split: '--' | last | split: ':' | last -%}
+
             {% render 'product-variant-picker',
               product: product,
               block: block,
               product_form_id: product_form_id,
-              update_url: update_browser_history
+              update_url: update_browser_history,
+              market_place: market_place
             %}
           </div>
         {%- when 'buy_buttons' -%}
@@ -701,6 +713,71 @@
                     {%- endif -%}
                   </div>
               {%- endcase -%}
+            {%- endif -%}
+          </div>
+        {%- when 'order_a_sample' -%}
+          <div
+            class="product__block product__block--{{ block.type }}"
+            {{ block.shopify_attributes }}
+          >
+            {%- liquid
+              if block.settings.include_stylesheet
+                echo 'order-sample-style.css' | asset_url | stylesheet_tag
+              endif
+
+              assign sample_product = block.settings.sample_product
+
+              if sample_product == blank
+                assign sample_product = product.metafields.custom.sample_product.value
+              endif
+
+              assign is_available = false
+              if sample_product != blank
+                assign is_available = true
+              endif
+
+              if request.design_mode
+                assign is_available = true
+              endif
+
+              assign sample_product_price = '£8'
+              
+              if sample_product != blank
+                assign sample_product_price = sample_product.selected_or_first_available_variant.price | money
+                if target_markets contains current_market
+                  assign sample_product_price = sample_product.selected_or_first_available_variant.price | money_without_trailing_zeros
+                endif
+              endif
+            -%}
+            {%- if is_available -%}
+              <order-sample>
+                <form is="product-form" id="Sample-product-atc-form--{{ sample_product.id }}" class="order-sample-form">
+                  <input type="hidden" name="id" value="{{ sample_product.selected_or_first_available_variant.id }}">
+                  <div class="product__order-sample-link">
+                    <!-- Left section -->
+                    
+                    <span class="product__order-sample-left">
+                      <button class="btn--link" type="submit">
+                        {%- if block.settings.show_badge -%}
+                        <span class="product__order-sample-badge">{{ block.settings.badge_text }}</span>
+                        {%- endif -%}
+                        {%- render 'loading-spinner' -%}
+                        <span>
+                        {{ block.settings.button_text }}
+                        </span>
+                        
+                        <span class="product__order-sample-price">{{ sample_product_price }}</span>
+                      </button>
+                    </span>
+
+                    <!-- Right section -->
+                    <span class="product__order-sample-right" aria-controls="ProductSampleDrawer-{{ product.id }}">
+                      <span class="product__order-sample-icon">i</span>
+                    </span>
+                  </div>
+                </form>
+              </order-sample>
+
             {%- endif -%}
           </div>
       {%- endcase -%}

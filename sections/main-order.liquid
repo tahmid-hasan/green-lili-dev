@@ -4,6 +4,10 @@
     transform: rotate(180deg);
   }
 {%- endstyle -%}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 
 <div
   class="customer order section section--padding"
@@ -123,7 +127,11 @@
                               {% render 'icon-discount' %}
                               <span>
                                 {{- discount_allocation.discount_application.title }} (-
-                                {{- discount_allocation.amount | money -}}
+                                {%- if target_markets contains current_market -%}
+                                  {{- discount_allocation.amount | money_without_trailing_zeros -}}
+                                {%- else -%}
+                                  {{- discount_allocation.amount | money -}}
+                                {%- endif -%}
                                 )</span
                               >
                             </li>
@@ -172,20 +180,32 @@
                             <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                           </dt>
                           <dd class="regular-price m-0">
-                            <s>{{ line_item.original_price | money }}</s>
+                            {%- if target_markets contains current_market -%}
+                              <s>{{ line_item.original_price | money_without_trailing_zeros }}</s>
+                            {%- else -%}
+                              <s>{{ line_item.original_price | money }}</s>
+                            {%- endif -%}
                           </dd>
                           <dt>
                             <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
                           </dt>
                           <dd class="m-0">
-                            <span>{{ line_item.final_price | money }}</span>
+                            {%- if target_markets contains current_market -%}
+                              <span>{{ line_item.final_price | money_without_trailing_zeros }}</span>
+                            {%- else -%}
+                              <span>{{ line_item.final_price | money }}</span>
+                            {%- endif -%}
                           </dd>
                         {%- else -%}
                           <dt>
                             <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                           </dt>
                           <dd class="m-0">
-                            {{ line_item.original_price | money }}
+                            {%- if target_markets contains current_market -%}
+                              {{ line_item.original_price | money_without_trailing_zeros }}
+                            {%- else -%}
+                              {{ line_item.original_price | money }}
+                            {%- endif -%}
                           </dd>
                         {%- endif -%}
                         {%- if line_item.unit_price_measurement -%}
@@ -204,7 +224,11 @@
                               {%- endif -%}
                               {{ line_item.unit_price_measurement.reference_unit }}
                             {%- endcapture -%}
-                              <span data-unit-price>{{ line_item.unit_price | money }}</span>
+                              {%- if target_markets contains current_market -%}
+                                <span data-unit-price>{{ line_item.unit_price | money_without_trailing_zeros }}</span>
+                              {%- else -%}
+                                <span data-unit-price>{{ line_item.unit_price | money }}</span>
+                              {%- endif -%}
                               {{- unit_price_separator -}}
                               {{- unit_price_base_unit -}}
                             </span>
@@ -212,7 +236,11 @@
                         {%- endif -%}
                       </dl>
                     {%- else -%}
-                      <span>{{ line_item.final_price | money }}</span>
+                      {%- if target_markets contains current_market -%}
+                        <span>{{ line_item.final_price | money_without_trailing_zeros }}</span>
+                      {%- else -%}
+                        <span>{{ line_item.final_price | money }}</span>
+                      {%- endif -%}
                     {%- endif -%}
                   </td>
                   <td
@@ -235,17 +263,29 @@
                           <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                         </dt>
                         <dd class="regular-price m-0">
-                          <s>{{ line_item.original_line_price | money }}</s>
+                          {%- if target_markets contains current_market -%}
+                            <s>{{ line_item.original_line_price | money_without_trailing_zeros }}</s>
+                          {%- else -%}
+                            <s>{{ line_item.original_line_price | money }}</s>
+                          {%- endif -%}
                         </dd>
                         <dt>
                           <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
                         </dt>
                         <dd class="m-0">
-                          <span>{{ line_item.final_line_price | money }}</span>
+                          {%- if target_markets contains current_market -%}
+                            <span>{{ line_item.final_line_price | money_without_trailing_zeros }}</span>
+                          {%- else -%}
+                            <span>{{ line_item.final_line_price | money }}</span>
+                          {%- endif -%}
                         </dd>
                       </dl>
                     {%- else -%}
-                      {{ line_item.original_line_price | money }}
+                      {%- if target_markets contains current_market -%}
+                        {{ line_item.original_line_price | money_without_trailing_zeros }}
+                      {%- else -%}
+                        {{ line_item.original_line_price | money }}
+                      {%- endif -%}
                     {%- endif -%}
                   </td>
                 </tr>
@@ -269,7 +309,7 @@
                   >:
                 </span>
                 <div>
-                  <span>-{{ discount_application.total_allocated_amount | money }}</span>
+                  <span>-{%- if target_markets contains current_market -%}{{ discount_application.total_allocated_amount | money_without_trailing_zeros }}{%- else -%}{{ discount_application.total_allocated_amount | money }}{%- endif -%}</span>
                   <span class="cart-discount">
                     {% render 'icon-discount' %}
                     {{- discount_application.title -}}
@@ -282,7 +322,11 @@
           {%- for shipping_method in order.shipping_methods -%}
             <li>
               <span>{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }}):</span>
-              {{ shipping_method.price | money }}
+              {%- if target_markets contains current_market -%}
+                {{ shipping_method.price | money_without_trailing_zeros }}
+              {%- else -%}
+                {{ shipping_method.price | money }}
+              {%- endif -%}
             </li>
           {%- endfor -%}
 
@@ -292,13 +336,22 @@
                 {{ 'customer.order.tax' | t }} ({{ tax_line.title }}
                 {{ tax_line.rate | times: 100 }}%):
               </span>
-              {{ tax_line.price | money }}
+              {%- if target_markets contains current_market -%}
+                {{ tax_line.price | money_without_trailing_zeros }}
+              {%- else -%}
+                {{ tax_line.price | money }}
+              {%- endif -%}
             </li>
           {%- endfor -%}
           {%- if order.total_duties -%}
             <li>
               <span>{{ 'customer.order.total_duties' | t }}:</span>
-              {{ order.total_duties | money }}
+              {%- if target_markets contains current_market -%}
+                {{ order.total_duties | money_without_trailing_zeros }}
+              {%- else -%}
+                {{ order.total_duties | money }}
+              {%- endif -%}
+              
             </li>
           {%- endif -%}
           {%- if order.total_refunded_amount > 0 -%}

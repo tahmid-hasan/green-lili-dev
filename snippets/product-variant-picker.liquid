@@ -18,6 +18,16 @@
     if size_chart_content == blank and block.settings.size_chart_from_page != blank
       assign size_chart_content = pages[block.settings.size_chart_from_page].content
     endif
+
+    assign selected_variant = product.selected_or_first_available_variant
+    unless product.selected_variant
+      if product.metafields.custom.default_variant != blank
+        assign default_variant = product.metafields.custom.default_variant.value
+        if default_variant.product.id == product.id
+          assign selected_variant = default_variant
+        endif
+      endif
+    endunless
   %}
   <script src="{{ 'variant-selects.js' | asset_url }}" defer="defer"></script>
   <variant-selects
@@ -91,6 +101,127 @@
           assign tag_fieldset = 'div'
           assign tag_legend = 'label'
         endunless
+
+        assign selected_value = option.selected_value
+
+        if option.position == 1
+          if default_variant != nil or default_variant != blank
+            assign selected_value = default_variant.options[0]
+          endif
+        endif
+        if option.position == 2
+          if default_variant != nil or default_variant != blank
+            assign selected_value = default_variant.options[1]
+          endif
+        endif
+        if option.position == 3
+          if default_variant != nil or default_variant != blank
+            assign selected_value = default_variant.options[2]
+          endif
+        endif
+
+        if attach_size_chart
+          assign market = market_place | strip | strip_html | strip_newlines
+          
+          assign downcase_value = selected_value | escape | downcase
+          assign variant_display_size = ''
+
+          if product.tags contains 'large-canvas-points' or product.tags contains 'small-med-canvas' or product.tags contains 'landscape'
+            if downcase_value == 'small'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '12x16”'
+              else
+                assign variant_display_size = '34x45cm'
+              endif
+            elsif downcase_value == 'medium'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '20x28”'
+              else
+                assign variant_display_size = '55x75cm'
+              endif
+            elsif downcase_value == 'large'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '28x40”'
+              else
+                assign variant_display_size = '75x106cm'
+              endif
+            elsif downcase_value == 'extra large'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '36x50”'
+              else
+                assign variant_display_size = '95x131cm'
+              endif
+            else
+              assign variant_display_size = value | escape
+            endif
+
+          elsif product.tags contains 'square-canvas-sizes'
+            if downcase_value == 'medium'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '24x24”'
+              else
+                assign variant_display_size = '65x65cm'
+              endif
+            elsif downcase_value == 'large'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '32x32”'
+              else
+                assign variant_display_size = '85x85cm'
+              endif
+            elsif downcase_value == 'extra large'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '40x40”'
+              else
+                assign variant_display_size = '106x106cm'
+              endif
+            else
+              assign variant_display_size = value | escape
+            endif
+
+          elsif product.tags contains '_tab_prints-framed-prints'
+            if downcase_value == 'small'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '12x16”'
+              else
+                assign variant_display_size = '30x40cm'
+              endif
+            elsif downcase_value == 'medium'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '18x24”'
+              else
+                assign variant_display_size = '45x60cm'
+              endif
+            elsif downcase_value == 'large'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '24x32”'
+              else
+                assign variant_display_size = '60x80cm'
+              endif
+            else
+              assign variant_display_size = value | escape
+            endif
+
+          elsif product.tags contains 'square-framed-print'
+            if downcase_value == 'small'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '12x12”'
+              else
+                assign variant_display_size = '30x30cm'
+              endif
+            elsif downcase_value == 'medium'
+              if market == 'usa' or market == 'au'
+                assign variant_display_size = '20x20”'
+              else
+                assign variant_display_size = '50x50cm'
+              endif
+            else
+              assign variant_display_size = value | escape
+            endif
+
+          else
+            assign variant_display_size = value | escape
+          endif
+        endif
       -%}
       <{{ tag_fieldset }}
         class="{{ wrap_class }}"
@@ -107,14 +238,19 @@
         >
           <div class="flex flex-wrap gap-2">
             <span class="font-body-bold">{{ option.name }}:</span>
-            <span data-selected-swatch-value="{{ option.name }}">
-              {{- option.selected_value -}}
+            <span data-selected-swatch-value="{{ option.name }}" {% if option_name_downcase == 'size' %}data-size{% endif %}>
+              {%- if attach_size_chart -%}
+                {{- variant_display_size -}}
+              {%- else -%}
+                {{- selected_value -}}
+              {%- endif -%}
+              
             </span>
           </div>
           {%- if size_chart_content != blank and attach_size_chart -%}
             <button
               class="open-size-chart no-js-hidden btn--link tracking-normal"
-              aria-controls="{{ size_chart_modal_id }}"
+              aria-controls="SizeChartDrawer"
               aria-haspopup="dialog"
             >
               {{ 'products.product.open_size_chart' | t }}
@@ -126,6 +262,7 @@
             {% render 'product-variant-options',
               product: product,
               option: option,
+              default_variant: selected_variant,
               block: block,
               picker_type: picker_type
             %}
@@ -148,6 +285,7 @@
                 {% render 'product-variant-options',
                   product: product,
                   option: option,
+                  default_variant: selected_variant,
                   block: block,
                   picker_type: picker_type
                 %}
@@ -158,7 +296,10 @@
       </{{ tag_fieldset }}>
     {%- endfor -%}
     <script type="application/json" data-selected-variant>
+      {% comment %}
       {{ product.selected_or_first_available_variant | json }}
+      {% endcomment %}
+      {{ selected_variant | json }}
     </script>
   </variant-selects>
   {%- if size_chart_content != blank -%}

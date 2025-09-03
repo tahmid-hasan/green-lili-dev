@@ -1,3 +1,7 @@
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {%- style -%}
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
@@ -195,7 +199,11 @@
                                 if settings.currency_code_enabled
                                   assign price = item.variant.price | money_with_currency
                                 else
-                                  assign price = item.variant.price | money
+                                  if target_markets contains current_market
+                                    assign price = item.variant.price | money_without_trailing_zeros
+                                  else
+                                    assign price = item.variant.price | money
+                                  endif
                                 endif
                               -%}
                               <span> {{ 'sections.quick_order_list.each_html' | t: money: price }}</span>
@@ -210,7 +218,11 @@
                                   if settings.currency_code_enabled
                                     assign price_break_price = price_break.price | money_with_currency
                                   else
-                                    assign price_break_price = price_break.price | money
+                                    if target_markets contains current_market
+                                      assign price_break_price = price_break.price | money_without_trailing_zeros
+                                    else
+                                      assign price_break_price = price_break.price | money
+                                    endif
                                   endif
                                 -%}
                                 <span>{{ 'sections.quick_order_list.each_html' | t: money: price_break_price }}</span>
@@ -240,7 +252,11 @@
                                 <div class="cart-item__prices lg:hidden">
                                   <div class="price text-right flex flex-wrap items-center gap-x-2 font-body-bolder{% if item.original_price != item.final_price %} price--on-sale{% endif %}">
                                     {%- liquid
-                                      assign money_price = item.original_price | money
+                                      if target_markets contains current_market
+                                        assign money_price = item.original_price | money_without_trailing_zeros
+                                      else
+                                        assign money_price = item.original_price | money
+                                      endif
                                       if settings.currency_code_enabled
                                         assign money_price = item.original_price | money_with_currency
                                       endif
@@ -254,7 +270,11 @@
                                           if settings.currency_code_enabled
                                             echo item.final_price | money_with_currency
                                           else
-                                            echo item.final_price | money
+                                            if target_markets contains current_market
+                                              echo item.final_price | money_without_trailing_zeros
+                                            else
+                                              echo item.final_price | money
+                                            endif
                                           endif  
                                         -%}
                                       </span>
@@ -275,7 +295,11 @@
                                             endif
                                           endcapture
                                         -%}
-                                        ({{ item.variant.unit_price | money }}
+                                        ({%- if target_markets contains current_market -%}
+                                          {{ item.variant.unit_price |   money_without_trailing_zeros }}
+                                        {%- else -%}
+                                          {{ item.variant.unit_price | money }}
+                                        {%- endif -%}
                                         <span aria-hidden="true">/</span>
                                         <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
                                         {{ unit_price_base_unit }})
@@ -460,7 +484,11 @@
                         <div class="cart-item__prices">
                           <div class="price text-left flex-col flex font-body-bolder{% if item.original_price != item.final_price %} price--on-sale{% endif %}">
                             {%- liquid
-                              assign money_price = item.original_price | money
+                              if target_markets contains current_market
+                                assign money_price = item.original_price | money_without_trailing_zeros
+                              else
+                                assign money_price = item.original_price | money
+                              endif
                               if settings.currency_code_enabled
                                 assign money_price = item.original_price | money_with_currency
                               endif
@@ -474,7 +502,11 @@
                                   if settings.currency_code_enabled
                                     echo item.final_price | money_with_currency
                                   else
-                                    echo item.final_price | money
+                                    if target_markets contains current_market
+                                      echo item.final_price | money_without_trailing_zeros
+                                    else
+                                      echo item.final_price | money
+                                    endif
                                   endif  
                                 -%}
                               </span>
@@ -495,7 +527,11 @@
                                     endif
                                   endcapture
                                 -%}
-                                ({{ item.variant.unit_price | money }}
+                                ({%- if target_markets contains current_market -%}
+                                  {{ item.variant.unit_price |  money_without_trailing_zeros }}
+                                {%- else -%}
+                                  {{ item.variant.unit_price | money }}
+                                {%- endif -%}
                                 <span aria-hidden="true">/</span>
                                 <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
                                 {{ unit_price_base_unit }})
@@ -632,7 +668,11 @@
                             if settings.currency_code_enabled
                               echo item.final_line_price | money_with_currency
                             else
-                              echo item.final_line_price | money
+                              if target_markets contains current_market
+                                echo item.final_line_price | money_without_trailing_zeros
+                              else
+                                echo item.final_line_price | money
+                              endif
                             endif
                           -%}
                         </span>
@@ -698,7 +738,11 @@
                             >
                               {% render 'icon-discount' %}
                               <span>{{- discount.title -}}</span>
-                              <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                              {%- if target_markets contains current_market -%}
+                                <span class="font-body-bold">(-{{ discount.total_allocated_amount | money_without_trailing_zeros }})</span>
+                              {%- else -%}
+                                <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                              {%- endif -%}
 
                               <button
                                 is="cart-discount-remove"
@@ -734,7 +778,11 @@
                                 >
                                   {% render 'icon-discount' %}
                                   <span>{{- discount.title -}}</span>
-                                  <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                                  {%- if target_markets contains current_market -%}
+                                    <span class="font-body-bold">(-{{ discount.total_allocated_amount | money_without_trailing_zeros }})</span>
+                                  {%- else -%}
+                                    <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                                  {%- endif -%}
 
                                   <button
                                     is="cart-discount-remove"
@@ -799,19 +847,19 @@
                           {{ 'general.cart.note.title' | t }}
                         </div>
                         {%- render 'icon-caret-down' -%}
-                      </summary>
+                      </summary> 
                       <cart-note class="flex flex-col items-start gap-5 accordion-details__content">
                         <div class="form-field w-full">
                           <textarea
-                            name="note"
+                            name="note" 
                             class="form-control form-control--textarea"
                             rows="5"
                             form="cart"
-                            placeholder="{{ 'general.cart.note.caption' | t }}"
+                            placeholder="{{ 'general.cart.note.caption' | t }}" 
                             id="CartNoteForm-{{ section.id }}"
                           >{{ cart.note }}</textarea>
                           <label class="visually-hidden" for="CartNoteForm-{{ section.id }}">
-                            {{- 'general.cart.note.title' | t -}}
+                            {{- 'general.cart.note.title' | t -}} 
                           </label>
                         </div>
                         <button

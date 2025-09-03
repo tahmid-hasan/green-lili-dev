@@ -1,0 +1,207 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_content_PPFewB": {
+      "type": "custom-content",
+      "blocks": {
+        "image_7hNHCw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/unearthed-green-canvas-cosy-room.jpg",
+            "width": "41%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_7hNHCw"
+      ],
+      "custom_css": [
+        "#block-image_7hNHCw {margin-left: auto; margin-right: auto; display: block;}"
+      ],
+      "name": "t:sections.custom-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "column_gap": "medium",
+        "row_gap": "large",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_content_hBWYff": {
+      "type": "custom-content",
+      "blocks": {
+        "text_gcMWgK": {
+          "type": "text",
+          "settings": {
+            "heading": "Sorry, we've left you hanging!",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none",
+            "subheading": "",
+            "description": "<p>We couldn’t find the page you were looking for, but we can help you find the right art.<strong><br/></strong></p><p></p>",
+            "text_size": "text-base",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "content_alignment": "center",
+            "width": "100%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_gcMWgK"
+      ],
+      "custom_css": [],
+      "name": "t:sections.custom-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "column_gap": "medium",
+        "row_gap": "large",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "collections_slider_CDTd97": {
+      "type": "collections-slider",
+      "blocks": {
+        "collection_mCXcYm": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "title": "",
+            "title_size": "hd2",
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "collection_axNRy6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "title": "",
+            "title_size": "hd2",
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "collection_tgeBcc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "title": "",
+            "title_size": "hd2",
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "collection_UpD4wn": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "title": "",
+            "title_size": "hd2",
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "collection_Krxxp6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "title": "",
+            "title_size": "hd2",
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline"
+          }
+        }
+      },
+      "block_order": [
+        "collection_mCXcYm",
+        "collection_axNRy6",
+        "collection_tgeBcc",
+        "collection_UpD4wn",
+        "collection_Krxxp6"
+      ],
+      "name": "t:sections.collections-slider.name",
+      "settings": {
+        "color_scheme": "",
+        "use_color_scheme_in_container": false,
+        "show_product_count": true,
+        "heading": "Collections slider",
+        "heading_size": "hd3",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "image_ratio": "adapt",
+        "slider_position": "left",
+        "autoplay": false,
+        "autoplay_delay": 3,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "custom_content_PPFewB",
+    "custom_content_hBWYff",
+    "main",
+    "collections_slider_CDTd97"
+  ]
+}

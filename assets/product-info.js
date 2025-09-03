@@ -38,6 +38,7 @@ if (!customElements.get('product-info')) {
       }
 
       connectedCallback() {
+        console.log('Product Info connected');
         this.initializeProductSwapUtility();
 
         this.onVariantChangeUnsubscriber = FoxTheme.pubsub.subscribe(

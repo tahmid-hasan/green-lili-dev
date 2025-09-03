@@ -5,6 +5,10 @@
     assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
     assign variant_price_compare = variant.compare_at_price
   -%}
+  {%- liquid
+    assign target_markets = "EUR,USD,CAD,AUD,CHF"
+    assign current_market = localization.country.currency.iso_code
+  -%}
   <price-per-item
     id="PricePerItem-{{ section_id }}"
     class="inline-flex flex-wrap items-center gap-2"
@@ -19,6 +23,9 @@
             assign variant_price = variant.price | money_with_currency
           else
             assign variant_price = variant.price | money
+            if target_markets contains current_market
+              assign variant_price = variant.price | money_without_trailing_zeros
+            endif
           endif
         -%}
         <span class="price-per-item--current price__regular whitespace-nowrap">
@@ -32,6 +39,9 @@
                 assign price_break_price = price_break.price | money_with_currency
               else
                 assign price_break_price = price_break.price | money
+                if target_markets contains current_market
+                  assign price_break_price = price_break.price | money_without_trailing_zeros
+                endif
               endif
             -%}
             <span class="price-per-item--current price__regular whitespace-nowrap">
@@ -48,6 +58,9 @@
             assign variant_price = variant.price | money_with_currency
           else
             assign variant_price = variant.price | money
+            if target_markets contains current_market
+              assign variant_price = variant.price | money_without_trailing_zeros
+            endif
           endif
         -%}
         {{- 'sections.quick_order_list.each_html' | t: money: variant_price -}}
@@ -62,7 +75,11 @@
           if settings.currency_code_enabled
             echo variant_price_compare | money_with_currency
           else
-            echo variant_price_compare | money
+            if target_markets contains current_market
+              echo variant_price_compare | money_without_trailing_zeros
+            else
+              echo variant_price_compare | money
+            endif
           endif
         -%}
         </s>
@@ -83,7 +100,7 @@
             endif
           endcapture
         -%}
-        ({{ item.variant.unit_price | money }}
+        ({%- if target_markets contains current_market -%}{{ item.variant.unit_price | money_without_trailing_zeros }}{%- else -%}{{ item.variant.unit_price | money }}{%- endif -%}
         <span aria-hidden="true">/</span>
         <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
         {{ unit_price_base_unit }})
@@ -161,6 +178,9 @@
                   assign price = variant.price | money_with_currency
                 else
                   assign price = variant.price | money
+                  if target_markets contains current_market
+                    assign price = variant.price | money_without_trailing_zeros
+                  endif
                 endif
               -%}
               <span> {{ 'sections.quick_order_list.each_html' | t: money: price }}</span>
@@ -176,6 +196,9 @@
                     assign price_break_price = price_break.price | money_with_currency
                   else
                     assign price_break_price = price_break.price | money
+                    if target_markets contains current_market
+                      assign price_break_price = price_break.price | money_without_trailing_zeros
+                    endif
                   endif
                 -%}
                 <span>{{ 'sections.quick_order_list.each_html' | t: money: price_break_price }}</span>
@@ -351,6 +374,10 @@
   </td>
 
   <td class="variant-item__totals text-right hidden md:table-cell">
-    {{- cart | line_items_for: item | sum: 'original_line_price' | money -}}
+    {%- if target_markets contains current_market -%}
+      {{- cart | line_items_for: item | sum: 'original_line_price' | money_without_trailing_zeros -}}
+    {%- else -%}
+      {{- cart | line_items_for: item | sum: 'original_line_price' | money -}}
+    {%- endif -%}
   </td>
 </tr>

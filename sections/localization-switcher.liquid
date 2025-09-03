@@ -1,0 +1,168 @@
+<script src="{{ 'localization-switcher.js' | asset_url }}" defer></script>
+{%- liquid
+  assign title = section.settings.heading
+
+  assign random_number = 'now' | date: '%N' | modulo: 10 | plus: 25
+  assign form_id = 'localization-' | append: random_number | append: '-' | append: section.id
+-%}
+<localization-drawer
+  id="LocalizationDrawer"
+  class="drawer drawer--right localization-drawer" shopify-design-mode hidden>
+  <div class="fixed-overlay" aria-controls="LocalizationDrawer"></div>
+  <div class="drawer__inner color-{{ section.settings.color_scheme }}">
+    <button class="drawer__close-btn z-1" aria-controls="LocalizationDrawer" type="button">
+      {% render 'icon-close' %}
+    </button>
+    <div class="drawer__content flex flex-col h-full w-full">
+      <div class="drawer__header localization-drawer__header flex flex-col gap-5 items-start">
+        <div class="drawer__heading flex items-center gap-3">
+          <span
+            class="f-country-flags f-country-flags--{{ localization.country.iso_code }}"
+            style="--background-image: url({{ localization.country | image_url: width: 20 }})"
+          ></span>
+          {{ localization.country.name }} ({{ localization.country.currency.iso_code }}
+          {{ localization.country.currency.symbol }})
+        </div>
+      </div>
+      <div class="v-scrollable drawer__body flex-grow">
+        <div class="localization-drawer__intro">
+          {%- if title != blank -%}
+            <h2 class="drawer__title text-heading-2 font-heading">
+              {{ title }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="rte text-normal">
+              {{ section.settings.text }}
+            </div>
+          {%- endif -%}
+        </div>
+        <div class="localization-drawer__selectors flex flex-col gap-8 mt-6">
+          {%- form 'localization', class: 'localization-form', id: form_id -%}
+            {%- if section.settings.show_country_selector -%}
+              <div class="input-group">
+                <label for="CountrySelect-{{ form_id }}" class="form__label">
+                  {{ 'localization.country_label' | t }}
+                </label>
+                <div class="select">
+                  <select
+                    id="CountrySelect-{{ form_id }}"
+                    class="localization-selector form-control form-control--select"
+                    name="country_code"
+                    aria-label="{{ 'localization.country_label' | t }}"
+                    data-country-select
+                  >
+                    {%- for country in localization.available_countries -%}
+                      <option
+                        value="{{ country.iso_code }}"
+                        {% if country.iso_code == localization.country.iso_code %}
+                          selected
+                        {% endif %}
+                        data-market="{{ country.market.handle }}"
+                      >
+                        {{ country.name }}
+                      </option>
+                    {%- endfor -%}
+                  </select>
+                  {% render 'icon-caret-down' %}
+                </div>
+              </div>
+            {%- endif -%}
+            {%- if section.settings.show_language_selector -%}
+              <div class="input-group">
+                <label for="LanguageSelect-{{ form_id }}" class="form__label">
+                  {{ 'localization.language_label' | t }}
+                </label>
+                <div class="select">
+                  <select
+                    id="LanguageSelect-{{ form_id }}"
+                    class="localization-selector form-control form-control--select"
+                    name="language_code"
+                    aria-label="{{ 'localization.language_label' | t }}"
+                    data-language-select
+                  >
+                    {%- for language in localization.available_languages -%}
+                      <option
+                        value="{{ language.iso_code }}"
+                        {% if language.iso_code == localization.language.iso_code %}
+                          selected
+                        {% endif %}
+                      >
+                        {{ language.name }}
+                      </option>
+                    {%- endfor -%}
+                  </select>
+                  {% render 'icon-caret-down' %}
+                </div>
+              </div>
+            {%- endif -%}
+            <div class="localization-submit flex">
+              <button class="btn btn--primary flex-1" type="submit" form="{{ form_id }}">Confirm</button>
+            </div>
+          {%- endform -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</localization-drawer>
+{%  schema %}
+{
+  "name": "Localization drawer",
+  "enabled_on": {
+    "groups": ["custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Select your location"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>We deliver to over 100 countries around the world. Shipping costs and delivery times vary depending on your location.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Country selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Currency selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_language_selector",
+      "label": "Show language selector",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Localization drawer",
+      "category": "Overlay group",
+      "settings": {
+        "heading": "Select your location",
+        "text": "<p>Update the store settings for your location for a smoother checkout.</p>",
+        "show_country_selector": true,
+        "show_language_selector": true
+      },
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

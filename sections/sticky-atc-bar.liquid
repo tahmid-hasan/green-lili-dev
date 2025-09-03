@@ -62,7 +62,16 @@
             {%- for variant in product.variants -%}
               {%- liquid
                 assign selected = false
-                if variant.id == product.selected_or_first_available_variant.id
+                assign is_selected_variant = product.selected_or_first_available_variant
+                unless product.selected_variant != nil
+                  if product.metafields.custom.default_variant != blank
+                    assign default_variant = product.metafields.custom.default_variant.value
+                    if default_variant.product.id == product.id
+                      assign is_selected_variant = default_variant
+                    endif
+                  endif
+                endunless
+                if variant.id == is_selected_variant.id
                   assign selected = true
                 endif
               -%}
