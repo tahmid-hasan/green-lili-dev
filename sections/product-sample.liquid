@@ -20,6 +20,11 @@
     endif
   endif
 -%}
+{%- style -%}
+  .sample-product__image {
+    margin-bottom: 32px;
+  }
+{%- endstyle -%}
 <product-sample-drawer id="ProductSampleDrawer-{{ product.id }}" class="drawer drawer--right product-sample-drawer" shopify-design-mode hidden>
   <div class="fixed-overlay" aria-controls="ProductSampleDrawer-{{ product.id }}"></div>
   <div class="drawer__inner color-{{ section.settings.color_scheme }}">
@@ -37,16 +42,16 @@
         </div>
       </div>
       <div class="v-scrollable drawer__body flex-grow flex flex-col">
-        <div class="sample-product__image flex-grow">
-          {%- unless product_image == blank -%}
+        <div class="sample-product__image">
+          {%- if product_image == blank -%}
             {%- if request.design_mode -%}
-              {{ product_image | image_url: width: 800 | image_tag }}
+              {{ 'product-1' | placeholder_svg_tag }}
             {%- endif -%}
           {%- else -%}
-            {{ 'product-1' | placeholder_svg_tag }}
-          {%- endunless -%}
+            {{ product_image | image_url: width: 800 | image_tag }}
+          {%- endif -%}
         </div>
-        <div class="sample-product__description flex-grow">
+        <div class="sample-product__description">
           {{ product_description }}
         </div>
       </div>

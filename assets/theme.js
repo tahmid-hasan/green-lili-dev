@@ -2653,40 +2653,43 @@ class OrderSample extends HTMLElement {
     this.form = this.querySelector('form[is="product-form"]');
     this.link = this.querySelector('[data-submit-sample]');
 
+    this.abortController = new AbortController();
+
+    this.handleVariantChange = this.handleVariantChange.bind(this);
+    document.addEventListener(
+      'variant:changed',
+      this.handleVariantChange,
+      { signal: this.abortController.signal }
+    );
+
     if (!this.form || !this.link) return;
-    this.link.addEventListener('click', this.handleClick);
+    
+    // Use AbortController for consistency
+    this.link.addEventListener('click', this.handleClick, {
+      signal: this.abortController.signal
+    });
+  }
+
+  handleVariantChange(e) {
+    if (e.detail.variant && e.detail.variant.sku) {
+      const newSku = e.detail.variant.sku.toUpperCase() + '-SAMPLE';
+      const sampleSkuInput = this.form?.querySelector('input[name="properties[_sample_SKU]"]');
+      
+      if (sampleSkuInput) sampleSkuInput.value = newSku;
+    }
   }
 
   disconnectedCallback() {
-    if (this.link) {
-      this.link.removeEventListener('click', this.handleClick);
-    }
+    // Clean and simple - AbortController handles all event listeners
+    this.abortController?.abort();
   }
 
   handleClick(e) {
     e.preventDefault();
     if (!this.form) return;
 
-    // mimic theme's loading state
-    // this.link.classList.add('btn--loading');
     this.link.setAttribute('aria-disabled', 'true');
-
-    // submit via native requestSubmit (triggers ProductForm logic)
     this.form.requestSubmit();
-
-    // // wait for ProductForm to clean up (theme removes loading states)
-    // const observer = new MutationObserver(() => {
-    //   if (!this.form.querySelector('.btn--loading')) {
-    //     this.link.classList.remove('btn--loading');
-    //     this.link.removeAttribute('aria-disabled');
-    //     observer.disconnect();
-    //   }
-    // });
-    // observer.observe(this.form, {
-    //   attributes: true,
-    //   subtree: true,
-    //   attributeFilter: ['class'],
-    // });
   }
 
   get submitButtonElement() {

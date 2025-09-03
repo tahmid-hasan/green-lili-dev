@@ -748,11 +748,28 @@
                   assign sample_product_price = sample_product.selected_or_first_available_variant.price | money_without_trailing_zeros
                 endif
               endif
+
+              assign selected_variant = product.selected_or_first_available_variant
+              unless product.selected_variant
+                if product.metafields.custom.default_variant != blank
+                  assign default_variant = product.metafields.custom.default_variant.value
+                  if default_variant.product.id == product.id
+                    assign selected_variant = default_variant
+                  endif
+                endif
+              endunless
             -%}
             {%- if is_available -%}
               <order-sample>
                 <form is="product-form" id="Sample-product-atc-form--{{ sample_product.id }}" class="order-sample-form">
                   <input type="hidden" name="id" value="{{ sample_product.selected_or_first_available_variant.id }}">
+                  <input
+                    type="hidden"
+                    id="LineItemProperty-{{ block.id }}"
+                    name="properties[_sample_SKU]"
+                    form="Sample-product-atc-form--{{ sample_product.id }}"
+                    value="{{ selected_variant.sku | upcase }}-SAMPLE"
+                  >
                   <div class="product__order-sample-link">
                     <!-- Left section -->
                     

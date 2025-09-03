@@ -818,7 +818,7 @@
         "color_scheme": "scheme-3",
         "product": "{{ product.metafields.custom.sample_product.value }}",
         "title": "{{ product.title }} Sample",
-        "product_image": "{{ section.settings.product.featured_image }}",
+        "product_image": "{{ product.metafields.custom.image_of_sample_product.value }}",
         "product_description": "{{ section.settings.product.description }}"
       }
     }
