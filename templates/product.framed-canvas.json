@@ -36,8 +36,15 @@
             "heading_size": "h1"
           }
         },
+        "custom_liquid_D4EW7e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.collections contains collections['wall-art-sets'] %}\n    <p>A set of 2 fine art prints on 400gsm cotton canvas, set in sustainably sourced hardwood float frames.</p>\n{% else %}\n  <p>Fine art print on 400gsm cotton canvas, set in a sustainably sourced hardwood float frame.</p>\n{% endif %}"
+          }
+        },
         "text_9dq6g6": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Fine art print on 400gsm cotton canvas, set in a sustainably sourced hardwood float frame.",
             "text_style": "body"
@@ -46,6 +53,25 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "klarna_on_site_messaging_app_block_UyeGN8": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-auto-size",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
+        "shipping_dQLyN7": {
+          "type": "shipping",
+          "disabled": true,
+          "settings": {
+            "deliver_text": "Free delivery:",
+            "deliver_days": "7",
+            "date_format": "%b %d"
+          }
         },
         "inventory": {
           "type": "inventory",
@@ -87,40 +113,22 @@
             "show_gift_card_recipient": true
           }
         },
-        "klarna_on_site_messaging_app_block_UyeGN8": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "settings": {
-            "data_key": "credit-promotion-auto-size",
-            "theme": "default",
-            "topPadding": "0",
-            "bottomPadding": "0",
-            "messagePrefix": ""
-          }
-        },
         "custom_liquid_MEDzkM": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<div style=\"height: 5px;\">&nbsp;</div>"
           }
         },
-        "shipping_dQLyN7": {
-          "type": "shipping",
-          "settings": {
-            "deliver_text": "Estimated delivery:",
-            "deliver_days": "7",
-            "date_format": "%b %d"
-          }
-        },
         "icon_with_text": {
           "type": "icon-with-text",
           "settings": {
-            "layout": "vertical",
+            "layout": "horizontal",
             "title_font": "body",
             "title_size": "text-base",
             "icon_1": "package",
-            "heading_1": "<strong>Free</strong> shipping in <strong>3-7 days</strong>",
+            "heading_1": "<strong>Free delivery in 3-7 days</strong>",
             "icon_2": "check-circle",
-            "heading_2": "No customs, duties or tariffs.",
+            "heading_2": "<em>No customs, duties or tariffs.</em>",
             "icon_3": "star-four",
             "heading_3": ""
           }
@@ -185,16 +193,17 @@
         "badges",
         "reviews_io_reviewsio_rating_output_jYPbNQ",
         "title",
+        "custom_liquid_D4EW7e",
         "text_9dq6g6",
         "price",
+        "klarna_on_site_messaging_app_block_UyeGN8",
+        "shipping_dQLyN7",
         "inventory",
         "text_B4ArTT",
         "variant_picker",
         "custom_liquid_3XiHEr",
         "buy_buttons",
-        "klarna_on_site_messaging_app_block_UyeGN8",
         "custom_liquid_MEDzkM",
-        "shipping_dQLyN7",
         "icon_with_text",
         "pickup_availability",
         "collapsible_tab_YLLxKj",
@@ -208,7 +217,8 @@
         ".complementary-products__container .product-card__wrapper .btn--secondary {background-color: transparent;}",
         ".product__block {--product-blocks-gap: 1.4rem; --product-blocks-gap-large: 3.2rem; margin: var(--product-blocks-gap) 0;}",
         ".product__tax.rte {display: none;}",
-        ".product__block--collapsible_tab {margin: 0px;}"
+        ".product__block--collapsible_tab {margin: 0px;}",
+        ".product__block.product__block--title {margin-top: -12px !important;}"
       ],
       "settings": {
         "color_scheme": "scheme-3",
@@ -716,7 +726,7 @@
           "type": "collapsible_item",
           "settings": {
             "icon": "none",
-            "heading": "Collapsible tab heading",
+            "heading": "Can I hang my canvas any way around?",
             "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
             "custom_liquid": "",
             "page": "",

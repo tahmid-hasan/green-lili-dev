@@ -99,6 +99,7 @@
     },
     "custom_liquid_hW6dya": {
       "type": "custom-liquid",
+      "custom_css": [],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"YNbqxJRyzerX0ViQ\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
@@ -108,170 +109,11 @@
         "custom_class": ""
       }
     },
-    "custom_content_RecVe9": {
-      "type": "custom-content",
-      "blocks": {
-        "image_card_3BJ74T": {
-          "type": "image_card",
-          "settings": {
-            "color_scheme": "scheme-inverse",
-            "image_ratio": "adapt",
-            "image_overlay_opacity": 30,
-            "heading": "Eye care",
-            "heading_size": "h4",
-            "heading_highlight_style": "none",
-            "subheading": "",
-            "description": "",
-            "button_label": "",
-            "button_style": "btn--primary",
-            "content_position": "middle-center",
-            "content_alignment": "center",
-            "content_spacing": "small",
-            "card_link": "",
-            "color_scheme_mobile": "",
-            "show_text_below": true,
-            "content_alignment_mobile": "left",
-            "width": "20%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        },
-        "image_card_GRXz6y": {
-          "type": "image_card",
-          "settings": {
-            "color_scheme": "scheme-inverse",
-            "image_ratio": "adapt",
-            "image_overlay_opacity": 30,
-            "heading": "Accessories",
-            "heading_size": "h4",
-            "heading_highlight_style": "none",
-            "subheading": "",
-            "description": "",
-            "button_label": "",
-            "button_style": "btn--primary",
-            "content_position": "middle-center",
-            "content_alignment": "center",
-            "content_spacing": "small",
-            "card_link": "",
-            "color_scheme_mobile": "",
-            "show_text_below": true,
-            "content_alignment_mobile": "left",
-            "width": "20%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        },
-        "image_card_BAAmnt": {
-          "type": "image_card",
-          "settings": {
-            "color_scheme": "scheme-inverse",
-            "image_ratio": "adapt",
-            "image_overlay_opacity": 30,
-            "heading": "Moisturizers",
-            "heading_size": "h4",
-            "heading_highlight_style": "none",
-            "subheading": "",
-            "description": "",
-            "button_label": "",
-            "button_style": "btn--primary",
-            "content_position": "middle-center",
-            "content_alignment": "center",
-            "content_spacing": "small",
-            "card_link": "",
-            "color_scheme_mobile": "",
-            "show_text_below": true,
-            "content_alignment_mobile": "left",
-            "width": "20%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        },
-        "image_card_EA8TmL": {
-          "type": "image_card",
-          "settings": {
-            "color_scheme": "scheme-inverse",
-            "image_ratio": "adapt",
-            "image_overlay_opacity": 30,
-            "heading": "Treatments",
-            "heading_size": "h4",
-            "heading_highlight_style": "none",
-            "subheading": "",
-            "description": "",
-            "button_label": "",
-            "button_style": "btn--primary",
-            "content_position": "middle-center",
-            "content_alignment": "center",
-            "content_spacing": "small",
-            "card_link": "",
-            "color_scheme_mobile": "",
-            "show_text_below": true,
-            "content_alignment_mobile": "left",
-            "width": "20%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        },
-        "image_card_Cab8TR": {
-          "type": "image_card",
-          "settings": {
-            "color_scheme": "scheme-inverse",
-            "image_ratio": "adapt",
-            "image_overlay_opacity": 30,
-            "heading": "Cleansers",
-            "heading_size": "h4",
-            "heading_highlight_style": "none",
-            "subheading": "",
-            "description": "",
-            "button_label": "",
-            "button_style": "btn--primary",
-            "content_position": "middle-center",
-            "content_alignment": "center",
-            "content_spacing": "small",
-            "card_link": "",
-            "color_scheme_mobile": "",
-            "show_text_below": true,
-            "content_alignment_mobile": "left",
-            "width": "20%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_card_3BJ74T",
-        "image_card_GRXz6y",
-        "image_card_BAAmnt",
-        "image_card_EA8TmL",
-        "image_card_Cab8TR"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".card-media {--padding-y-mobile: 1.2rem;}",
-        "@media (max-width: 767px) {.card-media--mobile-content-below .bg-overlay {display: none !important; }}"
-      ],
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "enable_sticky_column": false,
-        "heading": "",
-        "heading_size": "h1",
-        "heading_highlight_style": "none",
-        "subheading": "",
-        "description": "",
-        "column_gap": "extra-small",
-        "row_gap": "none",
-        "swipe_on_mobile": true,
-        "columns_mobile": "2",
-        "padding_top": 0,
-        "padding_bottom": 40,
-        "show_section_divider": false,
-        "divider_width": "fixed",
-        "custom_class": ""
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "custom_css": [],
+      "custom_css": [
+        ".border-top {border: 0px;}"
+      ],
       "settings": {
         "color_scheme": "scheme-9",
         "products_per_page": 36,
@@ -289,13 +131,54 @@
         "show_section_divider": true,
         "divider_width": "fixed"
       }
+    },
+    "rich_text_6kKpwj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X8djj3": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"Best affordable art for making a statement\"",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X8djj3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 20,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_cEfLmL": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {max-width: 180px; display: block; margin: 0 auto;}"
+      ],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/2271/6167/files/Evening_Standard_logo.png?v=1675938816\">",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
     }
   },
   "order": [
     "image_with_text_jwAncU",
     "banner",
     "custom_liquid_hW6dya",
-    "custom_content_RecVe9",
-    "product-grid"
+    "product-grid",
+    "rich_text_6kKpwj",
+    "custom_liquid_cEfLmL"
   ]
 }

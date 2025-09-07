@@ -25,6 +25,7 @@
     "font_family_body_custom": "Family | Avenir Next LT Pro\nAvenirNextLTPro-UltLt.woff2 | 200\nAvenirNextLTPro-UltLtIt.woff2 | 200 | italic\nAvenirNextLTPro-Regular.woff2 | 400\nAvenirNextLTPro-It.woff2 | 400 | italic\nAvenirNextLTPro-Medium.woff2 | 500\nAvenirNextLTPro-MediumIt.woff2 | 500 | italic\nAvenirNextLTPro-Demi.woff2 | 600\nAvenirNextLTPro-DemiIt.woff2 | 600 | italic\nAvenirNextLTPro-Bold.woff2 | 700\nAvenirNextLTPro-BoldIt.woff2 | 700 | italic\nAvenirNextLTPro-Heavy.woff2 | 800\nAvenirNextLTPro-HeavyIt.woff2 | 800 | italic",
     "type_header_font": "playfair_display_n4",
     "heading_scale": 100,
+    "heading_mobile_scale": 70,
     "heading_letter_spacing": -4,
     "type_header_font_custom": "Domaine Display",
     "font_family_header_custom": "Family | Domaine Display\ndomaine-display-regular.woff2 | 400\ndomaine-display-regular-italic.woff2 | 400 | italic\ndomaine-display-medium.woff2 | 500\ndomaine-display-medium-italic.woff2 | 500 | italic\ndomaine-display-semibold.woff2 | 600\ndomaine-display-semibold-italic.woff2 | 600 | italic\ndomaine-display-bold.woff2 | 700\ndomaine-display-bold-italic.woff2 | 700 | italic\ndomaine-display-extrabold.woff2 | 800\ndomaine-display-extrabold-italic.woff2 | 800 | italic\ndomaine-display-black.woff2 | 900\ndomaine-display-black-italic.woff2 | 900 | italic",
@@ -35,7 +36,7 @@
     "subheading_font_weight": "500",
     "subheading_letter_spacing": 0,
     "subheading_transform": "uppercase",
-    "pcard_title_scale": 110,
+    "pcard_title_scale": 100,
     "pcard_title_font": "body",
     "pcard_title_font_weight": "500",
     "pcard_title_uppercase": false,
@@ -134,10 +135,10 @@
           "text": "Reviews",
           "line_break": false,
           "listen_for_changes": false,
-          "rating_without_brackets": false,
+          "rating_without_brackets": true,
           "format_review_count": false,
           "show_popup": false,
-          "anchor_to_reviews_widget": false,
+          "anchor_to_reviews_widget": true,
           "show_empty_stars": false
         }
       }

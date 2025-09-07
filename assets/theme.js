@@ -262,6 +262,27 @@ console.log(
         return style.display !== 'none';
       });
     },
+    getGridColumnGap: (container) => {
+      const gapByDevice = {};
+      const gapCSSVariables = {
+        desktop: '--column-gap',
+        tabletLarge: '--column-gap-tablet-large',
+        tablet: '--column-gap-tablet',
+        mobile: '--column-gap-mobile',
+      };
+      const computedStyles = window.getComputedStyle(container);
+      for (const [device, cssVar] of Object.entries(gapCSSVariables)) {
+        const rawValue = computedStyles.getPropertyValue(cssVar).trim();
+        const match = rawValue.match(/^(\d*\.?\d+)(px|rem)$/);
+        let numericGap = 0;
+        if (match) {
+          const [originalValue, numberStr, unit] = match;
+          numericGap = unit === 'rem' ? parseFloat(numberStr) * 10 : parseFloat(numberStr);
+        }
+        gapByDevice[device] = numericGap;
+      }
+      return gapByDevice;
+    },
   };
 
   FoxTheme.pubsub = {
