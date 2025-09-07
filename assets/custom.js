@@ -1,24 +1,7 @@
-class SizeChartDrawer extends DrawerComponent {
-  constructor() {
-    super();
-  }
-
-  get requiresBodyAppended() {
-    return false;
-  }
-
-  get focusElement() {
-    return this.querySelector('input, textarea, select') || this.querySelector('button.drawer__close-btn');
-  }
-}
-
-customElements.define('size-chart-drawer', SizeChartDrawer);
-
 document.addEventListener('DOMContentLoaded', function() {
   (function(){
-    var root=document.getElementById('gl-size-chart');
+    var root=document.getElementById('gl-size-charts');
     if(!root) return;
-    console.log('here');
     var tabs=root.querySelectorAll('.gl-tab');
     var vals=root.querySelectorAll('.gl-val');
 
@@ -30,19 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       vals.forEach(function(el){
         var v=el.dataset[unit];
-        // skip if no value defined
-        if(typeof v === 'undefined' || v === '') return;
-
         if(unit==='inch' && el.classList.contains('gl-single') && v && !v.includes('x')){
           var num=parseFloat(v);
           if(!isNaN(num)) v=num.toFixed(1);
         }
-
-        if(unit==='cm'){
-          el.textContent = v + ' cm';
-        } else {
-          el.textContent = v + (el.classList.contains('gl-single') ? '"' : '"');
-        }
+        el.textContent = v + (unit==='cm' ? ' cm' : '"');
       });
     }
 
@@ -54,4 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     render('cm');
   })();
-});
+})

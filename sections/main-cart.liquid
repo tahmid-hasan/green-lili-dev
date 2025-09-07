@@ -154,8 +154,16 @@
                     if item.variant.quantity_price_breaks.size > 0
                       assign has_vol_pricing = true
                     endif
-                  -%}
 
+                    assign title = item.product.title
+                    assign url = item.url
+
+                    for property in item.properties
+                      if property.first == '_sample_URL' and property.last != blank
+                        assign url = property.last
+                      endif
+                    endfor
+                  -%}
                   {%- if has_qty_rules or has_vol_pricing -%}
                     {%- capture qty_rules_vol_pricing -%}
                       {%- if has_qty_rules -%}
@@ -247,7 +255,7 @@
                             <div class="grid gap-1 w-full">
                               <div class="flex items-center justify-between gap-1 flex-wrap">
                                 <div class="block">
-                                  <a href="{{ item.url }}" class="cart-item__title text-pcard-title reversed-link">{{- item.product.title | escape -}}</a>
+                                  <a href="{{ url }}" class="cart-item__title text-pcard-title reversed-link">{{- title | escape -}}</a>
                                 </div>
                                 <div class="cart-item__prices lg:hidden">
                                   <div class="price text-right flex flex-wrap items-center gap-x-2 font-body-bolder{% if item.original_price != item.final_price %} price--on-sale{% endif %}">

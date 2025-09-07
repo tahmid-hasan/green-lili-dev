@@ -158,12 +158,29 @@
                     if gift_wrap_id != null and item.id == gift_wrap_id
                       assign is_gift_wrap_item = true
                     endif
+
+                    assign title = item.product.title
+                    assign url = item.url
+                    assign is_sample = false
+                    assign product_id = item.product_id
+
+                    for property in item.properties
+                      if property.first == 'Artwork'
+                        assign is_sample = true
+                      endif
+                      if property.first == '_sample_id'
+                        assign product_id = property.last
+                      endif
+                      if property.first == '_sample_URL' and property.last != blank
+                        assign url = property.last
+                      endif
+                    endfor
                   -%}
                   {%- capture cart_item -%}
                   <li id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item flex flex-col gap-4" data-variant-id="{{ item.variant_id }}" data-handle="{{ item.product.handle }}" data-quantity="{{ item.quantity }}" data-price="{{ item.original_price }}">
                     <div class="cart-item__product flex items-start gap-3">
                       {%- if item.image -%}
-                        <a class="cart-item__media blocks-radius-sm media-wrapper" href="{{ item.url }}" tabindex="-1" aria-label="{{ item.title }}">
+                        <a class="cart-item__media blocks-radius-sm media-wrapper" href="{{ url }}" tabindex="-1" aria-label="{{ item.title }}">
                           {{- item.image 
                             | image_url: width: item.image.width
                             | image_tag:
@@ -176,7 +193,7 @@
                       {%- endif -%}
                       <div class="cart-item__details flex-grow flex flex-col gap-2">
                         <div class="grid">
-                          <div class="block"><a href="{{ item.url }}" class="cart-item__title text-pcard-title reversed-link">{{- item.product.title | escape -}}</a></div>
+                          <div class="block"><a href="{{ url }}" class="cart-item__title text-pcard-title reversed-link">{{- title | escape -}}</a></div>
                           {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != null -%}
                             <div class="cart-item__options">
                               {%- if item.product.has_only_default_variant == false -%}
@@ -484,20 +501,22 @@
                         </div>
                       </div>
                     </div>
-                    {%- if section.settings.enable_cart_recommendations -%}
-                      {%- render 'cart-drawer-products-recommendation',
-                        section_id: section.id
-                        product_id: item.product_id,
-                        heading: section.settings.cart_recommendations_heading,
-                        limit: section.settings.cart_recommendations_limit
-                      -%}
+                    {%- if is_sample == false -%}
+                      {%- if section.settings.enable_cart_recommendations -%}
+                        {%- render 'cart-drawer-products-recommendation',
+                          section_id: section.id
+                          product_id: product_id,
+                          heading: section.settings.cart_recommendations_heading,
+                          limit: section.settings.cart_recommendations_limit
+                        -%}
+                      {%- endif -%}
                     {%- endif -%}
-                    {% liquid
+                    {%- liquid
                       assign collections = ''
                       for collection in item.product.collections
                         assign collections = collections | append: collection.id | append: ','
                       endfor
-                    %}
+                    -%}
                     <foxkit-incart-upsell
                       data-collections="{{ collections | remove_last: ',' }}"
                       data-product-title="{{ item.product.title }}"

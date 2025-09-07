@@ -765,11 +765,26 @@
                   <input type="hidden" name="id" value="{{ sample_product.selected_or_first_available_variant.id }}">
                   <input
                     type="hidden"
-                    id="LineItemProperty-{{ block.id }}"
-                    name="properties[_sample_SKU]"
+                    id="LineItemProperty-sample-sku"
+                    name="properties[Artwork]"
                     form="Sample-product-atc-form--{{ sample_product.id }}"
-                    value="{{ selected_variant.sku | upcase }}-SAMPLE"
+                    value="{{ product.title }}"
                   >
+                  <input
+                    type="hidden"
+                    id="LineItemProperty-sample-product-id"
+                    name="properties[_sample_id]"
+                    form="Sample-product-atc-form--{{ sample_product.id }}"
+                    value="{{ product.id }}"
+                  >
+                  <input
+                    type="hidden"
+                    id="LineItemProperty-sample-product-url"
+                    name="properties[_sample_URL]"
+                    form="Sample-product-atc-form--{{ sample_product.id }}"
+                    value="{{ product.url }}"
+                  >
+
                   <div class="product__order-sample-link">
                     <!-- Left section -->
                     

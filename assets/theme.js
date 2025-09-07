@@ -2651,21 +2651,21 @@ class OrderSample extends HTMLElement {
 
   connectedCallback() {
     this.form = this.querySelector('form[is="product-form"]');
-    this.link = this.querySelector('[data-submit-sample]');
+    this.submitButton = this.querySelector('[data-submit-sample]');
 
     this.abortController = new AbortController();
 
     this.handleVariantChange = this.handleVariantChange.bind(this);
-    document.addEventListener(
-      'variant:changed',
-      this.handleVariantChange,
-      { signal: this.abortController.signal }
-    );
+    // document.addEventListener(
+    //   'variant:changed',
+    //   this.handleVariantChange,
+    //   { signal: this.abortController.signal }
+    // );
 
-    if (!this.form || !this.link) return;
+    if (!this.form || !this.submitButton) return;
     
     // Use AbortController for consistency
-    this.link.addEventListener('click', this.handleClick, {
+    this.submitButton.addEventListener('click', this.handleClick, {
       signal: this.abortController.signal
     });
   }
@@ -2688,7 +2688,7 @@ class OrderSample extends HTMLElement {
     e.preventDefault();
     if (!this.form) return;
 
-    this.link.setAttribute('aria-disabled', 'true');
+    this.submitButton.setAttribute('aria-disabled', 'true');
     this.form.requestSubmit();
   }
 

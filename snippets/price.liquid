@@ -14,8 +14,16 @@
 {%- liquid
   assign target_markets = "EUR,USD,CAD,AUD,CHF"
   assign current_market = localization.country.currency.iso_code
-
+  
   assign selected_variant = product.selected_or_first_available_variant
+  unless product.selected_variant
+    if product.metafields.custom.default_variant != blank
+      assign default_variant = product.metafields.custom.default_variant.value
+      if default_variant.product.id == product.id
+        assign selected_variant = default_variant
+      endif
+    endif
+  endunless
   if use_variant
     assign target = selected_variant
   else
