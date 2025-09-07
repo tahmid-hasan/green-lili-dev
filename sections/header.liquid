@@ -215,6 +215,18 @@
 
   <div class="header__icons header__icons--right flex justify-end z-1">
     <div class="header__buttons flex items-center justify-center">
+      <button
+        type="button"
+        class="localization-drawer-button btn btn--inherit flex items-center justify-center"
+        aria-controls="LocalizationDrawer"
+        aria-expanded="false"
+        {% comment %} aria-describedby="CountryLabel-{{ form_id }}" {% endcomment %}
+      >
+        <span
+          class="f-country-flags f-country-flags--{{ localization.country.iso_code }}"
+          style="--background-image: url({{ localization.country | image_url: width: 20 }})"
+        ></span>
+      </button>
       <a
         href="{{ routes.search_url }}"
         class="search-drawer-button flex items-center justify-center{% if header_layout == 'center-split' %} lg:hidden{% endif %}"

@@ -134,11 +134,19 @@
 :root {
   --page-padding: 1.5rem;
 }
-
+.image-with-text__inner {
+  padding-inline: var(--page-padding);
+}
 @media (min-width: 768px) {
   .section--padding {
     padding-block-start: min(6rem, var(--section-padding-top, 0) * 0.75);
     padding-block-end: min(6rem, var(--section-padding-bottom, 0) * 0.75);
+  }
+  .image-with-text__wrapper {
+    padding-inline: var(--page-padding);
+  }
+  .image-with-text__inner {
+    padding-inline: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -3543,6 +3551,24 @@ input:is([type=radio])::after {
 }
 .drawer .drawer > .fixed-overlay {
   background-color: rgba(var(--color-foreground), 0.3);
+}
+.localization-drawer__intro {
+  padding: 1.1rem 0;
+  margin-bottom: 1.5rem;
+}
+.localization-drawer__intro .drawer__title {
+  margin-bottom: 1.5rem;
+}
+.localization-drawer .input-group {
+  margin-bottom: 1.5rem;
+}
+.localization-drawer .form__label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.localization-drawer .localization-submit {
+  margin-top: 4.9rem;
 }
 @media (min-width: 768px) {
   .drawer {

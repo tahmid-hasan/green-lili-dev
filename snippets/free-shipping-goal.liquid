@@ -2,8 +2,12 @@
   assign minimum_amount_in_cents = minimum_amount | plus: 0
   assign total_price = cart.total_price | plus: 0
 -%}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {%- capture left_to_spend -%}
-    <strong data-left-to-spend>{{ limit_currency | minus: cart.total_price | money }}</strong>
+    <strong data-left-to-spend>{%- if target_markets contains current_market -%}{{ limit_currency | minus: cart.total_price | money_without_trailing_zeros }}{%- else -%}{{ limit_currency | minus: cart.total_price | money }}{%- endif -%}</strong>
 {%- endcapture -%}
 <free-shipping-goal
   data-cart-total="{{ total_price }}"

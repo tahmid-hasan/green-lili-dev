@@ -377,6 +377,64 @@
       },
       {
         "type": "header",
+        "content": "t:settings_schema.typography.settings.custom_font.type_body_font_custom.name"
+      },
+      {
+        "type": "text",
+        "id": "type_body_font_custom",
+        "label": "t:settings_schema.typography.settings.custom_font.type_body_font_custom.label"
+      },
+      {
+        "type": "select",
+        "id": "type_body_font_weight_custom",
+        "label": "t:settings_schema.typography.settings.custom_font.font_weight.label",
+        "options": [
+          {
+            "value": "100",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.thin"
+          },
+          {
+            "value": "200",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.extra_light"
+          },
+          {
+            "value": "300",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.light"
+          },
+          {
+            "value": "400",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.regular"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.medium"
+          },
+          {
+            "value": "600",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.semi_bold"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.bold"
+          },
+          {
+            "value": "800",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.extra_bold"
+          },
+          {
+            "value": "900",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.black"
+          }
+        ],
+        "default": "400"
+      },
+      {
+        "type": "textarea",
+        "id": "font_family_body_custom",
+        "label": "t:settings_schema.typography.settings.custom_font.name"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.typography.settings.header__heading_font.content"
       },
       {
@@ -421,6 +479,64 @@
         "id": "heading_uppercase",
         "label": "t:settings_schema.typography.settings.heading_uppercase.label",
         "default": false
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.custom_font.type_header_font_custom.name"
+      },
+      {
+        "type": "text",
+        "id": "type_header_font_custom",
+        "label": "t:settings_schema.typography.settings.custom_font.type_header_font_custom.label"
+      },
+      {
+        "type": "select",
+        "id": "type_header_font_weight_custom",
+        "label": "t:settings_schema.typography.settings.custom_font.font_weight.label",
+        "options": [
+          {
+            "value": "100",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.thin"
+          },
+          {
+            "value": "200",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.extra_light"
+          },
+          {
+            "value": "300",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.light"
+          },
+          {
+            "value": "400",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.regular"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.medium"
+          },
+          {
+            "value": "600",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.semi_bold"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.bold"
+          },
+          {
+            "value": "800",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.extra_bold"
+          },
+          {
+            "value": "900",
+            "label": "t:settings_schema.typography.settings.custom_font.font_weight.weights.black"
+          }
+        ],
+        "default": "400"
+      },
+      {
+        "type": "textarea",
+        "id": "font_family_header_custom",
+        "label": "t:settings_schema.typography.settings.custom_font.name"
       },
       {
         "type": "header",

@@ -59,6 +59,11 @@
 
       echo 'vendor.css' | asset_url | stylesheet_tag: preload: true
       echo 'theme.css' | asset_url | stylesheet_tag: preload: true
+      echo 'custom.css' | asset_url | stylesheet_tag: preload: true
+
+      if request.path contains 'size-chart-'
+        echo 'size-chart.css' | asset_url | stylesheet_tag: preload: true
+      endif
 
       if enable_rtl
         echo 'rtl.css' | asset_url | stylesheet_tag: preload: true
@@ -69,6 +74,11 @@
 
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom.js' |  asset_url }}" defer></script>
+
+    {%- if request.path contains 'size-chart-' -%}
+      <script src="{{ 'size-chart.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
 
     {%- if request.page_type contains 'customers/' -%}
       <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>

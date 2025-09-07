@@ -100,6 +100,16 @@
                     {{- block.settings.text -}}
                   </motion-element>
                   {%- assign motion_delay = motion_delay | plus: 50 -%}
+                {% when 'custom_liquid' %}
+                  <motion-element
+                    class="block"
+                    data-motion="fade-up"
+                    data-motion-delay="{{ motion_delay }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.custom_liquid }}
+                  </motion-element>
+                  {%- assign motion_delay = motion_delay | plus: 50 -%}
                 {% when 'button' %}
                   <motion-element class="block" data-motion="fade-up" data-motion-delay="{{ motion_delay }}">
                     {% if block.settings.button_label != blank %}
@@ -546,6 +556,18 @@
             }
           ],
           "default": "btn--primary"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+          "info": "t:sections.custom-liquid.settings.custom_liquid.info"
         }
       ]
     }

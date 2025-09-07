@@ -670,16 +670,27 @@ class ModalComponent extends HTMLElement {
   get focusElement() {
     return this.querySelector('button');
   }
+
+  get isSizeChartDrawer() {
+    return this.tagName.toLowerCase() === 'size-chart-drawer';
+  }
   connectedCallback() {
     // Initialize the AbortController
     this.abortController = new AbortController();
 
     // Add click event listeners to all controls
-    this.controls.forEach((button) => {
-      button.addEventListener('click', this.onButtonClick.bind(this), {
-        signal: this.abortController.signal,
-      });
-    });
+    this.rebindClickEvents();
+
+    // Re-initialize controls ONLY for size-chart drawer on variant change
+    if (this.isSizeChartDrawer) {
+      document.addEventListener(
+        'variant:changed',
+        () => {
+          this.rebindClickEvents();
+        },
+        { signal: this.abortController.signal }
+      );
+    }
 
     // Add keyup event listener to document for handling the Escape key
     document.addEventListener(
@@ -714,6 +725,20 @@ class ModalComponent extends HTMLElement {
         }
       );
     }
+  }
+
+  rebindClickEvents() {
+    // Remove old listeners by aborting & re-creating controller
+    if (this.controlsAbortController) {
+      this.controlsAbortController.abort();
+    }
+    this.controlsAbortController = new AbortController();
+
+    this.controls.forEach((button) => {
+      button.addEventListener('click', this.onButtonClick.bind(this), {
+        signal: this.controlsAbortController.signal,
+      });
+    });
   }
 
   disconnectedCallback() {
@@ -2638,6 +2663,62 @@ class ProductForm extends HTMLFormElement {
   };
 }
 customElements.define('product-form', ProductForm, { extends: 'form' });
+
+class OrderSample extends HTMLElement {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  connectedCallback() {
+    this.form = this.querySelector('form[is="product-form"]');
+    this.submitButton = this.querySelector('[data-submit-sample]');
+
+    this.abortController = new AbortController();
+
+    this.handleVariantChange = this.handleVariantChange.bind(this);
+    // document.addEventListener(
+    //   'variant:changed',
+    //   this.handleVariantChange,
+    //   { signal: this.abortController.signal }
+    // );
+
+    if (!this.form || !this.submitButton) return;
+    
+    // Use AbortController for consistency
+    this.submitButton.addEventListener('click', this.handleClick, {
+      signal: this.abortController.signal
+    });
+  }
+
+  handleVariantChange(e) {
+    if (e.detail.variant && e.detail.variant.sku) {
+      const newSku = e.detail.variant.sku.toUpperCase() + '-SAMPLE';
+      const sampleSkuInput = this.form?.querySelector('input[name="properties[_sample_SKU]"]');
+      
+      if (sampleSkuInput) sampleSkuInput.value = newSku;
+    }
+  }
+
+  disconnectedCallback() {
+    // Clean and simple - AbortController handles all event listeners
+    this.abortController?.abort();
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    if (!this.form) return;
+
+    this.submitButton.setAttribute('aria-disabled', 'true');
+    this.form.requestSubmit();
+  }
+
+  get submitButtonElement() {
+    return (this._submitButtonElement = this._submitButtonElement || this.querySelector('[data-submit-sample]'));
+  }
+}
+
+customElements.define('order-sample', OrderSample);
 
 class HighlightText extends HTMLElement {
   constructor() {

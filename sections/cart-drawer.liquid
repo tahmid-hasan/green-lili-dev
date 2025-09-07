@@ -1,3 +1,7 @@
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {%- if request.page_type != 'cart' and settings.cart_type == 'drawer' -%}
   {%- if request.page_type == 'cart' -%}
     {{ 'cart.css' | asset_url | stylesheet_tag }}
@@ -154,12 +158,29 @@
                     if gift_wrap_id != null and item.id == gift_wrap_id
                       assign is_gift_wrap_item = true
                     endif
+
+                    assign title = item.product.title
+                    assign url = item.url
+                    assign is_sample = false
+                    assign product_id = item.product_id
+
+                    for property in item.properties
+                      if property.first == 'Artwork'
+                        assign is_sample = true
+                      endif
+                      if property.first == '_sample_id'
+                        assign product_id = property.last
+                      endif
+                      if property.first == '_sample_URL' and property.last != blank
+                        assign url = property.last
+                      endif
+                    endfor
                   -%}
                   {%- capture cart_item -%}
                   <li id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item flex flex-col gap-4" data-variant-id="{{ item.variant_id }}" data-handle="{{ item.product.handle }}" data-quantity="{{ item.quantity }}" data-price="{{ item.original_price }}">
                     <div class="cart-item__product flex items-start gap-3">
                       {%- if item.image -%}
-                        <a class="cart-item__media blocks-radius-sm media-wrapper" href="{{ item.url }}" tabindex="-1" aria-label="{{ item.title }}">
+                        <a class="cart-item__media blocks-radius-sm media-wrapper" href="{{ url }}" tabindex="-1" aria-label="{{ item.title }}">
                           {{- item.image 
                             | image_url: width: item.image.width
                             | image_tag:
@@ -172,7 +193,7 @@
                       {%- endif -%}
                       <div class="cart-item__details flex-grow flex flex-col gap-2">
                         <div class="grid">
-                          <div class="block"><a href="{{ item.url }}" class="cart-item__title text-pcard-title reversed-link">{{- item.product.title | escape -}}</a></div>
+                          <div class="block"><a href="{{ url }}" class="cart-item__title text-pcard-title reversed-link">{{- title | escape -}}</a></div>
                           {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != null -%}
                             <div class="cart-item__options">
                               {%- if item.product.has_only_default_variant == false -%}
@@ -209,7 +230,11 @@
                           <div class="cart-item__prices">
                             <div class="price font-body-bolder{% if item.original_price != item.final_price %} price--on-sale{% endif %}">
                               {%- liquid
-                                assign money_price = item.original_price | money
+                                if target_markets contains current_market
+                                  assign money_price = item.original_price | money_without_trailing_zeros
+                                else
+                                  assign money_price = item.original_price | money
+                                endif
                                 if settings.currency_code_enabled
                                   assign money_price = item.original_price | money_with_currency
                                 endif
@@ -223,7 +248,11 @@
                                     if settings.currency_code_enabled
                                       echo item.final_price | money_with_currency
                                     else
-                                      echo item.final_price | money
+                                      if target_markets contains current_market
+                                        echo item.final_price | money_without_trailing_zeros
+                                      else
+                                        echo item.final_price | money
+                                      endif
                                     endif  
                                   -%}
                                 </span>
@@ -245,7 +274,11 @@
                                       endif
                                     endcapture
                                   -%}
-                                  ({{ item.variant.unit_price | money }}
+                                  ({%- if target_markets contains current_market -%}
+                                    {{ item.variant.unit_price | money_without_trailing_zeros }}
+                                  {%- else -%}
+                                    {{ item.variant.unit_price | money }}
+                                  {%- endif -%}
                                   <span aria-hidden="true">/</span>
                                   <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
                                   {{ unit_price_base_unit }})
@@ -329,6 +362,9 @@
                                         assign price = item.variant.price | money_with_currency
                                       else
                                         assign price = item.variant.price | money
+                                        if target_markets contains current_market
+                                          assign price = item.variant.price | money_without_trailing_zeros
+                                        endif
                                       endif
                                     -%}
                                     <span> {{ 'products.product.volume_pricing.each_html' | t: money: price }}</span>
@@ -343,7 +379,11 @@
                                         if settings.currency_code_enabled
                                           assign price_break_price = price_break.price | money_with_currency
                                         else
-                                          assign price_break_price = price_break.price | money
+                                          if target_markets contains current_market
+                                            assign price_break_price = price_break.price | money_without_trailing_zeros
+                                          else
+                                            assign price_break_price = price_break.price | money
+                                          endif
                                         endif
                                       -%}
                                       <span>{{ 'products.product.volume_pricing.each_html' | t: money: price_break_price }}</span>
@@ -461,20 +501,22 @@
                         </div>
                       </div>
                     </div>
-                    {%- if section.settings.enable_cart_recommendations -%}
-                      {%- render 'cart-drawer-products-recommendation',
-                        section_id: section.id
-                        product_id: item.product_id,
-                        heading: section.settings.cart_recommendations_heading,
-                        limit: section.settings.cart_recommendations_limit
-                      -%}
+                    {%- if is_sample == false -%}
+                      {%- if section.settings.enable_cart_recommendations -%}
+                        {%- render 'cart-drawer-products-recommendation',
+                          section_id: section.id
+                          product_id: product_id,
+                          heading: section.settings.cart_recommendations_heading,
+                          limit: section.settings.cart_recommendations_limit
+                        -%}
+                      {%- endif -%}
                     {%- endif -%}
-                    {% liquid
+                    {%- liquid
                       assign collections = ''
                       for collection in item.product.collections
                         assign collections = collections | append: collection.id | append: ','
                       endfor
-                    %}
+                    -%}
                     <foxkit-incart-upsell
                       data-collections="{{ collections | remove_last: ',' }}"
                       data-product-title="{{ item.product.title }}"
@@ -754,7 +796,11 @@
                       >
                         {% render 'icon-discount' %}
                         <span>{{- discount.title -}}</span>
-                        <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                        {%- if target_markets contains current_market -%}
+                          <span class="font-body-bold">(-{{ discount.total_allocated_amount | money_without_trailing_zeros }})</span>
+                        {%- else -%}
+                          <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                        {%- endif -%}
 
                         <button
                           is="cart-discount-remove"
@@ -790,7 +836,11 @@
                           >
                             {% render 'icon-discount' %}
                             <span>{{- discount.title -}}</span>
-                            <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                            {%- if target_markets contains current_market -%}
+                              <span class="font-body-bold">(-{{ discount.total_allocated_amount | money_without_trailing_zeros }})</span>
+                            {%- else -%}
+                              <span class="font-body-bold">(-{{ discount.total_allocated_amount | money }})</span>
+                            {%- endif -%}
 
                             <button
                               is="cart-discount-remove"

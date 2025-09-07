@@ -114,7 +114,7 @@
         "padding_bottom": 0,
         "show_section_divider": false,
         "divider_width": "fixed",
-        "custom_class": ""
+        "custom_class": "site-hero"
       }
     },
     "custom_liquid_xJKEwR": {

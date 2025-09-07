@@ -143,6 +143,10 @@
     endif
   endif
 -%}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {% comment %}
   {%- if is_metro_item -%}
     {%- capture current_image_sizes -%}
@@ -281,7 +285,11 @@
                   assign sale_badge = amount | times: -1 | append: '%'
                 when 'show_amount'
                   if compare_at_price > price
-                    assign amount = compare_at_price | minus: price | money
+                    if target_markets contains current_market
+                      assign amount = compare_at_price | minus: price | money_without_trailing_zeros
+                    else
+                      assign amount = compare_at_price | minus: price | money
+                    endif
                   endif
                   assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
                 else

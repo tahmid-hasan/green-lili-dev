@@ -7,6 +7,10 @@
 
   assign description = section.settings.description
 -%}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 
 {% style %}
   .section-{{ section.id }} {
@@ -126,7 +130,11 @@
                   <div class="totals__product-total flex items-center justify-between gap-3">
                     <p class="totals__subtotal h5">{{ 'sections.quick_order_list.product_total' | t }}</p>
                     <span class="totals__subtotal-value font-body-bolder h5">
-                      {{ cart | line_items_for: product | sum: 'original_line_price' | money }}
+                      {%- if target_markets contains current_market -%}
+                        {{ cart | line_items_for: product | sum: 'original_line_price' | money_without_trailing_zeros }}
+                      {%- else -%}
+                        {{ cart | line_items_for: product | sum: 'original_line_price' | money }}
+                      {%- endif -%}
                     </span>
                   </div>
                   <small class="tax-note text-subtext rte">

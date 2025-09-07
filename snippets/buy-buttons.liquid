@@ -21,6 +21,10 @@
       assign show_dynamic_checkout = true
     endif
   -%}
+  {%- liquid
+    assign target_markets = "EUR,USD,CAD,AUD,CHF"
+    assign current_market = localization.country.currency.iso_code
+  -%}
   <div
     class="product-form"
     data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -151,7 +155,11 @@
                           if settings.currency_code_enabled
                             echo variant_price_compare | money_with_currency
                           else
-                            echo variant_price_compare | money
+                            if target_markets contains current_market
+                              echo variant_price_compare | money_without_trailing_zeros
+                            else
+                              echo variant_price_compare | money
+                            endif
                           endif
                         -%}
                       </span>
@@ -164,7 +172,11 @@
                           if settings.currency_code_enabled
                             assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
                           else
-                            assign variant_price = product.selected_or_first_available_variant.price | money
+                            if target_markets contains current_market
+                              assign variant_price = product.selected_or_first_available_variant.price | money_without_trailing_zeros
+                            else
+                              assign variant_price = product.selected_or_first_available_variant.price | money
+                            endif
                           endif
                         -%}
                         <span class="price-per-item--current price__regular whitespace-nowrap">
@@ -177,7 +189,11 @@
                               if settings.currency_code_enabled
                                 assign price_break_price = price_break.price | money_with_currency
                               else
-                                assign price_break_price = price_break.price | money
+                                if target_markets contains current_market
+                                  assign price_break_price = price_break.price | money_without_trailing_zeros
+                                else
+                                  assign price_break_price = price_break.price | money
+                                endif
                               endif
                             -%}
                             <span class="price-per-item--current price__regular whitespace-nowrap">
@@ -193,7 +209,11 @@
                           if settings.currency_code_enabled
                             assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
                           else
-                            assign variant_price = product.selected_or_first_available_variant.price | money
+                            if target_markets contains current_market
+                              assign variant_price = product.selected_or_first_available_variant.price | money_without_trailing_zeros
+                            else
+                              assign variant_price = product.selected_or_first_available_variant.price | money
+                            endif
                           endif
                         -%}
                         {{- 'products.product.volume_pricing.price_at_each_html' | t: price: variant_price -}}
@@ -246,7 +266,11 @@
                       if settings.currency_code_enabled
                         assign price = product.selected_or_first_available_variant.price | money_with_currency
                       else
-                        assign price = product.selected_or_first_available_variant.price | money
+                        if target_markets contains current_market
+                          assign price = product.selected_or_first_available_variant.price | money_without_trailing_zeros
+                        else
+                          assign price = product.selected_or_first_available_variant.price | money
+                        endif
                       endif
                     -%}
                     <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price }}">
@@ -258,7 +282,11 @@
                       if settings.currency_code_enabled
                         assign price_break_price = price_break.price | money_with_currency
                       else
-                        assign price_break_price = price_break.price | money
+                        if target_markets contains current_market
+                          assign price_break_price = price_break.price | money_without_trailing_zeros
+                        else
+                          assign price_break_price = price_break.price | money
+                        endif
                       endif
                     -%}
                     <li class="blocks-radius-md{% if forloop.index >= 3 %} show-more-item hidden{% endif %}">
@@ -325,7 +353,7 @@
                 form="{{ product_form_id }}"
               >
               <button class="quantity__button" name="plus" type="button">
-                <span class="visually-hidden">
+                <span class="visual ly-hidden">
                   {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
                 </span>
                 {% render 'icon-plus' %}

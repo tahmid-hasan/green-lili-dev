@@ -22,6 +22,10 @@
     assign in_stock = false
   endif
 -%}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 {%- if in_stock -%}
   {%- if has_tags -%}
     {%- for tag in product.tags -%}
@@ -51,6 +55,9 @@
         when 'fixed_amount'
           if compare_at_price > price
             assign amount = compare_at_price | minus: price | money
+            if target_markets contains current_market
+              assign amount = compare_at_price | minus: price | money_without_trailing_zeros
+            endif
           endif
           assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
         else

@@ -12,7 +12,18 @@
   {% render 'price', product: product %}
 {% endcomment %}
 {%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+  
   assign selected_variant = product.selected_or_first_available_variant
+  unless product.selected_variant
+    if product.metafields.custom.default_variant != blank
+      assign default_variant = product.metafields.custom.default_variant.value
+      if default_variant.product.id == product.id
+        assign selected_variant = default_variant
+      endif
+    endif
+  endunless
   if use_variant
     assign target = selected_variant
   else
@@ -27,8 +38,17 @@
   assign price_max = product.price_max
   assign available = target.available | default: false
   assign money_price = price | money
+  if target_markets contains current_market
+    assign money_price = price | money_without_trailing_zeros
+  endif
   assign money_price_min = price_min | money
+  if target_markets contains current_market
+    assign money_price_min = price_min | money_without_trailing_zeros
+  endif
   assign money_price_max = price_max | money
+  if target_markets contains current_market
+    assign money_price_max = price_max | money_without_trailing_zeros
+  endif
   if settings.currency_code_enabled
     assign money_price = price | money_with_currency
     assign money_price_min = price_min | money_with_currency
@@ -63,7 +83,11 @@
             {% if settings.currency_code_enabled %}
               {{ compare_at_price | money_with_currency }}
             {% else %}
-              {{ compare_at_price | money }}
+              {%- if target_markets contains current_market -%}
+                {{ compare_at_price | money_without_trailing_zeros }}
+              {% else %}
+                {{ compare_at_price | money }}
+              {% endif %}
             {% endif %}
           </s>
         </span>
@@ -91,7 +115,11 @@
           {% if settings.currency_code_enabled %}
             {{ compare_at_price | money_with_currency }}
           {% else %}
-            {{ compare_at_price | money }}
+            {%- if target_markets contains current_market -%}
+              {{ compare_at_price | money_without_trailing_zeros }}
+            {%- else -%}
+              {{ compare_at_price | money }}
+            {%- endif -%}
           {% endif %}
         </s>
       </span>
@@ -113,7 +141,13 @@
             {%- endif -%}
           </span>
       {%- endcapture -%}
-      <span data-unit-price>{{ selected_variant.unit_price | money }}</span>
+      <span data-unit-price>
+        {%- if target_markets contains current_market -%}
+          {{ selected_variant.unit_price | money_without_trailing_zeros }}
+        {%- else -%}
+          {{ selected_variant.unit_price | money }}
+        {%- endif -%}
+      </span>
       {{- unit_price_separator -}}
       {{- unit_price_base_unit -}}
     </div>
@@ -134,6 +168,9 @@
             when 'fixed_amount'
               if compare_at_price > price
                 assign amount = compare_at_price | minus: price | money
+                if target_markets contains current_market
+                  assign amount = compare_at_price | minus: price | money_without_trailing_zeros
+                endif
               endif
               assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
             else

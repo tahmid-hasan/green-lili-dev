@@ -42,7 +42,10 @@
 
     {{ 'giftcard.css' | asset_url | stylesheet_tag }}
   </head>
-
+  {%- liquid
+    assign target_markets = "EUR,USD,CAD,AUD,CHF"
+    assign current_market = localization.country.currency.iso_code
+  -%}
   <body class="gift-card">
     <header>
       <div class="gift-card__price">
@@ -50,7 +53,11 @@
           {% if settings.currency_code_enabled %}
             {{ gift_card.balance | money_with_currency }}
           {% else %}
-            {{ gift_card.balance | money }}
+            {%- if target_markets contains current_market -%}
+              {{ gift_card.balance | money_without_trailing_zeros }}
+            {%- else -%}
+              {{ gift_card.balance | money }}
+            {%- endif -%}
           {% endif %}
         </h1>
         {%- if gift_card.enabled == false or gift_card.expired -%}

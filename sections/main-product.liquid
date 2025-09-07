@@ -1375,6 +1375,46 @@
           "visible_if": "{{ block.settings.property_type == 'checkbox' }}"
         }
       ]
+    },
+    {
+      "type": "order_a_sample",
+      "name": "Order sample button",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_stylesheet",
+          "label": "Include stylesheet",
+          "default": true
+        },
+        {
+          "type": "product",
+          "id": "sample_product",
+          "label": "Sample product",
+          "info": "This is required. Otherwise the sample button will only be shown inside customizer"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Order a swatch sample"
+        },
+        {
+          "type": "header",
+          "content": "Badge"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badge",
+          "label": "Show badge",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge text",
+          "default": "New"
+        }
+      ]
     }
   ],
   "settings": [

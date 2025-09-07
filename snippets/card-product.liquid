@@ -94,6 +94,10 @@
   assign image_sizes = image_sizes | default: '450px'
   assign image_widths = '70, 140, 165, 355, 450, 535, 710, 900, 1070, 1420'
 -%}
+{%- liquid
+  assign target_markets = "EUR,USD,CAD,AUD,CHF"
+  assign current_market = localization.country.currency.iso_code
+-%}
 <div
   class="product-card product-card-style-{{ settings.pcard_style }}{% if settings.pcard_style == 'card' %} color-{{ settings.pcard_color_scheme }}{% endif %}{{ card_wrapper_class }}{% if list_on_mobile %} product-card-list-on-mobile{% endif %}"
 >
@@ -176,7 +180,11 @@
                   assign sale_badge = amount | times: -1 | append: '%'
                 when 'show_amount'
                   if compare_at_price > price
-                    assign amount = compare_at_price | minus: price | money
+                    if target_markets contains current_market
+                      assign amount = compare_at_price | minus: price | money_without_trailing_zeros
+                    else
+                      assign amount = compare_at_price | minus: price | money
+                    endif
                   endif
                   assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
                 else

@@ -9,14 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "rich_text_z4VXMQ": {
       "type": "rich-text",
       "blocks": {
@@ -40,6 +32,7 @@
         "heading_hxH6gJ",
         "text_ichyj7"
       ],
+      "disabled": true,
       "custom_css": [
         "p {max-width: 650px; margin: 0 auto;}"
       ],
@@ -54,21 +47,16 @@
         "custom_class": ""
       }
     },
-    "custom_liquid_xVqwXP": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
+    "main": {
+      "type": "main-page",
       "settings": {
-        "custom_liquid": "<!-- ===== Canvas Size Charts ===== -->\n<div class=\"gl-size-charts\" id=\"gl-size-charts\">\n\n  <!-- Portrait / Landscape -->\n  <div class=\"gl-block\">\n    <img class=\"gl-img\" src=\"https://cdn.shopify.com/s/files/1/2271/6167/files/PORTRAIT-CANVAS-SIZES.webp?v=1756237261\" alt=\"Portrait / Landscape canvas size illustration\" loading=\"lazy\">\n    <div class=\"gl-head\">\n      <h2>Portrait / Landscape</h2>\n      <div class=\"gl-tabs\" role=\"tablist\" aria-label=\"Units\">\n        <button class=\"gl-tab is-active\" data-unit=\"cm\" aria-selected=\"true\">cm</button>\n        <button class=\"gl-tab\" data-unit=\"inch\" aria-selected=\"false\">inches</button>\n      </div>\n    </div>\n    <table class=\"gl-table\" aria-live=\"polite\">\n      <thead>\n        <tr><th>Size</th><th>Canvas Size</th><th>Framed Size</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Small</td><td class=\"gl-val\" data-cm=\"30 x 41\" data-inch=\"12 x 16\">30 x 41 cm</td><td class=\"gl-val\" data-cm=\"34 x 45\" data-inch=\"13.4 x 17.4\">34 x 45 cm</td></tr>\n        <tr><td>Medium</td><td class=\"gl-val\" data-cm=\"51 x 71\" data-inch=\"20 x 28\">51 x 71 cm</td><td class=\"gl-val\" data-cm=\"55 x 75\" data-inch=\"21.4 x 29.4\">55 x 75 cm</td></tr>\n        <tr><td>Large</td><td class=\"gl-val\" data-cm=\"71 x 102\" data-inch=\"28 x 40\">71 x 102 cm</td><td class=\"gl-val\" data-cm=\"75 x 106\" data-inch=\"29.4 x 41.4\">75 x 106 cm</td></tr>\n        <tr><td>Extra Large</td><td class=\"gl-val\" data-cm=\"91 x 127\" data-inch=\"36 x 50\">91 x 127 cm</td><td class=\"gl-val\" data-cm=\"95 x 131\" data-inch=\"37.4 x 51.4\">95 x 131 cm</td></tr>\n      </tbody>\n    </table>\n  </div>\n\n  <!-- Square -->\n  <div class=\"gl-block\">\n    <img class=\"gl-img\" src=\"https://cdn.shopify.com/s/files/1/2271/6167/files/SQUARE-CANVAS-SIZES-SCALE.webp?v=1756394871\" alt=\"Square canvas size illustration\" loading=\"lazy\">\n    <div class=\"gl-head\">\n      <h2>Square</h2>\n      <div class=\"gl-tabs\" role=\"tablist\" aria-label=\"Units\">\n        <button class=\"gl-tab is-active\" data-unit=\"cm\" aria-selected=\"true\">cm</button>\n        <button class=\"gl-tab\" data-unit=\"inch\" aria-selected=\"false\">inches</button>\n      </div>\n    </div>\n    <table class=\"gl-table\" aria-live=\"polite\">\n      <thead>\n        <tr><th>Size</th><th>Canvas Size</th><th>Framed Size</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Medium</td><td class=\"gl-val\" data-cm=\"61 x 61\" data-inch=\"24 x 24\">61 x 61 cm</td><td class=\"gl-val\" data-cm=\"65 x 65\" data-inch=\"25.4 x 25.4\">65 x 65 cm</td></tr>\n        <tr><td>Large</td><td class=\"gl-val\" data-cm=\"81 x 81\" data-inch=\"32 x 32\">81 x 81 cm</td><td class=\"gl-val\" data-cm=\"85 x 85\" data-inch=\"33.4 x 33.4\">85 x 85 cm</td></tr>\n        <tr><td>Extra Large</td><td class=\"gl-val\" data-cm=\"102 x 102\" data-inch=\"40 x 40\">102 x 102 cm</td><td class=\"gl-val\" data-cm=\"106 x 106\" data-inch=\"41.4 x 41.4\">106 x 106 cm</td></tr>\n      </tbody>\n    </table>\n  </div>\n\n  <!-- Frame details -->\n  <div class=\"gl-frame\">\n    <div class=\"gl-frame-grid\">\n      <img class=\"gl-img\" src=\"https://cdn.shopify.com/s/files/1/2271/6167/files/FRAME-DETAILS.webp?v=1756239651\" alt=\"Frame details diagram\" loading=\"lazy\">\n      <div>\n        <div class=\"gl-head\">\n          <h2>Frame details</h2>\n          <div class=\"gl-tabs\" role=\"tablist\" aria-label=\"Units\">\n            <button class=\"gl-tab is-active\" data-unit=\"cm\" aria-selected=\"true\">cm</button>\n            <button class=\"gl-tab\" data-unit=\"inch\" aria-selected=\"false\">inches</button>\n          </div>\n        </div>\n        <table class=\"gl-table gl-tight\">\n          <colgroup><col class=\"gl-col-left\"><col class=\"gl-col-right\"></colgroup>\n          <tbody>\n            <tr><td class=\"gl-left\">A&nbsp;–&nbsp;Float</td><td class=\"gl-val gl-right gl-single\" data-cm=\"0.5\" data-inch=\"0.20\">0.5 cm</td></tr>\n            <tr><td class=\"gl-left\">B&nbsp;–&nbsp;Frame&nbsp;width</td><td class=\"gl-val gl-right gl-single\" data-cm=\"1.2\" data-inch=\"0.47\">1.2 cm</td></tr>\n            <tr><td class=\"gl-left\">C&nbsp;–&nbsp;Frame&nbsp;depth</td><td class=\"gl-val gl-right gl-single\" data-cm=\"5.4\" data-inch=\"2.13\">5.4 cm</td></tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n<style>\n  /* Container: wider + responsive padding */\n  .gl-size-charts{\n    max-width:700px;\n    margin:0 auto;\n    font-family:var(--font-body-family,inherit);\n  }\n  @media(max-width:900px){\n    .gl-size-charts{ padding:0 20px; }\n  }\n\n  /* Images with larger gap to tables */\n  .gl-img{\n      width: 100%;\n  height: auto;        /* keeps natural aspect ratio */\n  border-radius: 2px;\n  margin: 40px 0;\n  display: block;\n  }\n\n  /* Titles + tabs: bigger, same font, normal case */\n  .gl-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}\n  .gl-head h2{\n    margin:0;\n    font-family:var(--font-heading-family,inherit);\n    font-weight:600;\n    font-size:28px;\n    line-height:1.25;\n    text-transform:none !important;\n  }\n  .gl-tabs{\n    display:flex;gap:14px;margin-left:auto;\n    font-family:var(--font-heading-family,inherit);\n  }\n  .gl-tab{\n    background:none;border:0;padding:0;\n    font-size:16px;\n    color:#777;cursor:pointer;\n    text-transform:none !important;\n  }\n  .gl-tab.is-active{color:#000;font-weight:700}\n\n  /* Tables */\n  .gl-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-bottom:32px}\n  .gl-table th,.gl-table td{padding:12px 8px;border-bottom:1px solid #ccc}\n  .gl-table thead th{\n    border-top:0;\n    font-family:var(--font-heading-family,inherit);\n    font-weight:700;\n  }\n  .gl-table th:nth-child(1),.gl-table td:nth-child(1){width:25%;text-align:left;padding-left:0}\n  .gl-table th:nth-child(2),.gl-table td:nth-child(2){width:35%;text-align:center}\n  .gl-table th:nth-child(3),.gl-table td:nth-child(3){width:40%;text-align:right;padding-right:0;font-weight:700}\n\n  /* Frame block layout */\n.gl-frame-grid > div { margin-top: 40px; }\n  .gl-frame-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}\n  @media(max-width:640px){\n    .gl-frame-grid{grid-template-columns:1fr}\n    .gl-head{margin-top:14px}\n  }\n\n  /* Frame table */\n  .gl-tight{margin:0;table-layout:fixed}\n  .gl-tight .gl-col-left{width:70%}\n  .gl-tight .gl-col-right{width:30%}\n  .gl-tight td.gl-left{white-space:nowrap;padding-left:0;text-align:left}\n  .gl-tight td.gl-right{padding-right:0;text-align:right;font-weight:700}\n</style>\n\n<script>\n(function(){\n  var root=document.getElementById('gl-size-charts');\n  if(!root) return;\n  var tabs=root.querySelectorAll('.gl-tab');\n  var vals=root.querySelectorAll('.gl-val');\n\n  function render(unit){\n    tabs.forEach(function(b){\n      var active=b.dataset.unit===unit;\n      b.classList.toggle('is-active',active);\n      b.setAttribute('aria-selected',active?'true':'false');\n    });\n    vals.forEach(function(el){\n      var v=el.dataset[unit];\n      if(unit==='inch' && el.classList.contains('gl-single') && v && !v.includes('x')){\n        var num=parseFloat(v);\n        if(!isNaN(num)) v=num.toFixed(1);\n      }\n      el.textContent = v + (unit==='cm' ? ' cm' : '\"');\n    });\n  }\n\n  root.addEventListener('click',function(e){\n    var btn=e.target.closest('.gl-tab');\n    if(!btn) return;\n    render(btn.dataset.unit);\n  });\n\n  render('cm');\n})();\n</script>",
-        "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 50,
-        "custom_class": ""
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     }
   },
   "order": [
-    "main",
     "rich_text_z4VXMQ",
-    "custom_liquid_xVqwXP"
+    "main"
   ]
 }
