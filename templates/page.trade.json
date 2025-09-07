@@ -241,6 +241,43 @@
         "custom_class": ""
       }
     },
+    "rich_text_KWmbdg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8rzY9A": {
+          "type": "heading",
+          "settings": {
+            "heading": "What our <em>clients say</em>",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8rzY9A"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 20,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_ccUDKi": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"reviews-io-rating-bar-widget\"\n  widget-id=\"YNbqxJRyzerX0ViQ\"\n data-store-name=\"www.greenlili.com\"\n lang=\"en\"\n ></div>\n<script src='//widget.reviews.io/modern-widgets/rating-bar.js'></script>",
+        "color_scheme": "scheme-3",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
     "testimonials_f93kTG": {
       "type": "testimonials",
       "blocks": {
@@ -286,7 +323,7 @@
       "name": "Testimonials",
       "settings": {
         "color_scheme": "scheme-3",
-        "heading": "What our <em>clients say</em>",
+        "heading": "",
         "heading_size": "h1",
         "heading_highlight_style": "none",
         "subheading": "",
@@ -573,6 +610,8 @@
     "image_with_text_pzQqfq",
     "multicolumn_4A7PF3",
     "multicolumn_LWj6HT",
+    "rich_text_KWmbdg",
+    "custom_liquid_ccUDKi",
     "testimonials_f93kTG",
     "rich_text_kTba7D",
     "custom_liquid_qHHrC4",

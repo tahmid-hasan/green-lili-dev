@@ -227,7 +227,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "neutral-wall-art",
-            "image": "shopify://shop_images/neutral-wall-art.webp",
+            "image": "shopify://shop_images/Neutral-artwork.jpg",
             "title": "Neutral Wall Art",
             "description": "<p>Simple & Timeless</p>"
           }
@@ -259,9 +259,17 @@
             "description": "<p>Playful energy, effortless style.</p>"
           }
         },
+        "featured_collection_HQg83m": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "minimalist-wall-art",
+            "image": "shopify://shop_images/BA0031-ROOM-LN2.jpg",
+            "title": "Minimalist Wall Art",
+            "description": ""
+          }
+        },
         "featured_collection_LVRJyK": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "floral-botanical-wall-art",
             "image": "shopify://shop_images/FLORAL-BOTANICAL_b853f3fe-fbf6-4835-8f79-8d7f7be7d3ad.jpg",
@@ -275,6 +283,7 @@
         "featured_collection_VRdbRe",
         "featured_collection_CdV3dF",
         "featured_collection_8EcRFr",
+        "featured_collection_HQg83m",
         "featured_collection_LVRJyK"
       ],
       "custom_css": [
@@ -292,10 +301,10 @@
         "card_color_inherited": false,
         "show_product_count": false,
         "show_icon": false,
-        "card_style": "style-1",
-        "card_image_ratio": "adapt",
+        "card_style": "",
+        "card_image_ratio": "3/4",
         "content_alignment": "left",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "column_gap": "medium",
         "row_gap": "medium",
         "enable_slider": true,

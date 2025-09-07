@@ -61,10 +61,71 @@
             "product_list": [],
             "heading": ""
           }
+        },
+        "promotion_banner_bQ4AG7": {
+          "type": "promotion_banner",
+          "settings": {
+            "menu_title": "Collections",
+            "menu_columns": 4,
+            "promotions_width": 100,
+            "promotion_columns": 4,
+            "color_scheme_1": "scheme-1",
+            "promo_image_1": "shopify://shop_images/SHAPES-OF-MOROCCO-SIZE-CHART.webp",
+            "subheading_1": "",
+            "heading_1": "Shapes and forms",
+            "heading_size_1": "h5",
+            "description_1": "<p>Playful energy, effortless style</p>",
+            "button_label_1": "",
+            "button_style_1": "btn--underline",
+            "content_position_1": "below",
+            "content_alignment_1": "left",
+            "promotion_link_1": "shopify://collections/abstract-wall-art",
+            "color_scheme_2": "",
+            "subheading_2": "",
+            "heading_2": "",
+            "heading_size_2": "h5",
+            "description_2": "",
+            "button_label_2": "",
+            "button_style_2": "btn--primary",
+            "content_position_2": "below",
+            "content_alignment_2": "left",
+            "promotion_link_2": "",
+            "color_scheme_3": "",
+            "subheading_3": "",
+            "heading_3": "",
+            "heading_size_3": "h5",
+            "description_3": "",
+            "button_label_3": "",
+            "button_style_3": "btn--primary",
+            "content_position_3": "below",
+            "content_alignment_3": "left",
+            "promotion_link_3": "",
+            "color_scheme_4": "",
+            "subheading_4": "",
+            "heading_4": "",
+            "heading_size_4": "h5",
+            "description_4": "",
+            "button_label_4": "",
+            "button_style_4": "btn--primary",
+            "content_position_4": "below",
+            "content_alignment_4": "left",
+            "promotion_link_4": "",
+            "color_scheme_5": "",
+            "heading_5": "",
+            "subheading_5": "",
+            "heading_size_5": "h5",
+            "description_5": "",
+            "button_label_5": "",
+            "button_style_5": "btn--primary",
+            "content_position_5": "below",
+            "content_alignment_5": "left",
+            "promotion_link_5": ""
+          }
         }
       },
       "block_order": [
-        "product_list_rj7mwc"
+        "product_list_rj7mwc",
+        "promotion_banner_bQ4AG7"
       ],
       "custom_css": [
         ".card-media__description {opacity: 0.6;}"
@@ -84,7 +145,7 @@
         "logo_mobile_position": "center",
         "show_social_media_icons": true,
         "enable_language_selector": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "padding_top": 20,
         "padding_bottom": 26
       }
